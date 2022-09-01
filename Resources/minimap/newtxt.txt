@@ -1,0 +1,483 @@
+<data name="Aatrox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Aatrox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Ahri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Ahri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Akali" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Akali.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Akshan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Akshan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Alistar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Alistar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Amumu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Amumu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Anivia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Anivia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Annie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Annie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Aphelios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Aphelios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Ashe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Ashe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="AurelionSol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\AurelionSol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Azir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Azir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Bard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Bard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Blitzcrank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Blitzcrank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Brand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Brand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Braum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Braum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Caitlyn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Caitlyn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Camille" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Camille.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Cassiopeia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Cassiopeia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Chogath" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Chogath.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Corki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Corki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Darius" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Darius.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Diana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Diana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Draven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Draven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="DrMundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\DrMundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Ekko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Ekko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Elise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Elise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Evelynn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Evelynn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Ezreal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Ezreal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="FiddleSticks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\FiddleSticks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Fiora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Fiora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Fizz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Fizz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Galio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Galio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Gangplank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Gangplank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Garen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Garen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Gnar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Gnar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Gragas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Gragas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Graves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Graves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Gwen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Gwen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Hecarim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Hecarim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Heimerdinger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Heimerdinger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Illaoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Illaoi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Irelia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Irelia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Ivern" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Ivern.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Janna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Janna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="JarvanIV" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\JarvanIV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Jax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Jax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Jayce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Jayce.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Jhin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Jhin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Jinx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Jinx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Kaisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Kaisa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Kalista" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Kalista.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Karma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Karma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Karthus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Karthus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Kassadin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Kassadin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Katarina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Katarina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Kayle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Kayle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Kayn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Kayn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Kennen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Kennen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Khazix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Khazix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Kindred" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Kindred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Kled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Kled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="KogMaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\KogMaw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Leblanc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Leblanc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="LeeSin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\LeeSin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Leona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Leona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Lillia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Lillia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Lissandra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Lissandra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Lucian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Lucian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Lulu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Lulu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Lux" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Lux.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Malphite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Malphite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Malzahar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Malzahar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Maokai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Maokai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="MasterYi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\MasterYi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="MissFortune" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\MissFortune.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="MonkeyKing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\MonkeyKing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Mordekaiser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Mordekaiser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Morgana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Morgana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Nami" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Nami.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Nasus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Nasus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Nautilus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Nautilus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Neeko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Neeko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="newtxttxt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\newtxttxt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Nidalee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Nidalee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Nocturne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Nocturne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Nunu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Nunu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Olaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Olaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Orianna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Orianna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Ornn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Ornn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Pantheon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Pantheon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Poppy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Poppy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Pyke" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Pyke.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="pythonscriptpy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\pythonscriptpy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Qiyana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Qiyana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Quinn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Quinn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Rakan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Rakan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Rammus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Rammus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="RekSai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\RekSai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Rell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Rell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Renata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Renata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Renekton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Renekton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Rengar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Rengar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Riven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Riven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Rumble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Rumble.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Ryze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Ryze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Samira" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Samira.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Sejuani" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Sejuani.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Senna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Senna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Seraphine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Seraphine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Sett" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Sett.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Shaco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Shaco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Shen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Shen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Shyvana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Shyvana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Singed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Singed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Sion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Sion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Sivir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Sivir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Skarner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Skarner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Sona" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Sona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Soraka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Soraka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Swain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Swain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Sylas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Sylas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Syndra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Syndra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="TahmKench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\TahmKench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Taliyah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Taliyah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Talon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Talon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Taric" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Taric.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Teemo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Teemo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Thresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Thresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Tristana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Tristana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Trundle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Trundle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Tryndamere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Tryndamere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="TwistedFate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\TwistedFate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Twitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Twitch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Udyr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Udyr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Urgot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Urgot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Varus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Varus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Vayne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Vayne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Veigar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Veigar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Velkoz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Velkoz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Vex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Vex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Vi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Vi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Viego" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Viego.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Viktor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Viktor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Vladimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Vladimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Volibear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Volibear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Warwick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Warwick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Xayah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Xayah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Xerath" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Xerath.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="XinZhao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\XinZhao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Yasuo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Yasuo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Yone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Yone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Yorick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Yorick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Yuumi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Yuumi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Zac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Zac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Zed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Zed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Zeri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Zeri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Ziggs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Ziggs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Zilean" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Zilean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Zoe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Zoe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
+<data name="Zyra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+<value>..\Resources\minimap\Zyra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+</data>
