@@ -90,9 +90,9 @@ namespace Slutty_Caitlyn
             Config.Add("autoP").AddItem(new MenuItem("MANASlider", "Minimum %Mana for Potion")).SetValue(new Slider(50));
             */
 
-            Config.Add(new MenuKeyBind("dashte", "Dash EQ to on target",Keys.C, KeyBindType.Press));
+            Config.Add(new MenuKeyBind("dashte", "Dash EQ to on target",Keys.N, KeyBindType.Press));
 
-            Config.Add(new MenuKeyBind("fleekey", "Use Flee Mode",Keys.A, KeyBindType.Press));
+            Config.Add(new MenuKeyBind("fleekey", "Use Flee Mode",Keys.Z, KeyBindType.Press));
             
             Config.Attach();
             Drawing.OnDraw += Drawing_OnDraw;
