@@ -184,7 +184,7 @@ namespace Flowers_Yasuo.MyCommon
                                     .OrderByDescending(x => GameObjects.EnemyHeroes.Count(i => i.Distance(x) <= 220))
                                     .FirstOrDefault();
 
-                            if (bestPos != Vector3.Zero && bestPos.CountEnemyHeroesInRange(220) > 0 && Q.Cast(Me.PreviousPosition))
+                            if (bestPos != Vector3.Zero && bestPos.CountEnemyHeroesInRange(220) > 0 && Q.Cast(new Vector3(60000f, 60000f, 60000f)))
                             {
                                 DelayAction.Add(10 + (Game.Ping / 2 - 5), () =>
                                 {
@@ -527,7 +527,7 @@ namespace Flowers_Yasuo.MyCommon
                             {
                                 if (GameObjects.EnemyHeroes.Any(x => x.IsValidTarget(220f, true, YasuolastEPos)) && Me.Distance(YasuolastEPos) <= 250)
                                 {
-                                    Q.Cast(Me.PreviousPosition);
+                                    Q.Cast(new Vector3(60000f, 60000f, 60000f));
                                 }
                             }
 
@@ -535,7 +535,7 @@ namespace Flowers_Yasuo.MyCommon
                             {
                                 if (YasuolastEPos.CountEnemyHeroesInRange(220) > 0 && Me.Distance(YasuolastEPos) <= 250)
                                 {
-                                    Q.Cast(Me.PreviousPosition);
+                                    Q.Cast(new Vector3(60000f, 60000f, 60000f));
                                 }
                             }
                         }
@@ -582,7 +582,7 @@ namespace Flowers_Yasuo.MyCommon
                     {
                         var bestPos = MyExtraManager.FlashPoints().ToArray().FirstOrDefault(x => target.Distance(x) <= 220);
 
-                        if (bestPos != Vector3.Zero && bestPos.CountEnemyHeroesInRange(220) > 0 && Q.Cast(Me.PreviousPosition))
+                        if (bestPos != Vector3.Zero && bestPos.CountEnemyHeroesInRange(220) > 0 && Q.Cast(new Vector3(60000f, 60000f, 60000f)))
                         { 
                             DelayAction.Add(10 + (Game.Ping / 2 - 5),
                                 () =>
@@ -611,7 +611,7 @@ namespace Flowers_Yasuo.MyCommon
 
                     if (bestPos != Vector3.Zero &&
                         bestPos.CountEnemyHeroesInRange(220) >=
-                        ComboMenu["FlowersYasuo.ComboMenu.EQFlashCount"].GetValue<MenuSliderButton>().Value && Q.Cast(Me.PreviousPosition))
+                        ComboMenu["FlowersYasuo.ComboMenu.EQFlashCount"].GetValue<MenuSliderButton>().Value && Q.Cast(new Vector3(60000f, 60000f, 60000f)))
                     {
                         DelayAction.Add(10 + (Game.Ping / 2 - 5),
                             () =>
@@ -723,7 +723,7 @@ namespace Flowers_Yasuo.MyCommon
                         {
                             if (minions.Count(x => x.Health > 0 && x.IsValidTarget(220, true, YasuolastEPos)) >= 1)
                             {
-                                Q.Cast(Me.PreviousPosition);
+                                Q.Cast(new Vector3(60000f, 60000f, 60000f));
                             }
                         }
                     }
