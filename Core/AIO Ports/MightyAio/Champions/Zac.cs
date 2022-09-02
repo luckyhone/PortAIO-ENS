@@ -205,7 +205,15 @@ namespace MightyAio.Champions
                     break;
 
                 case OrbwalkerMode.LaneClear:
-                    Clear();
+                    try
+                    {
+                        Clear();
+                    }
+                    catch (Exception e)
+                    {
+                        // 
+                    }
+
                     break;
 
                 case OrbwalkerMode.LastHit:
