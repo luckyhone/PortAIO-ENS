@@ -904,7 +904,7 @@ namespace PortAIO
                 case "Yasuo":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
-                        case 11: // Flowers' Yasuo
+                        case 0: // Flowers' Yasuo
                             Flowers_Yasuo.MyLoader.Loads();
                             break;
                     }
