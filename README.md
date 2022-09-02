@@ -15,7 +15,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Ashe x4.
     - Blitzcrank x3.
     - Brand x1.
-    - Caitlyn x5.
+    - Caitlyn x6.
     - Camille x3.
     - Cassiopeia x2.
     - Chogath x1.
@@ -32,7 +32,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Jayce x2.
     - Jhin x3.
     - Jinx x8.
-    - Kalista x6.
+    - Kalista x7.
     - Karthus x4.
     - Katarina x1.
     - Kayn x1.
