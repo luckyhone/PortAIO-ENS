@@ -59,7 +59,7 @@ namespace zedisback
                 
                 //Combo
                 var comboSettings = _config.Add(new Menu("Combo", "Combo"));
-                comboSettings.Add(new MenuBool("UseWC", "Us7e W (also gap close)")).SetValue(true);
+                comboSettings.Add(new MenuBool("UseWC", "Use W (also gap close)")).SetValue(true);
                 comboSettings.Add(new MenuBool("UseIgnitecombo", "Use Ignite(rush for it)")).SetValue(true);
                 comboSettings.Add(new MenuBool("UseUlt", "Use Ultimate")).SetValue(true);
                 comboSettings.Add(new MenuKeyBind("ActiveCombo", "Combo!",Keys.Space, KeyBindType.Press));
