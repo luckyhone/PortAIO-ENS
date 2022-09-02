@@ -10,6 +10,7 @@ using PortAIO.Properties;
 using SebbyLib;
 using SharpDX;
 using SharpDX.Direct3D9;
+using Color = System.Drawing.Color;
 using Geometry = LeagueSharpCommon.Geometry.Geometry;
 using Menu = EnsoulSharp.SDK.MenuUI.Menu;
 using MenuItem = EnsoulSharp.SDK.MenuUI.MenuItem;
@@ -183,13 +184,6 @@ namespace OneKeyToWin_AIO_Sebby.Core
             notifications.Add(new MenuBool("NotificationS", "Summoners").SetValue(true));
             notifications.Add(new MenuSlider("posXn", "Notifications posX ", 400, 0, 1000));
             notifications.Add(new MenuSlider("posYn", "Notifications posY", 50, 0, 1000));
-            
-            var en_range = ud.Add(new Menu("en_range","Enemy ranges"));
-            {
-                en_enabled = en_range.Add(new MenuBool("er_enabled", "Show ranges").SetValue(true));
-                en_animated = en_range.Add(new MenuBool("er_animated", "Animated fade").SetValue(true));
-                en_thickness = en_range.Add(new MenuSlider("er_thick", "Line thickness percentage",100, 0, 250));
-            };
 
             var awr = screen.Add(new Menu("awr", "Awareness radar"));
             awr.Add(new MenuBool("ScreenRadar", "Enable").SetValue(true));
@@ -204,7 +198,7 @@ namespace OneKeyToWin_AIO_Sebby.Core
             spelltracker.Add(new MenuBool("SpellTrackerMe", "Me").SetValue(true));
             spelltracker.Add(new MenuBool("SpellTrackerLvl", "Show spell lvl (can drop fps)").SetValue(true));
 
-            ud.Add(new MenuBool("ShowClicks", "Show enemy clicks").SetValue(true));
+            ud.Add(new MenuBool("ShowClicks", "Show enemy clicks").SetValue(false));
             ud.Add(new MenuBool("showWards", "Show hidden objects, wards").SetValue(true));
             ud.Add(new MenuBool("buffTracker", "My buff tracker").SetValue(false));
             ud.Add(new MenuBool("HpBar", "Damage indicators").SetValue(true));
@@ -255,23 +249,10 @@ namespace OneKeyToWin_AIO_Sebby.Core
             });
 
             Drawing.OnEndScene += Drawing_OnEndScene;
-            Drawing.OnDraw += OnDraw;
             Game.OnUpdate += Game_OnUpdate;
             Game.OnWndProc += Game_OnWndProc;
         }
-
-        private void OnDraw(EventArgs args)
-        {
-            if (Config["ud"]["disableDraws"].GetValue<MenuBool>().Enabled)
-                return;
-            foreach (var hero in OKTWtracker.ChampionInfoList.Where(x => !x.Hero.IsDead))
-            {
-                if (en_enabled.GetValue<MenuBool>().Enabled && hero.Hero.IsVisible)
-                {
-                    draw_entity_range(hero.Hero);
-                } 
-            }
-        }
+        
 
         private void Game_OnWndProc(GameWndEventArgs args)
         {
@@ -767,60 +748,42 @@ namespace OneKeyToWin_AIO_Sebby.Core
 
                         if (HpBar)
                         {
-                            float QdmgDraw = 0, WdmgDraw = 0, EdmgDraw = 0, RdmgDraw = 0, damage = 0;
-                            bool qRdy = ObjectManager.Player.Spellbook.GetSpell(SpellSlot.Q).IsReady();
-                            bool wRdy = ObjectManager.Player.Spellbook.GetSpell(SpellSlot.W).IsReady();
-                            bool eRdy = ObjectManager.Player.Spellbook.GetSpell(SpellSlot.E).IsReady();
-                            bool rRdy = ObjectManager.Player.Spellbook.GetSpell(SpellSlot.R).IsReady();
+                            var barPoss = hero.Hero.HPBarPosition;
+                            if (Math.Abs(barPos.X) < 0.0000001) continue;
+                            if (Math.Abs(barPos.Y) < 0.0000001) continue;
 
-                            float qDmg = 0;
-                            float wDmg = 0;
-                            float eDmg = 0;
-                            float rDmg = 0;
+                            double qDamage = 0;
+                            double wDamage = 0;
+                            double eDamage = 0;
+                            double rDamage = 0;
 
-                            if (qRdy)
-                                qDmg = (float) Player.GetSpellDamage(hero.Hero, SpellSlot.Q);
-                            if (wRdy)
-                                wDmg = (float) Player.GetSpellDamage(hero.Hero, SpellSlot.W);
-                            if (eRdy)
-                                eDmg = (float) Player.GetSpellDamage(hero.Hero, SpellSlot.E);
-                            if (rRdy)
-                                rDmg = (float) Player.GetSpellDamage(hero.Hero, SpellSlot.R);
-
-                            damage = qDmg + wDmg + eDmg + rDmg;
-
-                            if (qRdy)
-                                QdmgDraw = (qDmg / damage);
-
-                            if (wRdy && Player.CharacterName != "Kalista")
-                                WdmgDraw = (wDmg / damage);
-
-                            if (eRdy)
-                                EdmgDraw = (eDmg / damage);
-
-                            if (rRdy)
-                                RdmgDraw = (rDmg / damage);
-
-                            var percentHealthAfterDamage = Math.Max(0, hero.Hero.Health - damage) / hero.Hero.MaxHealth;
-
-                            var yPos = barPos.Y + YOffset;
-                            var xPosDamage = barPos.X + XOffset + Width * percentHealthAfterDamage;
-                            var xPosCurrentHp = barPos.X + XOffset + Width * hero.Hero.Health / hero.Hero.MaxHealth;
-
-                            var differenceInHP = xPosCurrentHp - xPosDamage;
-                            var pos1 = barPos.X + XOffset + (Width * percentHealthAfterDamage);
-
-                            for (var i = 0; i < differenceInHP; i++)
+                            if (Q.IsReady())
                             {
-                                if (Q.IsReady() && i < QdmgDraw * differenceInHP)
-                                    Drawing.DrawLine(pos1 + i, yPos, pos1 + i, yPos + Height, 1, System.Drawing.Color.Cyan);
-                                else if (W.IsReady() && i < (QdmgDraw + WdmgDraw) * differenceInHP)
-                                    Drawing.DrawLine(pos1 + i, yPos, pos1 + i, yPos + Height, 1, System.Drawing.Color.Orange);
-                                else if (E.IsReady() && i < (QdmgDraw + WdmgDraw + EdmgDraw) * differenceInHP)
-                                    Drawing.DrawLine(pos1 + i, yPos, pos1 + i, yPos + Height, 1, System.Drawing.Color.Yellow);
-                                else if (R.IsReady() && i < (QdmgDraw + WdmgDraw + EdmgDraw + RdmgDraw) * differenceInHP)
-                                    Drawing.DrawLine(pos1 + i, yPos, pos1 + i, yPos + Height, 1, System.Drawing.Color.YellowGreen);
+                                qDamage = Player.GetSpellDamage(hero.Hero, SpellSlot.Q);
                             }
+
+                            if (W.IsReady())
+                            {
+                                wDamage = Player.GetSpellDamage(hero.Hero, SpellSlot.W);
+                            }
+
+                            if (E.IsReady())
+                            {
+                                eDamage = Player.GetSpellDamage(hero.Hero, SpellSlot.E);
+                            }
+
+                            if (R.IsReady())
+                            {
+                                rDamage = Player.GetSpellDamage(hero.Hero, SpellSlot.R);
+                            }
+
+                            var totalDamage = qDamage + wDamage + eDamage + rDamage;
+                            var xPos = barPos.X - 45;
+                            var yPos = barPos.Y - 19;
+                            var remainHelath = hero.Hero.Health - totalDamage;
+                            var x1 = xPos + (hero.Hero.Health / hero.Hero.MaxHealth * 104);
+                            var x2 = (float) (xPos + ((remainHelath > 0 ? remainHelath : 0) / hero.Hero.MaxHealth * 103.4));
+                            Drawing.DrawLine(x1, yPos + 1, x2, yPos + 1, 12, Color.Cyan);
                         }
                     }
 
@@ -1210,55 +1173,6 @@ namespace OneKeyToWin_AIO_Sebby.Core
                 
             }
         }
-
-        private void draw_entity_range(AIHeroClient obj)
-        {
-            var CircleQuality = 120;
-            var StepMax = 3.14159265358979323846f * 2.0f * ((float)(CircleQuality) - 1.0f) / (float)(CircleQuality);
-
-            var EnemyPos = obj.Position;
-            var AARange = obj.AttackRange + obj.BoundingRadius;
-            var DistanceToEnemy = ObjectManager.Player.Distance(obj);
-            var IsInRange = DistanceToEnemy <= AARange;
-            var LineThickness = (float)(en_thickness.GetValue<MenuSlider>().Value) / 100f;
-            
-            List<SharpDX.Vector3> DrawPoints = new List<SharpDX.Vector3>();
-            for (var i = 0; i <= CircleQuality; i++)
-            {
-                var Step = (float)(i) / (float)(CircleQuality) * StepMax;
-                DrawPoints.Add(new SharpDX.Vector3(EnemyPos.X + (float)Math.Cos((double)Step) * AARange, EnemyPos.Y + (float)Math.Sin((double)Step) * AARange, EnemyPos.Z));
-            }
-            var my_pos = ObjectManager.Player.Position;
-            for (var i = 1; i <= DrawPoints.Count; i++)
-            {
-                var Prev = DrawPoints.ElementAt(i - 1);
-                var Cur = DrawPoints.ElementAt(i == DrawPoints.Count() ? 0 : i);
-
-                var a_2d = Drawing.WorldToScreen(Prev);
-                var b_2d = Drawing.WorldToScreen(Cur);
-
-                if (!is_on_screen(a_2d) || !is_on_screen(b_2d))
-                    continue;
-
-                if (en_animated.GetValue<MenuBool>().Enabled && !IsInRange)
-                {
-                    var AnimRange = 400f;
-                    var Mid = (Prev + Cur) * 0.5f;
-                    var Dist = my_pos.Distance(Mid);
-                    var AnimStep = 1f - Math.Max(Math.Min((Dist / AnimRange) * 0.55f, 1f), 0f);
-
-                    //DrawingInternal.AddLineOnScreen(a_2d.To3D(), b_2d.To3D(), GetColorFade(System.Drawing.Color.FromArgb(155, 155, 155), System.Drawing.Color.FromArgb(255, 63, 0), AnimStep), LineThickness);
-                    Drawing.DrawLine(a_2d, b_2d,LineThickness,GetColorFade(System.Drawing.Color.FromArgb(155, 155, 155), System.Drawing.Color.Cyan, AnimStep));
-                }
-                else
-                    //DrawingInternal.AddLineOnScreen(a_2d.To3D(), b_2d.To3D(), IsInRange ? System.Drawing.Color.FromArgb(255, 63, 0) : System.Drawing.Color.FromArgb(155, 155, 155), LineThickness);
-
-                    Drawing.DrawLine(a_2d, b_2d, LineThickness,
-                        IsInRange
-                            ? System.Drawing.Color.Cyan : System.Drawing.Color.FromArgb(155, 155, 155));
-            }
-        }
-        
         public bool is_on_screen(SharpDX.Vector2 pos)
         {
             return pos.X > 0 && pos.X <= Drawing.Width && pos.Y > 0 && pos.Y <= Drawing.Height;
