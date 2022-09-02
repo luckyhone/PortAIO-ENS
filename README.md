@@ -56,7 +56,6 @@ Only scripts that have "[Listo]" written in the menu work.
     - Thresh x4.
     - TwistedFate x3.
     - Twitch x3.
-    - Udyr (OLD) x1.
     - Varus x3.
     - Vayne x6.
     - Viktor x3.
@@ -64,6 +63,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Yasuo x1.
     - Yorick x1.
     - Yuumi x1.
+    - Zac x1.
     - Zed x3.
     - Zoe x1.
 
