@@ -75,7 +75,7 @@ namespace PortAIO
                 case "Caitlyn":
                     champ = new[]
                     {
-                        "OKTW", "[SDK] ExorAIO", "SluttyCaitlyn", "Caitlyn Master Headshot"
+                        "OKTW", "[SDK] ExorAIO", "SluttyCaitlyn", "Caitlyn Master Headshot","ChallengerSeriesAIO"
                     };
                     break;
                 case "Camille":
@@ -167,7 +167,7 @@ namespace PortAIO
                 case "Kalista":
                     champ = new[]
                     {
-                        "Hermes Kalista", "OKTW", "SharpShooter", "[SDK] ExorAIO", "EzAIO", "EnsoulSharp.Kalista"
+                        "Hermes Kalista", "OKTW", "SharpShooter", "[SDK] ExorAIO", "EzAIO", "EnsoulSharp.Kalista","ChallengerSeriesAIO"
                     };
                     break;
                 case "Karthus":

@@ -56,35 +56,40 @@ namespace xSalice_Reworked.Base
 
         private static void Mec(EventArgs args)
         {
-            if (!_menu.GetValue<MenuBool>("enabledAOE").Enabled)
+            try
             {
-                return;
-            }
-            if (_qeEnabled)
-            {
-                CastComboMec(QExtend, _menu["qeAutoLaunch"].GetValue<MenuSlider>().Value);
-            }
+                if (!_menu["AOE Spells"]["enabledAOE"].GetValue<MenuBool>().Enabled)
+                {
+                    Game.Print("aaaa");
+                    return;
+                }
 
-            if (_qEnabled)
-            {
-                CastMec(Q, _menu["qAutoLaunch"].GetValue<MenuSlider>().Value);
-            }
+                if (_qeEnabled)
+                {
+                    CastComboMec(QExtend, _menu["AOE Spells"]["qeAutoLaunch"].GetValue<MenuSlider>().Value);
+                }
 
-            if (_wEnabled)
-            {
-                CastMec(W, _menu["wAutoLaunch"].GetValue<MenuSlider>().Value);
-            }
+                if (_qEnabled)
+                {
+                    CastMec(Q, _menu["AOE Spells"]["qAutoLaunch"].GetValue<MenuSlider>().Value);
+                }
 
-            if (_eEnabled)
-            {
-                CastMec(E, _menu["eAutoLaunch"].GetValue<MenuSlider>().Value);
-            }
+                if (_wEnabled)
+                {
+                    CastMec(W, _menu["AOE Spells"]["wAutoLaunch"].GetValue<MenuSlider>().Value);
+                }
 
-            if (_rEnabled)
-            {
-                CastMec(R, _menu["rAutoLaunch"].GetValue<MenuSlider>().Value);
-            }
-            
+                if (_eEnabled)
+                {
+                    CastMec(E, _menu["AOE Spells"]["eAutoLaunch"].GetValue<MenuSlider>().Value);
+                }
+
+                if (_rEnabled)
+                {
+                    CastMec(R, _menu["AOE Spells"]["rAutoLaunch"].GetValue<MenuSlider>().Value);
+                }
+            }catch(Exception e){}
+
         }
         private static void CastMec(Spell spell, int minHit)
         {

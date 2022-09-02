@@ -100,10 +100,10 @@ namespace xSalice_Reworked.Pluging
 
             var target = TargetSelector.GetTarget(550, DamageType.Magical);
 
-            if (target != null && Menu["Always_Use"].GetValue<MenuBool>().Enabled)
+            if (target != null)
                 return;
 
-            if (Menu["UseWCombo"].GetValue<MenuBool>().Enabled && W.IsReady())
+            if (Menu["UseECombo"].GetValue<MenuBool>().Enabled && W.IsReady())
                 W.CastIfHitchanceEquals(target, HitChance.High);
         }
 

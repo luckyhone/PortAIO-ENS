@@ -270,11 +270,14 @@ namespace PortAIO
                         case 1: // SharpShooter
                             SharpShooter.MyLoader.Loads();
                             break;
-                        case 5: // Slutty Caitlyn
+                        case 2: // Slutty Caitlyn
                             Slutty_Caitlyn.Program.Loads();
                             break;
-                        case 9: // Caitlyn Master Headshot
+                        case 3: // Caitlyn Master Headshot
                             Caitlyn_Master_Headshot.Program.Loads();
+                            break;
+                        case 4: // ChallengerSeriesAIO
+                            Challenger_Series.Program.Loads();
                             break;
                     }
 
@@ -540,6 +543,9 @@ namespace PortAIO
                             break;
                         case 5: // EnsoulSharp.Kalista
                             EnsoulSharp.Kalista.Program.Loads();
+                            break;
+                        case 6: // ChallengerSeriesAIO
+                            Challenger_Series.Program.Loads();
                             break;
                     }
 
