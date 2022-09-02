@@ -25,12 +25,14 @@ namespace Entropy.AIO.Neeko.Logics
 
             var target = GameObjects.Jungle.Where(m => m.IsValidTarget(E.Range)).MaxBy(h => h.MaxHealth);
 
-            if (target == null)
+            if (target != null)
             {
-                return;
+                var qinput = E.GetPrediction(target);
+                if (qinput.Hitchance >= HitChance.High)
+                {
+                    E.Cast(target);
+                }
             }
-
-            E.Cast(target);
         }
 
         public static void ExecuteQ()
@@ -47,12 +49,14 @@ namespace Entropy.AIO.Neeko.Logics
 
             var target = GameObjects.Jungle.Where(m => m.IsValidTarget(Q.Range)).MaxBy(h => h.MaxHealth);
 
-            if (target == null)
+            if (target != null)
             {
-                return;
+                var qinput = Q.GetPrediction(target);
+                if (qinput.Hitchance >= HitChance.High)
+                {
+                    Q.Cast(target);
+                }
             }
-
-            Q.Cast(target);
         }
     }
 }
