@@ -79,7 +79,7 @@ namespace PortAIO
                     };
                     break;
                 case "Camille":
-                    champ = new string[] { "hCamille", "Camille#", "Lord's Camille" };
+                    champ = new string[] { "hCamille", "Camille#", "Lord's Camille","Entropy.AIO" };
                     break;
                 case "Cassiopeia":
                     champ = new string[]

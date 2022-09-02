@@ -300,6 +300,9 @@ namespace PortAIO
                         case 2: // Lord's Camille
                             LordsCamille.Program.Loads();
                             break;
+                        case 3: // Entropy.AIO
+                            Entropy.AIO.Program.Loads();
+                            break;
                     }
 
                     break;
