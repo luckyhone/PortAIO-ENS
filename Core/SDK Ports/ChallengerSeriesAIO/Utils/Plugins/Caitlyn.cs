@@ -73,7 +73,7 @@ namespace Challenger_Series.Utils.Plugins
 
         private void OnInterruptableTarget(AIHeroClient sender, Interrupter.InterruptSpellArgs args)
         {
-            if (!GameObjects.AllyMinions.Any(m => !m.IsDead && m.Name.Contains("trap") && m.Distance(sender.ServerPosition) < 100) && ObjectManager.Player.Distance(sender) < 550)
+            if (!GameObjects.AllyMinions.Any(m => !m.IsDead && m.Name.Contains("Trap") && m.Distance(sender.ServerPosition) < 100) && ObjectManager.Player.Distance(sender) < 550)
             {
                 W.Cast(sender.ServerPosition);
             }
@@ -265,7 +265,7 @@ namespace Challenger_Series.Utils.Plugins
             if (goodTarget != null)
             {
                 var pos = goodTarget.ServerPosition;
-                if (!GameObjects.AllyMinions.Any(m => !m.IsDead && m.Name.Contains("trap") && m.Distance(goodTarget.ServerPosition) < 100) && pos.Distance(ObjectManager.Player.ServerPosition) < 820)
+                if (!GameObjects.AllyMinions.Any(m => !m.IsDead && m.Name.Contains("Trap") && m.Distance(goodTarget.ServerPosition) < 100) && pos.Distance(ObjectManager.Player.ServerPosition) < 820)
                 {
                     W.Cast(goodTarget.ServerPosition);
                 }
@@ -287,8 +287,8 @@ namespace Challenger_Series.Utils.Plugins
                     var pred = Prediction.GetPrediction(hero, W);
                     if (
                         !GameObjects.AllyMinions.Any(
-                            m => !m.IsDead && m.Name.Contains("trap") && m.Distance(pred.Item2) < 100) &&
-                        (int) pred.Item1 > (int) HitChance.Medium && ObjectManager.Player.Distance(pred.Item2) < W.Range)
+                            m => !m.IsDead && m.Name.Contains("Trap") && m.Distance(pred.Item2) < 100) &&
+                        (int) pred.Item1 > (int) HitChance.High && ObjectManager.Player.Distance(pred.Item2) < W.Range)
                     {
                         W.Cast(pred.Item2);
                     }
