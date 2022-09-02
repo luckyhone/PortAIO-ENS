@@ -784,6 +784,14 @@ namespace Sharpy_AIO.Plugins
                                     }
                                 }
                             }
+                            else
+                            {
+                                var target = TargetSelector.GetTarget(W.Range, DamageType.Physical);
+                                if (target != null)
+                                {
+                                    W.Cast(target.Position);
+                                }
+                            }
                         }
                         else
                         {
