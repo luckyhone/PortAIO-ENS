@@ -8,7 +8,7 @@ using PortAIO;
 [assembly: AssemblyTitle("PortAIO")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Eubb")]
+[assembly: AssemblyCompany("PortAIO-Team")]
 [assembly: AssemblyProduct("PortAIO")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]

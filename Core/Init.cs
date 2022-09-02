@@ -356,6 +356,7 @@ namespace PortAIO
                             OneKeyToWin_AIO_Sebby.Program.GameOnOnGameLoad();
                             break;
                     }
+
                     break;
                 case "Ezreal":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -373,6 +374,7 @@ namespace PortAIO
                             MightyAio.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Fizz":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -420,6 +422,7 @@ namespace PortAIO
                             ExorAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Illaoi":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -449,6 +452,7 @@ namespace PortAIO
                             NoobAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Jayce":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -460,6 +464,7 @@ namespace PortAIO
                             Jayce.Load.Loads();
                             break;
                     }
+
                     break;
                 case "Jhin":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -474,6 +479,7 @@ namespace PortAIO
                             EzAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Jinx":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -503,6 +509,7 @@ namespace PortAIO
                             MightyAio.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Kalista":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -526,6 +533,7 @@ namespace PortAIO
                             EnsoulSharp.Kalista.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Karthus":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -543,6 +551,7 @@ namespace PortAIO
                             LyrdumAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Katarina":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -551,6 +560,7 @@ namespace PortAIO
                             NoobAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Kayn":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -559,6 +569,7 @@ namespace PortAIO
                             NoobAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Kindred":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -567,6 +578,7 @@ namespace PortAIO
                             OneKeyToWin_AIO_Sebby.Program.GameOnOnGameLoad();
                             break;
                     }
+
                     break;
                 case "Leblanc":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -575,6 +587,7 @@ namespace PortAIO
                             Entropy.AIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Leona":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -583,6 +596,7 @@ namespace PortAIO
                             Z.aio.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Lillia":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -651,6 +665,16 @@ namespace PortAIO
                             Easy_Sup.Program.Loads();
                             break;
                     }
+
+                    break;
+                case "Neeko":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // Entropy.AIO
+                            Entropy.AIO.Program.Loads();
+                            break;
+                    }
+
                     break;
                 case "Pyke":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -659,6 +683,7 @@ namespace PortAIO
                             Easy_Sup.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Riven":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -667,6 +692,7 @@ namespace PortAIO
                             MightyAio.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Senna":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -675,6 +701,7 @@ namespace PortAIO
                             MightyAio.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Shen":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -683,6 +710,7 @@ namespace PortAIO
                             MightyAio.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Shyvana":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -691,6 +719,7 @@ namespace PortAIO
                             NoobAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Sivir":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -705,6 +734,7 @@ namespace PortAIO
                             Flowers_Series.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Skarner":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -713,6 +743,7 @@ namespace PortAIO
                             MightyAio.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Soraka":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -721,6 +752,7 @@ namespace PortAIO
                             Easy_Sup.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Syndra":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -732,6 +764,7 @@ namespace PortAIO
                             OneKeyToWin_AIO_Sebby.Program.GameOnOnGameLoad();
                             break;
                     }
+
                     break;
                 case "Taliyah":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -740,6 +773,7 @@ namespace PortAIO
                             ExorAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Thresh":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -757,6 +791,7 @@ namespace PortAIO
                             Easy_Sup.Program.Loads();
                             break;
                     }
+
                     break;
                 case "TwistedFate":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -771,6 +806,7 @@ namespace PortAIO
                             NoobAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Twitch":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -785,6 +821,7 @@ namespace PortAIO
                             NoobAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Varus":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -799,6 +836,7 @@ namespace PortAIO
                             SharpShooter.MyLoader.Loads();
                             break;
                     }
+
                     break;
                 case "Vayne":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -822,6 +860,7 @@ namespace PortAIO
                             EzAIO.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Viktor":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -836,6 +875,7 @@ namespace PortAIO
                             Flowers_Viktor.Program.Loads();
                             break;
                     }
+
                     break;
                 case "Xayah":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -844,6 +884,7 @@ namespace PortAIO
                             SharpShooter.MyLoader.Loads();
                             break;
                     }
+
                     break;
                 case "Yasuo":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -852,6 +893,7 @@ namespace PortAIO
                             Flowers_Yasuo.MyLoader.Loads();
                             break;
                     }
+
                     break;
                 case "Yorick":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
@@ -908,6 +950,5 @@ namespace PortAIO
         }
 
         #endregion
-
     }
 }

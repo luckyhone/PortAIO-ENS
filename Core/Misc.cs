@@ -24,7 +24,7 @@ namespace PortAIO
             menu.Add(dualPort);
 
             var hasDualPort = true;
-            
+
             switch (GameObjects.Player.CharacterName)
             {
                 #region Dual-Ports
@@ -32,15 +32,16 @@ namespace PortAIO
                 case "Ahri":
                     champ = new[]
                     {
-                        "OKTW", "DZAhri", "EloFactory Ahri", "xSalice", "BadaoSeries", "AhriSharp", "[SDK] Flowers' Series", "Babehri","Entropy.AIO"
+                        "OKTW", "DZAhri", "EloFactory Ahri", "xSalice", "BadaoSeries", "AhriSharp",
+                        "[SDK] Flowers' Series", "Babehri", "Entropy.AIO"
                     };
                     break;
                 case "Akali":
-                    champ = new[] {"KDA Akali", "MightyAIO"};
+                    champ = new[] { "KDA Akali", "MightyAIO" };
                     break;
                 case "Alistar":
                     champ = new string[]
-                        {"Easy_Sup"};
+                        { "Easy_Sup" };
                     break;
                 case "Annie":
                     champ = new string[]
@@ -51,7 +52,7 @@ namespace PortAIO
                 case "Ashe":
                     champ = new string[]
                     {
-                        "OKTW","SharpShooter","[SDK] Flowers' Series","Flowers' ADC Series"
+                        "OKTW", "SharpShooter", "[SDK] Flowers' Series", "Flowers' ADC Series"
                     };
                     break;
                 case "Blitzcrank":
@@ -73,34 +74,34 @@ namespace PortAIO
                     };
                     break;
                 case "Camille":
-                    champ = new string[] {"hCamille", "Camille#", "Lord's Camille"};
+                    champ = new string[] { "hCamille", "Camille#", "Lord's Camille" };
                     break;
                 case "Cassiopeia":
                     champ = new string[]
                     {
-                        "[SDK] ExorAIO","LyrdumAIO"
+                        "[SDK] ExorAIO", "LyrdumAIO"
                     };
                     break;
                 case "Chogath":
                     champ = new string[]
-                        {"MightyAIO"};
+                        { "MightyAIO" };
                     break;
                 case "Corki":
                     champ = new string[]
                     {
-                        "OKTW","SharpShooter","[SDK] ExorAIO"
+                        "OKTW", "SharpShooter", "[SDK] ExorAIO"
                     };
                     break;
                 case "Darius":
                     champ = new string[]
                     {
-                        "OKTW","[SDK] ExorAIO", "[SDK] Flowers' Series"
+                        "OKTW", "[SDK] ExorAIO", "[SDK] Flowers' Series"
                     };
                     break;
                 case "Draven":
                     champ = new[]
                     {
-                        "SharpShooter","[SDK] ExorAIO", "[SDK] Tyler1.exe"
+                        "SharpShooter", "[SDK] ExorAIO", "[SDK] Tyler1.exe"
                     };
                     break;
                 case "Ekko":
@@ -110,7 +111,7 @@ namespace PortAIO
                     };
                     break;
                 case "Ezreal":
-                    champ = new[] {"OKTW", "EzAIO", "SharpShooter", "MightyAIO"};
+                    champ = new[] { "OKTW", "EzAIO", "SharpShooter", "MightyAIO" };
                     break;
                 case "Fizz":
                     champ = new string[]
@@ -121,59 +122,60 @@ namespace PortAIO
                 case "Gangplank":
                     champ = new[]
                     {
-                        "BadaoGangplank", "Bangplank", "BePlank", "e.Motion Gangplank", "GangplankBuddy","Entropy.AIO"
+                        "BadaoGangplank", "Bangplank", "BePlank", "e.Motion Gangplank", "GangplankBuddy", "Entropy.AIO"
                     };
                     break;
                 case "Graves":
                     champ = new string[]
                     {
-                        "OKTW","SharpShooter","[SDK] ExorAIO"
+                        "OKTW", "SharpShooter", "[SDK] ExorAIO"
                     };
                     break;
                 case "Illaoi":
                     champ = new[]
                     {
-                        "Tentacle Kitty","[SDK] Flowers' Series", "[SDK] Kraken Priestess", "IllaoiSOH"
+                        "Tentacle Kitty", "[SDK] Flowers' Series", "[SDK] Kraken Priestess", "IllaoiSOH"
                     };
                     break;
                 case "Jax":
                     champ = new[]
                     {
-                        "[SDK] ExorAIO","NoobAIO"
+                        "[SDK] ExorAIO", "NoobAIO"
                     };
                     break;
                 case "Jayce":
-                    champ = new[] { "OKTW","[SDK] Shulepin Jayce" };
+                    champ = new[] { "OKTW", "[SDK] Shulepin Jayce" };
                     break;
                 case "Jhin":
                     champ = new[]
                     {
-                        "OKTW","[SDK] ExorAIO","EzAIO"
+                        "OKTW", "[SDK] ExorAIO", "EzAIO"
                     };
                     break;
                 case "Jinx":
                     champ = new[]
                     {
-                        "OKTW", "EzAIO", "ADCPackage", "GENESIS Jinx","SharpShooter", "xSalice", "[SDK] ExorAIO", "MightyAIO"
+                        "OKTW", "EzAIO", "ADCPackage", "GENESIS Jinx", "SharpShooter", "xSalice", "[SDK] ExorAIO",
+                        "MightyAIO"
                     };
                     break;
                 case "Kalista":
                     champ = new[]
                     {
-                        "Hermes Kalista","OKTW","SharpShooter","[SDK] ExorAIO","EzAIO", "EnsoulSharp.Kalista"
+                        "Hermes Kalista", "OKTW", "SharpShooter", "[SDK] ExorAIO", "EzAIO", "EnsoulSharp.Kalista"
                     };
                     break;
                 case "Karthus":
                     champ = new string[]
                     {
-                        "OKTW", "KimbaengKarthus","Flowers' Karthus","LyrdumAIO"
+                        "OKTW", "KimbaengKarthus", "Flowers' Karthus", "LyrdumAIO"
                     };
                     break;
                 case "Katarina":
-                    champ = new[] {"NoobAIO"};
+                    champ = new[] { "NoobAIO" };
                     break;
                 case "Kayn":
-                    champ = new[] {"NoobAIO"};
+                    champ = new[] { "NoobAIO" };
                     break;
                 case "Kindred":
                     champ = new string[]
@@ -191,18 +193,18 @@ namespace PortAIO
                     };
                     break;
                 case "Lillia":
-                    champ = new string[] {"MightyAIO"};
+                    champ = new string[] { "MightyAIO" };
                     break;
                 case "Lucian":
                     champ = new[]
                     {
-                        "OKTW","SharpShooter","[SDK] ExorAIO","Flowers' ADC Series","EzAIO", "MightyAIO"
+                        "OKTW", "SharpShooter", "[SDK] ExorAIO", "Flowers' ADC Series", "EzAIO", "MightyAIO"
                     };
                     break;
                 case "Lux":
                     champ = new[]
                     {
-                        "OKTW","M00N Lux","LyrdumAIO", "Easy_Sup"
+                        "OKTW", "M00N Lux", "LyrdumAIO", "Easy_Sup"
                     };
                     break;
                 case "MasterYi":
@@ -217,34 +219,40 @@ namespace PortAIO
                         "Easy_Sup"
                     };
                     break;
+                case "Neeko":
+                    champ = new[]
+                    {
+                        "Entropy.AIO"
+                    };
+                    break;
                 case "Pyke":
-                    champ = new string[] {"Easy_Sup"};
+                    champ = new string[] { "Easy_Sup" };
                     break;
                 case "Riven":
                     champ = new string[]
-                    { 
+                    {
                         "MightyAIO"
                     };
                     break;
                 case "Senna":
-                    champ = new string[] {"MightyAIO"};
+                    champ = new string[] { "MightyAIO" };
                     break;
                 case "Shen":
                     champ = new string[]
-                        {"MightyAIO"};
+                        { "MightyAIO" };
                     break;
                 case "Shyvana":
                     champ = new string[]
-                        {"NoobAIO"};
+                        { "NoobAIO" };
                     break;
                 case "Sivir":
                     champ = new string[]
                     {
-                        "OKTW","SharpShooter","[SDK] Flowers' Series"
+                        "OKTW", "SharpShooter", "[SDK] Flowers' Series"
                     };
                     break;
                 case "Skarner":
-                    champ = new string[] {"MightyAIO"};
+                    champ = new string[] { "MightyAIO" };
                     break;
                 case "Soraka":
                     champ = new string[]
@@ -255,50 +263,50 @@ namespace PortAIO
                 case "Syndra":
                     champ = new string[]
                     {
-                        "BadaoSeries","OKTW"
+                        "BadaoSeries", "OKTW"
                     };
                     break;
                 case "Taliyah":
-                    champ = new string[] {"[SDK] ExorAIO"};
+                    champ = new string[] { "[SDK] ExorAIO" };
                     break;
                 case "Thresh":
                     champ = new[]
                     {
-                        "OKTW","SluttyThresh","LyrdumAIO", "Easy_Sup"
+                        "OKTW", "SluttyThresh", "LyrdumAIO", "Easy_Sup"
                     };
                     break;
                 case "TwistedFate":
                     champ = new string[]
                     {
-                        "SharpShooter", "BadaoSeries","NoobAIO"
+                        "SharpShooter", "BadaoSeries", "NoobAIO"
                     };
                     break;
                 case "Twitch":
                     champ = new string[]
                     {
-                        "SharpShooter","[SDK] ExorAIO","NoobAIO"
+                        "SharpShooter", "[SDK] ExorAIO", "NoobAIO"
                     };
                     break;
                 case "Varus":
                     champ = new string[]
                     {
-                        "ElVarus", "OKTW","SharpShooter"
+                        "ElVarus", "OKTW", "SharpShooter"
                     };
                     break;
                 case "Vayne":
                     champ = new[]
                     {
-                        "OKTW","SharpShooter","hi im gosu","[SDK] ExorAIO", "[SDK] Flowers' Series","EzAIO"
+                        "OKTW", "SharpShooter", "hi im gosu", "[SDK] ExorAIO", "[SDK] Flowers' Series", "EzAIO"
                     };
                     break;
                 case "Viktor":
                     champ = new[]
                     {
-                        "Badao's Viktor","[SDK] Flowers' Series", "[SDK] Flowers' Viktor"
+                        "Badao's Viktor", "[SDK] Flowers' Series", "[SDK] Flowers' Viktor"
                     };
                     break;
                 case "Xayah":
-                    champ = new[] {"SharpShooter"};
+                    champ = new[] { "SharpShooter" };
                     break;
                 case "Yasuo":
                     champ = new[]
@@ -307,22 +315,22 @@ namespace PortAIO
                     };
                     break;
                 case "Yorick":
-                    champ = new[] {"MightyAIO"};
+                    champ = new[] { "MightyAIO" };
                     break;
                 case "Yuumi":
-                    champ = new[] {"MightyAIO"};
+                    champ = new[] { "MightyAIO" };
                     break;
                 case "Zac":
-                    champ = new[] {"MightyAIO"};
+                    champ = new[] { "MightyAIO" };
                     break;
                 case "Zed":
                     champ = new[]
                     {
-                        "Korean Zed", "SharpyAIO","Ze-D is Back"
+                        "Korean Zed", "SharpyAIO", "Ze-D is Back"
                     };
                     break;
                 case "Zoe":
-                    champ = new[] {"MightyAIO"};
+                    champ = new[] { "MightyAIO" };
                     break;
                 default:
                     hasDualPort = false;
@@ -340,9 +348,9 @@ namespace PortAIO
 
             var dutility = new Menu("Utilitiesports", "Dual-Utilities");
             dutility.Add(new MenuBool("enableTracker", "Enable Tracker", false));
-            dutility.Add(new MenuList("Tracker", "Which Tracker?", new[] {"NabbTracker", "Tracker#"}));
+            dutility.Add(new MenuList("Tracker", "Which Tracker?", new[] { "NabbTracker", "Tracker#" }));
             dutility.Add(new MenuBool("enableEvade", "Enable Evade", false));
-            dutility.Add(new MenuList("Evade", "Which Evade?", new[] {"Evade#"}));
+            dutility.Add(new MenuList("Evade", "Which Evade?", new[] { "Evade#" }));
             //dutility.Add(new MenuBool("enablePredictioner", "Enable Predictioner", false));
             /*dutility.Add(new MenuList("Predictioner", "Which Predictioner?",
                 new[] {"SPredictioner", "OKTWPredictioner", "L#Predictioner"}));*/
