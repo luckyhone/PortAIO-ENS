@@ -183,7 +183,7 @@ namespace PortAIO
                     };
                     break;
                 case "Katarina":
-                    champ = new[] { "NoobAIO","StormAIO" };
+                    champ = new[] { "NoobAIO"/*"StormAIO"*/ };
                     break;
                 case "Kayn":
                     champ = new[] { "NoobAIO" };

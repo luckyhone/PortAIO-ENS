@@ -592,9 +592,9 @@ namespace PortAIO
                         case 0: // NoobAIO
                             NoobAIO.Program.Loads();
                             break;
-                        case 1: // StormAIO
+                        /*case 1: // StormAIO
                             StormAIO.Program.Loads();
-                            break;
+                            break;*/
                     }
 
                     break;
