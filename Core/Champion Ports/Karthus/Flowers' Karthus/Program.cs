@@ -157,7 +157,7 @@ namespace Flowers_Karthus
                 SPrediction.Prediction.Initialize(PredMenu);
             }
 
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Game.OnUpdate += OnUpdate;
             
             Drawing.OnDraw += OnDraw;

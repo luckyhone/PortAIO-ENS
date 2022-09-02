@@ -24,7 +24,7 @@ namespace Challenger_Series.Utils.Plugins
             Drawing.OnDraw += OnDraw;
             Orbwalker.OnAfterAttack += OnAfter;
             Orbwalker.OnBeforeAttack += OnBefore;
-            AIBaseClient.OnProcessSpellCast += UltLogic_OnSpellcast;
+            AIBaseClient.OnDoCast += UltLogic_OnSpellcast;
             Game.OnUpdate += UltLogic_OnUpdate;
         }
 

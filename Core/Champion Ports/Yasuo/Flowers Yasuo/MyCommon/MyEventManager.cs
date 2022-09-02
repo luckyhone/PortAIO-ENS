@@ -20,7 +20,7 @@ namespace Flowers_Yasuo.MyCommon
             {
                 Game.OnUpdate += Args => OnUpdate();
                 AIBaseClient.OnBuffAdd += OnBuffGain;
-                AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+                AIBaseClient.OnDoCast += OnProcessSpellCast;
                 AIBaseClient.OnPlayAnimation += OnPlayAnimation;
                 Orbwalker.OnAfterAttack += (sender, Args) => OnAction(Args);
                 Drawing.OnDraw += Args => OnRender();

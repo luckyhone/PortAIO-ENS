@@ -91,7 +91,7 @@ namespace SharpShooter.MyPlugin
             MyMenuExtensions.DrawOption.AddR(R);
             MyMenuExtensions.DrawOption.AddDamageIndicatorToHero(true, true, true, true, true);
 
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Game.OnUpdate += OnUpdate;
             Orbwalker.OnAfterAttack += OnAction;
         }

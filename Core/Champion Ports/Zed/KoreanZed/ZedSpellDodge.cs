@@ -21,7 +21,7 @@ namespace KoreanZed
             zedMenu = mainMenu;
             player = ObjectManager.Player;
 
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
         }
 
         private void Obj_AI_Base_OnProcessSpellCast(AIBaseClient sender, AIBaseClientProcessSpellCastEventArgs args)
@@ -34,7 +34,7 @@ namespace KoreanZed
             }
 
             if (((args.Target != null && args.Target.IsMe)
-                 || player.Distance(args.End) < Math.Max(args.SData.CastRadiusSecondary, args.SData.LineWidth))
+                 || player.Distance(args.To) < Math.Max(args.SData.CastRadiusSecondary, args.SData.LineWidth))
                 && zedMenu.GetParamBool("koreanzed.miscmenu.rdodge." + args.SData.Name.ToLowerInvariant()))
             {
                 int delay = (int) Math.Truncate((double)(player.Distance(sender) / args.SData.MissileSpeed)) - 1;

@@ -87,7 +87,7 @@ namespace SharpShooter.MyPlugin
 
             Game.OnUpdate += OnUpdate;
             //Gapcloser.OnGapcloser += OnGapcloser;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
         }
 
         private static void OnUpdate(EventArgs args)

@@ -236,7 +236,7 @@ namespace e.Motion_Gangplank
             Game.OnUpdate += OnUpdate;
             GameObject.OnCreate += OnCreate;
             Spellbook.OnCastSpell += CheckForBarrel;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
         }
 
         private static void OnProcessSpellCast(AIBaseClient sender, AIBaseClientProcessSpellCastEventArgs args)

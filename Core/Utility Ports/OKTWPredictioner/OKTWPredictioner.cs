@@ -49,7 +49,7 @@ namespace OKTWPredictioner
             #region Initialize Events
 
             Spellbook.OnCastSpell += EventHandlers.Spellbook_OnCastSpell;
-            AIBaseClient.OnProcessSpellCast += EventHandlers.AIHeroClient_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += EventHandlers.AIHeroClient_OnProcessSpellCast;
 
             #endregion
 

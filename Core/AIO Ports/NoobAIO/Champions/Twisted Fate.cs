@@ -108,7 +108,7 @@ namespace NoobAIO.Champions
             CreateMenu();
             Game.OnUpdate += GameOnGameUpdate;
             Drawing.OnDraw += OnDraw;
-            AIBaseClient.OnProcessSpellCast += ObjAiBaseOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += ObjAiBaseOnOnProcessSpellCast;
             AntiGapcloser.OnGapcloser += Gapcloser_OnGapcloser;
         }
         private static void ObjAiBaseOnOnProcessSpellCast(AIBaseClient sender, AIBaseClientProcessSpellCastEventArgs args)

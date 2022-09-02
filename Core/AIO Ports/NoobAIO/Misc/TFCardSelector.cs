@@ -36,7 +36,7 @@ namespace NoobAIO.Misc
             static CardSelector()
             {
                 Game.OnUpdate += GameOnGameUpdate;
-                AIBaseClient.OnProcessSpellCast += ObjAiBaseOnOnProcessSpellCast;
+                AIBaseClient.OnDoCast += ObjAiBaseOnOnProcessSpellCast;
             }
             public static void SelectCard(AIBaseClient t, Cards selectedCard)
             {

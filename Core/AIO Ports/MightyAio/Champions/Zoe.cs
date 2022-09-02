@@ -25,7 +25,7 @@ namespace MightyAio.Champions
             R.SetSkillshot(0.7f, 140f, 1500f, true, SpellType.Circle);
 
             Game.OnUpdate += Game_OnUpdate;
-            AIBaseClient.OnProcessSpellCast += AIBaseClient_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClient_OnProcessSpellCast;
             Drawing.OnDraw += Drawing_OnDraw;
         }
 

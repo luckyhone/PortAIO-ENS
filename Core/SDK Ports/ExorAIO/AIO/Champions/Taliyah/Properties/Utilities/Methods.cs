@@ -19,7 +19,7 @@ namespace ExorAIO.Champions.Taliyah
             Game.OnUpdate += Taliyah.OnUpdate;
             GameObject.OnCreate += Taliyah.OnCreate;
             GameObject.OnDelete += Taliyah.OnDelete;
-            AIBaseClient.OnProcessSpellCast += Taliyah.OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Taliyah.OnProcessSpellCast;
             AntiGapcloser.OnGapcloser += Taliyah.OnGapCloser;
             Interrupter.OnInterrupterSpell += Taliyah.OnInterruptableTarget;
         }

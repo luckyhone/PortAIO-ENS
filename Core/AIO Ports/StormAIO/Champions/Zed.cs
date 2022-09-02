@@ -234,7 +234,7 @@ namespace StormAIO.Champions
                 if (!Helper.drawIndicator || t == null) return;
                 Helper.Indicator(AllDamage(t));
             };
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnOnProcessSpellCast;
             Interrupter.OnInterrupterSpell += InterrupterOnOnInterrupterSpell;
             GameObject.OnCreate += AIBaseClientOnOnMissileCreate;
             
@@ -276,11 +276,11 @@ namespace StormAIO.Champions
                 R.Cast(target);
             }
 
-            if (BlockSpellDataBase.DangerousList.Contains(args.SData.Name) && args.End.DistanceToPlayer() < 100 )
+            if (BlockSpellDataBase.DangerousList.Contains(args.SData.Name) && args.To.DistanceToPlayer() < 100 )
             {
                 if (Evade.R2Bool.Enabled && _RStage == RStage.Second)
                 {
-                    if (args.End.Distance(RShadow) > args.SData.CastRadius)
+                    if (args.To.Distance(RShadow) > args.SData.CastRadius)
                     {
                         R.Cast();
                     }
@@ -289,14 +289,14 @@ namespace StormAIO.Champions
 
                 if (Evade.W2Bool.Enabled && _wStage == WStage.Second && ShdowsafeSpot())
                 {
-                    if (args.End.Distance(WShadow) > args.SData.CastRadius)
+                    if (args.To.Distance(WShadow) > args.SData.CastRadius)
                     {
                         W.Cast();
                     }
                   
                 }
             }
-            if (sender.CharacterName.Equals("Yone") && args.Slot == SpellSlot.R && args.End.DistanceToPlayer() < 100 )
+            if (sender.CharacterName.Equals("Yone") && args.Slot == SpellSlot.R && args.To.DistanceToPlayer() < 100 )
             {
                 if (Evade.R2Bool.Enabled && _RStage == RStage.Second)
                 {

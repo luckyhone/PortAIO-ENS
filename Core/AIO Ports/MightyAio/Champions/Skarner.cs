@@ -147,7 +147,7 @@ namespace MightyAio.Champions
                 });
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnOnProcessSpellCast;
             AntiGapcloser.OnGapcloser += (sender, args) =>
             {
                 // something will be added if needed it 

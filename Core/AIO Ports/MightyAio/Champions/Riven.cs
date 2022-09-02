@@ -81,11 +81,11 @@ namespace MightyAio.Champions
             Game.OnUpdate += OnTick;
             Drawing.OnDraw += Drawing_OnDraw;
             Drawing.OnEndScene += Drawing_OnEndScene;
-            AIBaseClient.OnProcessSpellCast += OnCast;
-            AIBaseClient.OnDoCast += OnDoCast;
-            AIBaseClient.OnDoCast += OnDoCastLC;
+            AIBaseClient.OnDoCast += OnCast;
+            AIBaseClient.OnProcessSpellCast += OnDoCast;
+            AIBaseClient.OnProcessSpellCast += OnDoCastLC;
             AIBaseClient.OnPlayAnimation += OnPlay;
-            AIBaseClient.OnProcessSpellCast += OnCasting;
+            AIBaseClient.OnDoCast += OnCasting;
             Interrupter.OnInterrupterSpell += Interrupt;
         }
 

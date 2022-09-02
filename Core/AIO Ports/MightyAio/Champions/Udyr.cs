@@ -152,7 +152,7 @@ namespace MightyAio.Champions
             Drawing.OnDraw += DrawingOnOnDraw;
             AntiGapcloser.OnGapcloser += GapcloserOnOnGapcloser;
             Interrupter.OnInterrupterSpell += InterrupterOnOnInterrupterSpell;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnOnProcessSpellCast;
         }
 
         #endregion

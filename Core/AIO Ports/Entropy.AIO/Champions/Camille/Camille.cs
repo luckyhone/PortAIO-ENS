@@ -138,7 +138,7 @@ namespace Entropy.AIO.Camille
                     break;
                 case SpellSlot.W:
                     Definitions.LastWCast = Environment.TickCount;
-                    var dir = (args.End - args.Start).Normalized();
+                    var dir = (args.To - args.Start).Normalized();
                     Definitions.WDirection = dir;
                     break;
             }

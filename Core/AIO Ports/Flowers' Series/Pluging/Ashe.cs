@@ -139,7 +139,7 @@ namespace Flowers_ADC_Series.Pluging
 
             AntiGapcloser.OnGapcloser += OnEnemyGapcloser;
             Interrupter.OnInterrupterSpell += OnInterruptableTarget;
-            AIBaseClient.OnProcessSpellCast += OnSpellCast;
+            AIBaseClient.OnDoCast += OnSpellCast;
             Game.OnUpdate += OnUpdate;
             Drawing.OnDraw += OnDraw;
             Drawing.OnEndScene += OnEndScene;

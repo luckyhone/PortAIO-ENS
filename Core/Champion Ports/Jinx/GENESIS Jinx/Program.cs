@@ -65,7 +65,7 @@ namespace Jinx_Genesis
             Orbwalker.OnBeforeAttack += BeforeAttack;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             Game.Print("<font color=\"#00BFFF\">GENESIS </font>Jinx<font color=\"#000000\"> by Sebby </font> - <font color=\"#FFFFFF\">Loaded</font>");
         }
 

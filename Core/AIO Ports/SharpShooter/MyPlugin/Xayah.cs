@@ -82,7 +82,7 @@ namespace SharpShooter.MyPlugin
             Game.OnUpdate += OnUpdate;
             GameObject.OnCreate += (sender, args) => OnCreate(sender);
             GameObject.OnDelete += (sender, args) => OnDestroy(sender);
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Orbwalker.OnBeforeAttack += OnAction;
         }
 

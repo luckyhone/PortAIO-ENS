@@ -87,9 +87,9 @@ namespace CamilleSharp
                     Game.OnUpdate += Game_OnUpdate;
                     Drawing.OnDraw += Drawing_OnDraw;
                     Drawing.OnEndScene += Drawing_OnEndScene;
-                    AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnSpellCast;
+                    AIBaseClient.OnDoCast += Obj_AI_Base_OnSpellCast;
                     AIBaseClient.OnIssueOrder += CamilleOnIssueOrder;
-                    AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+                    AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
                     GameObject.OnCreate += Obj_GeneralParticleEmitter_OnCreate;
                     Interrupter.OnInterrupterSpell += Interrupter2_OnInterruptableTarget;
 
@@ -144,7 +144,7 @@ namespace CamilleSharp
                                 break;
                             case EvadeType.SkillshotLine:
                                 var lineStart = args.Start.To2D();
-                                var lineEnd = args.End.To2D();
+                                var lineEnd = args.To.To2D();
 
                                 if (lineStart.Distance(lineEnd) < R.Range)
                                     lineEnd = lineStart + (lineEnd - lineStart).Normalized() * R.Range + 25;
@@ -161,7 +161,7 @@ namespace CamilleSharp
 
                             case EvadeType.SkillshotCirce:
                                 var curStart = args.Start.To2D();
-                                var curEnd = args.End.To2D();
+                                var curEnd = args.To.To2D();
 
                                 if (curStart.Distance(curEnd) > R.Range)
                                     curEnd = curStart + (curEnd - curStart).Normalized() * R.Range;

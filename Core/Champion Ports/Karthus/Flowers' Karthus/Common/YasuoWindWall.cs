@@ -23,7 +23,7 @@ namespace Flowers_Karthus.Common
                 }
             }
 
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
         }
 
         private static void OnProcessSpellCast(AIBaseClient sender, AIBaseClientProcessSpellCastEventArgs Args)
@@ -46,7 +46,7 @@ namespace Flowers_Karthus.Common
             if (Args.SData.Name == "YasuoWMovingWall")
             {
                 YasuoWall.CastTime = Game.Time;
-                YasuoWall.CastPosition = sender.Position.Extend(Args.End, 400);
+                YasuoWall.CastPosition = sender.Position.Extend(Args.To, 400);
                 YasuoWall.YasuoPosition = sender.Position;
                 YasuoWall.WallLvl = sender.Spellbook.Spells[1].Level;
             }

@@ -53,7 +53,7 @@ namespace Caitlyn_Master_Headshot
             GameObject.OnCreate += Obj_AI_Base_OnCreate;
             GameObject.OnDelete += Obj_AI_Base_OnDelete;
             Game.OnUpdate += Update;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
             AIBaseClient.OnBuffAdd += OnBuffAdd;
             Drawing.OnDraw += OnDraw;

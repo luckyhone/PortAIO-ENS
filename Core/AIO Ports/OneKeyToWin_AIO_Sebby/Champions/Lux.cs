@@ -95,7 +95,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
             Game.OnUpdate += Game_OnGameUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
             Drawing.OnEndScene += Drawing_OnEndScene;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
         }
 
@@ -109,7 +109,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
         {
             if (sender.IsMe && args.SData.Name == "LuxLightStrikeKugel")
             {
-                Epos = args.End;
+                Epos = args.To;
             }
         }
 

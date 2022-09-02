@@ -52,7 +52,7 @@ namespace Evade
                 }
             }
 
-            AIBaseClient.OnProcessSpellCast += ObjAiHeroOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += ObjAiHeroOnOnProcessSpellCast;
             AIBaseClient.OnNewPath += Obj_AI_Base_OnNewPath;
             Game.OnUpdate += Game_OnUpdate;
             AIBaseClient.OnBuffAdd += Obj_AI_Base_OnBuffAdd;
@@ -545,7 +545,7 @@ namespace Evade
                     if (obj.IsEnemy && spellData.FromObjects.Contains(obj.Name))
                     {
                         var start = obj.Position.To2D();
-                        var end = start + spellData.Range * (args.End.To2D() - obj.Position.To2D()).Normalized();
+                        var end = start + spellData.Range * (args.To.To2D() - obj.Position.To2D()).Normalized();
                         TriggerOnDetectSkillshot(
                             DetectionType.ProcessSpell, spellData, Utils.TickCount - Game.Ping / 2, start, end, end,
                             (AIHeroClient) sender);
@@ -558,9 +558,9 @@ namespace Evade
                 return;
             }
 
-            var endPos = args.End.To2D();
+            var endPos = args.To.To2D();
 
-            if (spellData.SpellName == "RakanW" && args.Start.Distance(args.End) > 100)
+            if (spellData.SpellName == "RakanW" && args.Start.Distance(args.To) > 100)
             {
                 return;
             }
@@ -648,13 +648,13 @@ namespace Evade
            
             //Trigger the skillshot detection callbacks.
 
-            TriggerOnDetectSkillshot(DetectionType.ProcessSpell, spellData, startTime, startPos, endPos, args.End.To2D(), (AIHeroClient) sender);
+            TriggerOnDetectSkillshot(DetectionType.ProcessSpell, spellData, startTime, startPos, endPos, args.To.To2D(), (AIHeroClient) sender);
             if (spellData.SpellName == "EkkoQ")
             {
                 startPos = endPos - 450 * direction;
                 endPos = endPos + 150 * direction;
                 
-                TriggerOnDetectSkillshot(DetectionType.ProcessSpell, SpellDatabase.GetByName("EkkoQball"), startTime, startPos, endPos, args.End.To2D(), (AIHeroClient) sender);
+                TriggerOnDetectSkillshot(DetectionType.ProcessSpell, SpellDatabase.GetByName("EkkoQball"), startTime, startPos, endPos, args.To.To2D(), (AIHeroClient) sender);
 
             }
         }

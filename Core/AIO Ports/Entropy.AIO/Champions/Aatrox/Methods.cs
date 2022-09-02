@@ -16,7 +16,7 @@ namespace Entropy.AIO.Aatrox
             GameEvent.OnGameTick                     += Aatrox.OnTick;
             Orbwalker.OnAfterAttack          += Aatrox.OnPostAttack;
             AntiGapcloser.OnGapcloser        += Aatrox.OnNewGapcloser;
-            AIBaseClient.OnProcessSpellCast += Aatrox.OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Aatrox.OnProcessSpellCast;
         }
     }
 }

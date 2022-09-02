@@ -173,7 +173,7 @@ namespace StormAIO.Champions
                 if (!Helper.drawIndicator || t == null) return;
                 Helper.Indicator(AllDamage(t));
             };
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnOnProcessSpellCast;
         }
 
         private void OnAfterAttack(object sender, AfterAttackEventArgs args)

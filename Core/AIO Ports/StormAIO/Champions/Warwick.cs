@@ -94,7 +94,7 @@ namespace StormAIO.Champions
             CreateMenu();
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnOnProcessSpellCast;
             Orbwalker.OnAfterAttack += OnAfterAttack;
             Orbwalker.OnBeforeAttack += OnBeforeAttack;
             Dash.OnDash += (sender, args) =>

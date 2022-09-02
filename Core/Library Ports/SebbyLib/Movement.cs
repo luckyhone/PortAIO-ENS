@@ -1135,7 +1135,7 @@ namespace Movement
                 UnitTrackerInfoList.Add(new UnitTrackerInfo() { NetworkId = (int)hero.NetworkId, AaTick = Variables.TickCount, StopMoveTick = Variables.TickCount, NewPathTick = Variables.TickCount, SpecialSpellFinishTick = Variables.TickCount, LastInvisableTick = Variables.TickCount });
             }
 
-            AIBaseClient.OnProcessSpellCast += AIBaseClient_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClient_OnProcessSpellCast;
             AIBaseClient.OnNewPath += AIHeroClient_OnNewPath;
             //AttackableUnit.OnEnterLocalVisiblityClient += AIBaseClient_OnEnterLocalVisiblityClient;
         }

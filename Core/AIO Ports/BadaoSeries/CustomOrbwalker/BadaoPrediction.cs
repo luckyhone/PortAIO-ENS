@@ -18,7 +18,7 @@ namespace BadaoSeries.CustomOrbwalker
         
         static BadaoPrediction()
         {
-            AIBaseClient.OnProcessSpellCast += AIHeroClient_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIHeroClient_OnProcessSpellCast;
         }
         
 

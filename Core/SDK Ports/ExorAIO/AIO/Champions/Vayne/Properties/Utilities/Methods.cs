@@ -17,7 +17,7 @@ namespace ExorAIO.Champions.Vayne
         public static void Initialize()
         {
             Game.OnUpdate += Vayne.OnUpdate;
-            AIBaseClient.OnProcessSpellCast += Vayne.OnSpellCast;
+            AIBaseClient.OnDoCast += Vayne.OnSpellCast;
             AntiGapcloser.OnGapcloser += Vayne.OnGapCloser;
             Interrupter.OnInterrupterSpell += Vayne.OnInterruptableTarget;
             Orbwalker.OnBeforeAttack += Vayne.OnAction;

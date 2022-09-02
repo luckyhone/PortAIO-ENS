@@ -17,7 +17,7 @@ namespace ExorAIO.Champions.Jax
         public static void Initialize()
         {
             Game.OnUpdate += Jax.OnUpdate;
-            AIBaseClient.OnProcessSpellCast += Jax.OnSpellCast;
+            AIBaseClient.OnDoCast += Jax.OnSpellCast;
             AntiGapcloser.OnGapcloser += Jax.OnGapCloser;
         }
 

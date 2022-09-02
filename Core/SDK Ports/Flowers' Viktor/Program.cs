@@ -115,7 +115,7 @@
 
             Game.OnUpdate += OnUpdate;
             AntiGapcloser.OnGapcloser += OnGapCloser;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Drawing.OnDraw += OnDraw;
         }
 
@@ -212,7 +212,7 @@
                 }
                 else if (CastWMePos(args.SData.Name))
                 {
-                    if (args.End.Distance(Me.Position) <= 100)
+                    if (args.To.Distance(Me.Position) <= 100)
                         W.Cast(Me);
                 }
             }

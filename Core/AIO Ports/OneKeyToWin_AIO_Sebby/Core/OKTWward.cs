@@ -55,7 +55,7 @@ namespace OneKeyToWin_AIO_Sebby.Core
             }
             
             Game.OnUpdate += Game_OnUpdate;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             GameObject.OnCreate +=GameObject_OnCreate;
             GameObject.OnDelete += GameObject_OnDelete;
         }
@@ -287,7 +287,7 @@ namespace OneKeyToWin_AIO_Sebby.Core
             if (sender is AIHeroClient && sender.IsEnemy)
             {
                 if(args.Target == null)
-                    AddWard(args.SData.Name.ToLower(), args.End);
+                    AddWard(args.SData.Name.ToLower(), args.To);
 
                 if ((OracleAlteration.IsReady || ControlWard.IsReady) && sender.Distance(Player.Position) < 1200)
                 {

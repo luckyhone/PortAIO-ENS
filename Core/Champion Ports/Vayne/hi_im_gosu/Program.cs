@@ -151,7 +151,7 @@ namespace hi_im_gosu
             }
             
             E.SetTargetted(0.25f, 2200f);
-            AIBaseClient.OnProcessSpellCast += Game_ProcessSpell;
+            AIBaseClient.OnDoCast += Game_ProcessSpell;
             Game.OnUpdate += Game_OnGameUpdate;
             Orbwalker.OnAfterAttack += Orbwalking_AfterAttack;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;

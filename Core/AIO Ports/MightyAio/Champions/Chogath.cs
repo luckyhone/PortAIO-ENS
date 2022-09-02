@@ -144,7 +144,7 @@ namespace MightyAio.Champions
             Orbwalker.OnAfterAttack += Orbwalker_OnAction;
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnProcessSpellCast;
             AntiGapcloser.OnGapcloser += (sender, args) =>
             {
                 if (sender.IsEnemy  && _menu["Q"].GetValue<MenuBool>("AQ").Enabled && _q.IsInRange(sender))

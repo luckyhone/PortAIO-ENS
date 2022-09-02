@@ -120,7 +120,7 @@ namespace StormAIO.Champions
             CreateMenu();
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnOnProcessSpellCast;
             Drawing.OnEndScene += delegate
             {
                 var t = TargetSelector.GetTarget(2000f,DamageType.Magical);

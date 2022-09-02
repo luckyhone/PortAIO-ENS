@@ -79,7 +79,7 @@ namespace NoobAIO.Champions
             Drawing.OnDraw += OnDraw;
             AIBaseClient.OnBuffRemove += OnBuffLose;
             AIBaseClient.OnBuffAdd += OnBuffGain;
-            AIBaseClient.OnProcessSpellCast += ObjAiBaseOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += ObjAiBaseOnOnProcessSpellCast;
             AntiGapcloser.OnGapcloser += Gapcloser_OnGapcloser;
             Orbwalker.OnAfterAttack += OnOrbwalkerAction;
         }

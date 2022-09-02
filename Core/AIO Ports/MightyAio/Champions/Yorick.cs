@@ -141,7 +141,7 @@ namespace MightyAio.Champions
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
             Orbwalker.OnAfterAttack += OrbwalkerOnOnAction;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnOnProcessSpellCast;
             Dash.OnDash += (sender, args) =>
             {
                 if (sender.IsEnemy && _w.IsReady() && _menu["Misc"].GetValue<MenuBool>("UseW").Enabled && _w.IsInRange(sender))

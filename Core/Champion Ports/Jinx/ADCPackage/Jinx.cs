@@ -33,7 +33,7 @@ namespace ADCPackage.Plugins
                 "[<font color='#F8F46D'>ADC Package</font>] by <font color='#79BAEC'>God</font> - <font color='#FFFFFF'>Jinx</font> loaded");
             //Orbwalker.OnBeforeAttack += CustomOrbwalker_BeforeAttack;
             Game.OnUpdate += PermaActive;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
             Drawing.OnDraw += Drawing_OnDraw;
 

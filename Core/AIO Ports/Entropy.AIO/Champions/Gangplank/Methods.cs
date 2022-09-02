@@ -28,7 +28,7 @@ namespace Entropy.AIO.Gangplank
             GameEvent.OnGameTick                       += Gangplank.OnTick;
             GameEvent.OnGameTick                 += Gangplank.OnCustomTick;
             GameObject.OnCreate               += Gangplank.OnCreate;
-            AIBaseClient.OnProcessSpellCast   += Gangplank.OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Gangplank.OnProcessSpellCast;
             AIBaseClient.OnDoCast += Gangplank.OnProcessBasicAttack;
             Drawing.OnDraw                 += Renderer_OnRender;
 

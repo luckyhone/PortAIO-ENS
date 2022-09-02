@@ -141,7 +141,7 @@
             Orbwalker.OnBeforeAttack += BeforeAttack;
             AntiGapcloser.OnGapcloser += OnEnemyGapcloser;
             Interrupter.OnInterrupterSpell += OnInterruptableTarget;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Game.OnUpdate += OnUpdate;
             EnsoulSharp.Drawing.OnDraw += OnDraw;
             EnsoulSharp.Drawing.OnEndScene += OnEndScene;

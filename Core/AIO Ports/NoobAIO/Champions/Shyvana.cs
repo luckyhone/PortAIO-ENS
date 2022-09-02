@@ -90,7 +90,7 @@ namespace NoobAIO.Champions
             CreateMenu();
             Game.OnUpdate += GameOnGameUpdate;
             Drawing.OnDraw += OnDraw;
-            AIBaseClient.OnProcessSpellCast += ObjAiBaseOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += ObjAiBaseOnOnProcessSpellCast;
         }
         private void GameOnGameUpdate(EventArgs args)
         {

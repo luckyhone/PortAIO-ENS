@@ -17,7 +17,7 @@ namespace ExorAIO.Champions.Graves
         public static void Initialize()
         {
             Game.OnUpdate += Graves.OnUpdate;
-            AIBaseClient.OnProcessSpellCast += Graves.OnSpellCast;
+            AIBaseClient.OnDoCast += Graves.OnSpellCast;
             AntiGapcloser.OnGapcloser += Graves.OnGapCloser;
         }
 

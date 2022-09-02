@@ -19,11 +19,11 @@ namespace SebbyLib
         /// </summary>
         static HealthPrediction()
         {
-            AIBaseClient.OnProcessSpellCast += ObjAiBaseOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += ObjAiBaseOnOnProcessSpellCast;
             Game.OnUpdate += Game_OnGameUpdate;
             Spellbook.OnStopCast += SpellbookOnStopCast;
             MissileClient.OnDelete += MissileClient_OnDelete;
-            AIBaseClient.OnDoCast += AIBaseClient_OnDoCast;
+            AIBaseClient.OnProcessSpellCast += AIBaseClient_OnDoCast;
         }
 
         /// <summary>

@@ -20,7 +20,7 @@ namespace ExorAIO.Champions.Caitlyn
             Spellbook.OnCastSpell += Caitlyn.OnCastSpell;
             AntiGapcloser.OnGapcloser += Caitlyn.OnGapCloser;
             Interrupter.OnInterrupterSpell += Caitlyn.OnInterruptableTarget;
-            AIBaseClient.OnProcessSpellCast += Caitlyn.OnSpellCast;
+            AIBaseClient.OnDoCast += Caitlyn.OnSpellCast;
         }
 
         #endregion

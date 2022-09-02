@@ -274,7 +274,7 @@ namespace BadaoSeries.Plugin
             
             Game.OnUpdate += OnUpdate;
             Drawing.OnDraw += OnDraw;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             GameObject.OnCreate += OnCreate;
             GameObject.OnDelete += OnDelete;
             AntiGapcloser.OnGapcloser += Gapcloser_OnGapCloser;

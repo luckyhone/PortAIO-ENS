@@ -17,9 +17,9 @@ namespace ExorAIO.Champions.Jhin
         public static void Initialize()
         {
             Game.OnUpdate += Jhin.OnUpdate;
-            AIBaseClient.OnProcessSpellCast += Jhin.OnSpellCast;
+            AIBaseClient.OnDoCast += Jhin.OnSpellCast;
             AntiGapcloser.OnGapcloser += Jhin.OnGapCloser;
-            AIBaseClient.OnProcessSpellCast += Jhin.OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Jhin.OnProcessSpellCast;
             Orbwalker.OnBeforeAttack += Jhin.OnAction;
         }
 

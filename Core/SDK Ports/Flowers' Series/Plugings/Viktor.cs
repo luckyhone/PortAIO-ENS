@@ -115,7 +115,7 @@ namespace Flowers_Series.Plugings
             Orbwalker.OnBeforeAttack += OnAction;
             Game.OnUpdate += OnUpdate;
             AntiGapcloser.OnGapcloser += OnGapCloser;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Drawing.OnDraw += OnDraw;
         }
 
@@ -176,7 +176,7 @@ namespace Flowers_Series.Plugings
                 }
                 else if (CastWMePos(Args.SData.Name))
                 {
-                    if (Args.End.Distance(Me.Position) <= 100)
+                    if (Args.To.Distance(Me.Position) <= 100)
                         W.Cast(Me);
                 }
             }

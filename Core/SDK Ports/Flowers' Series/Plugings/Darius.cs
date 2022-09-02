@@ -90,7 +90,7 @@
             Drawing.OnDraw += OnDraw;
             Orbwalker.OnAfterAttack += OnAfter;
             Orbwalker.OnBeforeAttack += OnBefore;
-            AIBaseClient.OnProcessSpellCast += OnSpellCast;
+            AIBaseClient.OnDoCast += OnSpellCast;
         }
 
         private static void OnBefore(object sender, BeforeAttackEventArgs Args)

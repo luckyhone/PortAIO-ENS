@@ -108,7 +108,7 @@ namespace ShadowTracker
                 Game.OnUpdate += OnGameUpdate;
                 Drawing.OnDraw += OnDraw.Drawing_OnDraw;
                 AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
-                AIBaseClient.OnProcessSpellCast += OnProcessSpell;
+                AIBaseClient.OnDoCast += OnProcessSpell;
                 Interrupter.OnInterrupterSpell += Interrupter2_OnInterruptableTarget;
                 GameObject.OnCreate += GameObject_OnCreate;
                 GameObject.OnDelete += GameObject_OnDelete;
@@ -181,7 +181,7 @@ namespace ShadowTracker
                             Sender = sender,
                             ExpireTime = TickCount(3000),
                             StartPosition = args.Start,
-                            EndPosition = args.Start.Extend(args.End, MovingSkillInfo.MaxRange)
+                            EndPosition = args.Start.Extend(args.To, MovingSkillInfo.MaxRange)
                         });
                     }
                     if (StopSkillInfo != null)
@@ -192,7 +192,7 @@ namespace ShadowTracker
                         {
                             InfoType = InfoType.StopSkill,
                             Sender = sender,
-                            CastPosition = args.End,
+                            CastPosition = args.To,
                             ExpireTime = TickCount(StopSkillInfo.ExpireTime)
                         });
                     }

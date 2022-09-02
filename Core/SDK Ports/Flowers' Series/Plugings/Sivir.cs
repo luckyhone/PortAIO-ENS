@@ -85,7 +85,7 @@
 
             WriteConsole(GameObjects.Player.CharacterName + " Inject!");
 
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Orbwalker.OnAfterAttack += OnAction;
             Game.OnUpdate += OnUpdate;
             Drawing.OnDraw += OnDraw;

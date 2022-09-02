@@ -107,7 +107,7 @@ namespace Flowers_Series.Plugings
             WriteConsole(GameObjects.Player.CharacterName + " Inject!");
 
             AntiGapcloser.OnGapcloser += OnGapCloser;
-            AIBaseClient.OnProcessSpellCast += OnSpellCast;
+            AIBaseClient.OnDoCast += OnSpellCast;
             Orbwalker.OnBeforeAttack += OnAction;
             Orbwalker.OnAfterAttack += OnAfterAttack;
             Game.OnUpdate += OnUpdate;

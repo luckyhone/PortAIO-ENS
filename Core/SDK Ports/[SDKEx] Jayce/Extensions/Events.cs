@@ -45,8 +45,8 @@ namespace Jayce.Extensions
         public static void Initialize()
         {
             Game.OnUpdate += OnUpdate;
-            AIBaseClient.OnProcessSpellCast += ProcessSpell;
-            AIBaseClient.OnProcessSpellCast += OnSpellCast;
+            AIBaseClient.OnDoCast += ProcessSpell;
+            AIBaseClient.OnDoCast += OnSpellCast;
             Orbwalker.OnAfterAttack += OnAction;
             Drawing.OnDraw += OnDraw;
             AntiGapcloser.OnGapcloser += GapCloser;
@@ -130,7 +130,7 @@ namespace Jayce.Extensions
                 if (E.IsReady() && RangeForm())
                 {
                     var Enemies = GameObjects.EnemyHeroes.Where(x => (x != null) && x.IsValidTarget(QE.Range));
-                    GatePos = ObjectManager.Player.ServerPosition.Extend(args.End, 130 + Game.Ping / 2);
+                    GatePos = ObjectManager.Player.ServerPosition.Extend(args.To, 130 + Game.Ping / 2);
                     switch (Orbwalker.ActiveMode)
                     {
                         case OrbwalkerMode.Combo:
@@ -216,7 +216,7 @@ namespace Jayce.Extensions
                 if (E.IsReady())
                 {
                     var Enemies = GameObjects.EnemyHeroes.Where(x => (x != null) && x.IsValidTarget(QE.Range));
-                    GatePos = ObjectManager.Player.ServerPosition.Extend(args.End, 130 + Game.Ping / 2);
+                    GatePos = ObjectManager.Player.ServerPosition.Extend(args.To, 130 + Game.Ping / 2);
                     switch (Orbwalker.ActiveMode)
                     {
                         case OrbwalkerMode.Combo:

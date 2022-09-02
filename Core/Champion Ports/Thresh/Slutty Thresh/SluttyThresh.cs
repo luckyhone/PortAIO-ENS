@@ -48,7 +48,7 @@ namespace Slutty_Thresh
             Interrupter.OnInterrupterSpell += ThreshInterruptableSpell;
             Dash.OnDash += Unit_OnDash;
             AntiGapcloser.OnGapcloser += OnGapCloser;
-            AIHeroClient.OnProcessSpellCast += Game_ProcessSpell;
+            AIHeroClient.OnDoCast += Game_ProcessSpell;
         }
 
         private static void Game_OnUpdate(EventArgs args)

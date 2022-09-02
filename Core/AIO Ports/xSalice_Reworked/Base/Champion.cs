@@ -32,7 +32,7 @@ namespace xSalice_Reworked.Base
             //Orbwalking.OnAttack += OnAttack;
 
             Spellbook.OnCastSpell += Obj_AI_Base_OnSpellCast;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCastEvent;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCastEvent;
             AIBaseClient.OnIssueOrder += ObjAiHeroOnOnIssueOrderEvent;
             AIBaseClient.OnBuffAdd += ObjAiBaseOnOnBuffAdd;
             AIBaseClient.OnBuffRemove += ObjAiBaseOnOnBuffLose;

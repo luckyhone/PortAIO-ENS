@@ -1,0 +1,35 @@
+
+bin/Release/EnsoulSharp.dll
+bin/Release/EnsoulSharp.SDK.dll
+bin/Release/EnsoulSharp.xml
+bin/Release/log4net.dll
+bin/Release/Newtonsoft.Json.dll
+bin/Release/PortAIO.exe
+bin/Release/PortAIO.exe.config
+bin/Release/PortAIO.pdb
+bin/Release/SharpDX.Direct3D11.dll
+bin/Release/SharpDX.Direct3D9.dll
+bin/Release/SharpDX.dll
+bin/Release/SharpDX.DXGI.dll
+bin/Release/SharpDX.Mathematics.dll
+obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+obj/Debug/PortAIO.csproj.AssemblyReference.cache
+obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+obj/Release/DesignTimeResolveAssemblyReferencesInput.cache
+obj/Release/PortAIO.Core.LeagueSharpCommon.Properties.Resources.resources
+obj/Release/PortAIO.Core.Utility_Ports.Entropy.Awareness.Resources.HUDTracker.HudTrackerResources.resources
+obj/Release/PortAIO.Core.Utility_Ports.Entropy.Awareness.Resources.SummonerSpells.SummonerSpellResource.resources
+obj/Release/PortAIO.csproj.AssemblyReference.cache
+obj/Release/PortAIO.csproj.CopyComplete
+obj/Release/PortAIO.csproj.CoreCompileInputs.cache
+obj/Release/PortAIO.csproj.FileListAbsolute.txt
+obj/Release/PortAIO.csproj.GenerateResource.cache
+obj/Release/PortAIO.exe
+obj/Release/PortAIO.pdb
+obj/Release/PortAIO.Properties.Resources.resources
+obj/Release/TempPE/Core.LeagueSharpCommon.Properties.Resources.Designer.cs.dll
+obj/Release/TempPE/Core.Utility Ports.Entropy.Awareness.Resources.HUDTracker.HudTrackerResources.Designer.cs.dll
+obj/Release/TempPE/Core.Utility Ports.Entropy.Awareness.Resources.SummonerSpells.SummonerSpellResource.Designer.cs.dll
+obj/Release/TempPE/Properties.Resources.Designer.cs.dll
+PortAIO.csproj

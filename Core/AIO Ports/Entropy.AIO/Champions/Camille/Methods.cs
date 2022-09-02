@@ -21,7 +21,7 @@ namespace Entropy.AIO.Camille
             GameEvent.OnGameTick      += Camille.OnCustomTick;
             Orbwalker.OnBeforeMove             += Camille.OnPreMove;
             Orbwalker.OnAfterAttack          += Camille.OnPostAttack;
-            AIBaseClient.OnProcessSpellCast += Camille.OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Camille.OnProcessSpellCast;
             AIBaseClient.OnBuffAdd          += Camille.OnGainBuff;
             Drawing.OnDraw += Drawings.OnRender;
         }

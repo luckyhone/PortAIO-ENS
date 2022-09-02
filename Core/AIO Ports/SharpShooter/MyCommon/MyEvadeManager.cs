@@ -48,7 +48,7 @@ namespace SharpShooter.MyCommon
             }
 
             Game.OnUpdate += OnUpdate;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             AIBaseClient.OnPlayAnimation += OnPlayAnimation;
             Dash.OnDash += OnDash;
         }

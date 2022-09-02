@@ -193,7 +193,7 @@ namespace MightyAio.Champions
                 });
 
             Game.OnUpdate += GameOnOnUpdate;
-            AIBaseClient.OnProcessSpellCast += ObjAiBaseOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += ObjAiBaseOnOnProcessSpellCast;
             Drawing.OnDraw += DrawingOnOnDraw;
         }
 

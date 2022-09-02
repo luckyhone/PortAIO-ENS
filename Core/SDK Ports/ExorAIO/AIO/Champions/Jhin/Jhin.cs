@@ -126,7 +126,7 @@ namespace ExorAIO.Champions.Jhin
                 if (args.SData.Name.Equals("JhinR"))
                 {
                     ShotsCount = 0;
-                    End = args.End;
+                    End = args.To;
                 }
                 else if (args.SData.Name.Equals("JhinRShot"))
                 {

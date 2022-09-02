@@ -108,7 +108,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
             FarmMenu.Add(minionE);
             FarmMenu.Add(jungleE);
 
-            AIBaseClient.OnDoCast += AIBaseClient_OnDoCast;
+            AIBaseClient.OnProcessSpellCast += AIBaseClient_OnDoCast;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnGapcloser;
             Drawing.OnDraw += Drawing_OnDraw;
             Game.OnUpdate += Game_OnUpdate;

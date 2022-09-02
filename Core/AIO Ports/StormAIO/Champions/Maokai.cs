@@ -219,7 +219,7 @@ namespace StormAIO.Champions
                 if (!Helper.drawIndicator || t == null) return;
                 Helper.Indicator(AllDamage(t));
             };
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnOnProcessSpellCast;
             AntiGapcloser.OnGapcloser += GapcloserOnOnGapcloser;
             Dash.OnDash += DashOnOnDash;
         }

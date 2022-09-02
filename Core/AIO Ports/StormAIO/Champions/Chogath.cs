@@ -104,7 +104,7 @@ namespace StormAIO.Champions
             Orbwalker.OnAfterAttack += Orbwalker_OnAction;
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnProcessSpellCast;
             AntiGapcloser.OnGapcloser += (sender, args) =>
             {
                 if (sender.IsEnemy  && champMenu["Q"].GetValue<MenuBool>("AQ").Enabled && Q.IsInRange(sender))

@@ -49,7 +49,7 @@ namespace HERMES_Kalista.MyLogic.Others
                             }
                             else if (slot.HasFlag(SpellSlot.Q | SpellSlot.W | SpellSlot.E | SpellSlot.R) &&
                                      ((args.Target != null && args.Target.NetworkId == _connectedAlly.NetworkId) ||
-                                      args.End.Distance(_connectedAlly.Position) <
+                                      args.To.Distance(_connectedAlly.Position) <
                                       Math.Pow(args.SData.LineWidth, 2)))
                             {
                                 _instantDamage.Add(Game.Time + 2, (float) attacker.GetSpellDamage(_connectedAlly, slot));

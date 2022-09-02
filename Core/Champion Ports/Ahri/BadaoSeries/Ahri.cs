@@ -176,7 +176,7 @@ namespace BadaoSeries.Plugin
             Game.OnUpdate += Game_OnUpdate;
             AIBaseClient.OnNewPath += Obj_AI_Base_OnNewPath;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             AntiGapcloser.OnGapcloser += Gapcloser_OnGapCloser;
             Interrupter.OnInterrupterSpell += InterruptableSpell_OnInterruptableTarget;
             Orbwalker.OnAfterAttack += Orbwalking_AfterAttack;

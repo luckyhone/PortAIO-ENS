@@ -17,7 +17,7 @@ namespace ExorAIO.Champions.Twitch
         public static void Initialize()
         {
             Game.OnUpdate += Twitch.OnUpdate;
-            AIBaseClient.OnProcessSpellCast += Twitch.OnSpellCast;
+            AIBaseClient.OnDoCast += Twitch.OnSpellCast;
             Spellbook.OnCastSpell += Twitch.OnCastSpell;
             Orbwalker.OnBeforeAttack += Twitch.OnAction;
         }

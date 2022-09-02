@@ -16,7 +16,7 @@ namespace Challenger_Series.Utils.Plugins
             base.R = new Spell(SpellSlot.R, 1400);
             base.R.SetSkillshot(250f, 80f, 1500f, false, SpellType.Line);
             InitMenu();
-            AIHeroClient.OnProcessSpellCast += OnSpellCast;
+            AIHeroClient.OnDoCast += OnSpellCast;
             Orbwalker.OnAttack += OnAttack;
             Orbwalker.OnBeforeAttack += OnBeforeAttack;
             DelayedOnUpdate += OnUpdate;

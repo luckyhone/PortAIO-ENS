@@ -27,7 +27,7 @@ namespace DeveloperSharp
             InitMenu();
             Game.OnUpdate += OnUpdate;
             Drawing.OnDraw += OnDraw;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
         }
 
         private static void OnProcessSpellCast(AIBaseClient sender, AIBaseClientProcessSpellCastEventArgs args)

@@ -58,7 +58,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
             Drawing.OnDraw += Drawing_OnDraw;
             //Orbwalking.BeforeAttack += BeforeAttack;
             //Orbwalking.AfterAttack += afterAttack;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             //Spellbook.OnCastSpell += Spellbook_OnCastSpell;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
         }

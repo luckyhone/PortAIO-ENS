@@ -188,7 +188,7 @@ namespace MightyAio.Champions
             Drawing.OnDraw += DrawingOnOnDraw;
             Teleport.OnTeleport += OnTeleportEvent;
             Interrupter.OnInterrupterSpell += OnInterruptible;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
         }
 
 

@@ -123,7 +123,7 @@ namespace MightyAio.Champions
             CreateMenu();
             Drawing.OnDraw += Game_OnDraw;
             Game.OnUpdate += Game_OnGameUpdate;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnProcessSpellCast;
         }
 
         private void AIBaseClientOnProcessSpellCast(AIBaseClient sender, AIBaseClientProcessSpellCastEventArgs args)

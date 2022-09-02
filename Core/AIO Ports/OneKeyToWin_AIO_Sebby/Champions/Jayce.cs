@@ -93,7 +93,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
             Interrupter.OnInterrupterSpell += Interrupter2_OnInterruptableTarget;
             Spellbook.OnCastSpell += Spellbook_OnCastSpell;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             Orbwalker.OnBeforeAttack += BeforeAttack;
             GameEvent.OnGameTick += OnUpdate;
         }
@@ -450,7 +450,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
             {
                 if (Range && E.IsReady() && Local["eConfig"]["autoE"].GetValue<MenuBool>().Enabled)
                 {
-                    EcastPos = Player.ServerPosition.Extend(args.End, 130 + (Game.Ping /2));
+                    EcastPos = Player.ServerPosition.Extend(args.To, 130 + (Game.Ping /2));
                     Etick = Utils.TickCount;
                     E.Cast(EcastPos);
 

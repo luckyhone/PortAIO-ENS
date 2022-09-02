@@ -81,7 +81,7 @@ namespace BadaoKingdom.BadaoChampion.BadaoGangplank
             GameObject.OnCreate += GameObject_OnCreate;
             GameObject.OnDelete += GameObject_OnDelete;
             Spellbook.OnCastSpell += Obj_AI_Base_OnSpellCast;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             Drawing.OnDraw += Drawing_OnDraw;
         }
 
@@ -133,7 +133,7 @@ namespace BadaoKingdom.BadaoChampion.BadaoGangplank
             if (/*args.Slot != SpellSlot.E*/ args.SData.Name != "GangplankE")
                 return;
             LastCastE = Environment.TickCount;
-            LastEPos = Helps.To2D(args.End);
+            LastEPos = Helps.To2D(args.To);
         }
 
         private static void GameObject_OnCreate(GameObject sender, EventArgs args)

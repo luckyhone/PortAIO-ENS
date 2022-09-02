@@ -70,7 +70,7 @@ namespace Z.aio.Common
             Orbwalker.OnAfterAttack += OnAfterAttack;
             Orbwalker.OnBeforeAttack += OnBeforeAttack;
             Spellbook.OnCastSpell += OnCastSpell;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             AntiGapcloser.OnGapcloser += OnGapcloser;
         }
 

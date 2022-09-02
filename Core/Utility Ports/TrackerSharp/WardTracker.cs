@@ -384,7 +384,7 @@ namespace Tracker
             Game.OnUpdate += GameOnOnGameUpdate;
 
             //Used to detect the wards when the unit that places the ward is visible:
-            AIBaseClient.OnProcessSpellCast += AIHeroClient_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIHeroClient_OnProcessSpellCast;
 
             //Used to detect the wards when the unit is not visible but the ward is.
             GameObject.OnCreate += Obj_AI_Base_OnCreate;
@@ -501,7 +501,7 @@ namespace Tracker
                 wardData.Duration = 1000 * (60 + (int) Math.Round(3.5 * (hero.Level - 1)));
             }
 
-            var endPosition = ObjectManager.Player.GetPath(args.End).ToList().Last();
+            var endPosition = ObjectManager.Player.GetPath(args.To).ToList().Last();
             DetectedWards.Add(new DetectedWard(wardData, endPosition, Environment.TickCount));
         }
 

@@ -88,7 +88,7 @@
 
             Game.OnUpdate += OnUpdate;
             //Gapcloser.OnGapcloser += OnGapcloser;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Spellbook.OnCastSpell += OnCastSpell;
         }
         

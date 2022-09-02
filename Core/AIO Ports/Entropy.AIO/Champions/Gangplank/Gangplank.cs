@@ -46,7 +46,7 @@ namespace Entropy.AIO.Gangplank
                         else
                         {
                             barrel.Decay(
-                                (int) ((int) (Geometry.Distance(args.End,args.Start) / args.SData.MissileSpeed) +
+                                (int) ((int) (Geometry.Distance(args.To, args.Start) / args.SData.MissileSpeed) +
                                        Game.Ping));
                         }
                     }
@@ -149,7 +149,7 @@ namespace Entropy.AIO.Gangplank
             else if (sender.IsMe && args.Slot == SpellSlot.E)
             {
                 var casted = Environment.TickCount;
-                BarrelManager.CastedBarrels.Add(args.End);
+                BarrelManager.CastedBarrels.Add(args.To);
                 Definitions.LastECast = casted;
             }
         }

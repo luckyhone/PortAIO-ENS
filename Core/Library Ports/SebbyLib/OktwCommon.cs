@@ -25,8 +25,8 @@ namespace SebbyLib
                     YasuoInGame = true;
             }
             
-            AIBaseClient.OnDoCast += AIBaseClient_OnDoCast;
-            AIBaseClient.OnProcessSpellCast += AIBaseClient_OnProcessSpellCast;
+            AIBaseClient.OnProcessSpellCast += AIBaseClient_OnDoCast;
+            AIBaseClient.OnDoCast += AIBaseClient_OnProcessSpellCast;
         }
         
         public static void debug(string msg)

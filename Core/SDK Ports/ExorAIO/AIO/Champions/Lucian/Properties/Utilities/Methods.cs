@@ -16,7 +16,7 @@ namespace ExorAIO.Champions.Lucian
         public static void Initialize()
         {
             Game.OnUpdate += Lucian.OnUpdate;
-            AIBaseClient.OnProcessSpellCast += Lucian.OnSpellCast;
+            AIBaseClient.OnDoCast += Lucian.OnSpellCast;
             AntiGapcloser.OnGapcloser += Lucian.OnGapCloser;
             AIBaseClient.OnPlayAnimation += Lucian.OnPlayAnimation;
             Orbwalker.OnBeforeAttack += Lucian.OnAction;

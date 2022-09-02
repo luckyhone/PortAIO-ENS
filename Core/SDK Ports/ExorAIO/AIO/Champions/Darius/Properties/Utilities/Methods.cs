@@ -17,7 +17,7 @@ namespace ExorAIO.Champions.Darius
         public static void Initialize()
         {
             Game.OnUpdate += Darius.OnUpdate;
-            AIBaseClient.OnProcessSpellCast += Darius.OnSpellCast;
+            AIBaseClient.OnDoCast += Darius.OnSpellCast;
             AntiGapcloser.OnGapcloser += Darius.OnGapCloser;
             Interrupter.OnInterrupterSpell += Darius.OnInterruptableTarget;
         }

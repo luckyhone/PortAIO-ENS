@@ -25,7 +25,7 @@ namespace Challenger_Series.Utils.Plugins
             Orbwalker.OnAfterAttack += OnAction;
             DelayedOnUpdate += OnUpdate;
             Drawing.OnDraw += OnDraw;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             AIBaseClient.OnPlayAnimation += OnPlayAnimation;
             AntiGapcloser.OnGapcloser += OnGapCloser;
             Interrupter.OnInterrupterSpell += OnInterruptableTarget;
@@ -84,12 +84,12 @@ namespace Challenger_Series.Utils.Plugins
             base.OnProcessSpellCast(sender, args);
             if (sender is AIHeroClient && sender.IsEnemy)
             {
-                if (args.SData.Name == "summonerflash" && args.End.Distance(ObjectManager.Player.ServerPosition) < 650)
+                if (args.SData.Name == "summonerflash" && args.To.Distance(ObjectManager.Player.ServerPosition) < 650)
                 {
                     var pred = Prediction.GetPrediction((AIHeroClient) args.Target, E);
-                    if (!pred.Item3.Any(o => o.IsMinion() && !o.IsDead && !o.IsAlly) && ShouldE(args.End))
+                    if (!pred.Item3.Any(o => o.IsMinion() && !o.IsDead && !o.IsAlly) && ShouldE(args.To))
                     {
-                        E.Cast(args.End);
+                        E.Cast(args.To);
                     }
                 }
             }

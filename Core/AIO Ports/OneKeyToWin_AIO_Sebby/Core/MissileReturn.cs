@@ -41,7 +41,7 @@ namespace OneKeyToWin_AIO_Sebby.Core
             MissileReturnName = missileReturnName;
             MissileReturnSpell = qwer;
 
-            AIBaseClient.OnDoCast += AIBaseClient_OnDoCast;
+            AIBaseClient.OnProcessSpellCast += AIBaseClient_OnDoCast;
             Drawing.OnDraw += Drawing_OnDraw;
             Game.OnUpdate += Game_OnUpdate;
             GameObject.OnCreate += GameObject_OnCreate;

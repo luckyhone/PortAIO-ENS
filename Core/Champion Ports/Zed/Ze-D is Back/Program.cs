@@ -129,7 +129,7 @@ namespace zedisback
                 Game.OnUpdate += Game_OnUpdate;
                 try
                 {
-                    AIBaseClient.OnProcessSpellCast += OnProcessSpell;
+                    AIBaseClient.OnDoCast += OnProcessSpell;
                 }
                 catch (Exception){}
             }
@@ -152,7 +152,7 @@ namespace zedisback
                 {
                     
                     if (DangerDB.DangerousList.Any(spell => spell.Contains(castedSpell.SData.Name)) && 
-                        (unit.Distance(_player.Position) < 650f || _player.Distance(castedSpell.End) <= 250f))
+                        (unit.Distance(_player.Position) < 650f || _player.Distance(castedSpell.To) <= 250f))
                     {
                         if (castedSpell.SData.Name == "SyndraR")
                         {

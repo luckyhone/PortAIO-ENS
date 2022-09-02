@@ -44,7 +44,7 @@ namespace Evade
 
         public static void Init()
         {
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Hero_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Hero_OnProcessSpellCast;
         }
 
 

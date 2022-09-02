@@ -112,7 +112,7 @@ namespace MightyAio.Champions
                 });
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnOnProcessSpellCast;
             // += OrbwalkerOnOnAction;
         }
         

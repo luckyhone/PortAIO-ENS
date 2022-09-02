@@ -97,7 +97,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
             Drawing.OnDraw += Drawing_OnDraw;
             Game.OnUpdate += Game_OnGameUpdate;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             Drawing.OnEndScene += Drawing_OnEndScene;
             Spellbook.OnCastSpell += Spellbook_OnCastSpell;
         }
@@ -125,7 +125,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
         {
             if(sender.IsMe && args.SData.Name.ToLower() == "jhinr")
             {
-                rPosCast = args.End;
+                rPosCast = args.To;
             }
             if (!E.IsReady() || sender.IsMinion() || !sender.IsEnemy || !Local["eConfig"]["Espell"].GetValue<MenuBool>().Enabled || !sender.IsValid() || !sender.IsValidTarget(E.Range))
                 return;

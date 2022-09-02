@@ -136,7 +136,7 @@ namespace EloFactory_Ahri
             
             Game.OnUpdate += Game_OnGameUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
             Dash.OnDash += Unit_OnDash;
         }

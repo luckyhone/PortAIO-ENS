@@ -48,7 +48,7 @@ namespace HERMES_Kalista.MyLogic.Others
                             }
                             else if (slot.HasFlag(SpellSlot.Q | SpellSlot.W | SpellSlot.E | SpellSlot.R) &&
                                      ((args.Target != null && args.Target.NetworkId == ObjectManager.Player.NetworkId) ||
-                                      args.End.Distance(ObjectManager.Player.Position) <
+                                      args.To.Distance(ObjectManager.Player.Position) <
                                       Math.Pow(args.SData.LineWidth, 2)))
                             {
                                 _instantDamage.Add(Game.Time + 2,

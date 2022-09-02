@@ -130,8 +130,8 @@ namespace Flowers_ADC_Series.Pluging
             }
 
             Game.OnUpdate += OnUpdate;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
-            AIBaseClient.OnProcessSpellCast += OnSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnSpellCast;
             AntiGapcloser.OnGapcloser += OnEnemyGapcloser;
             Drawing.OnDraw += OnDraw;
         }

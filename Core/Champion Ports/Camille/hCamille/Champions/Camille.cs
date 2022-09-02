@@ -30,10 +30,10 @@ namespace hCamille.Champions
             Menus.Initializer();
 
             Game.OnUpdate += CamilleOnUpdate;
-            AIBaseClient.OnProcessSpellCast += CamilleOnSpellCast;
+            AIBaseClient.OnDoCast += CamilleOnSpellCast;
             AIBaseClient.OnIssueOrder += OnIssueOrder;
             Drawing.OnDraw += OnDraw;
-            AIBaseClient.OnProcessSpellCast += OnProcess;
+            AIBaseClient.OnDoCast += OnProcess;
             AntiGapcloser.OnGapcloser += OnEnemyGapcloser;
             Interrupter.OnInterrupterSpell += OnInterrupt;
         }

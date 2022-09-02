@@ -125,7 +125,7 @@ namespace Babehri
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
             Orbwalker.OnAfterAttack += Orbwalking_AfterAttack;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             Interrupter.OnInterrupterSpell += Interrupter2_OnInterruptableTarget;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
             GameObject.OnCreate += GameObject_OnCreate;

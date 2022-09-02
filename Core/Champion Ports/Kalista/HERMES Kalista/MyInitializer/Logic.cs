@@ -9,11 +9,11 @@ namespace HERMES_Kalista.MyInitializer
         {
             MyLogic.Spells.OnLoad(new EventArgs());
             Game.OnUpdate += MyLogic.Others.SoulboundSaver.OnUpdate;
-            AIBaseClient.OnProcessSpellCast += MyLogic.Others.SoulboundSaver.OnProcessSpellCast;
+            AIBaseClient.OnDoCast += MyLogic.Others.SoulboundSaver.OnProcessSpellCast;
 
             #region Others
             
-            AIBaseClient.OnProcessSpellCast += MyLogic.Others.Events.OnProcessSpellcast;
+            AIBaseClient.OnDoCast += MyLogic.Others.Events.OnProcessSpellcast;
             Drawing.OnDraw += MyLogic.Others.Events.OnDraw;
             Game.OnUpdate += MyLogic.Others.SkinHack.OnUpdate;
 

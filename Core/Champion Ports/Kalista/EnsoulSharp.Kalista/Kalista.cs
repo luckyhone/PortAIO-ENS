@@ -80,7 +80,7 @@ namespace EnsoulSharp.Kalista
             MyMenu.Attach();
 
             Game.OnUpdate += OnTick;
-            AIBaseClient.OnDoCast += OnDoCast;
+            AIBaseClient.OnProcessSpellCast += OnDoCast;
             Drawing.OnDraw += OnDraw;
             Drawing.OnEndScene += OnEndScene;
         }
@@ -425,7 +425,7 @@ namespace EnsoulSharp.Kalista
                         {
                             if (slot.HasFlag(SpellSlot.Q | SpellSlot.W | SpellSlot.E | SpellSlot.R) &&
                                 (args.Target != null && args.Target.NetworkId == SweetHeart.NetworkId ||
-                                args.End.Distance(SweetHeart.Position) < Math.Pow(args.SData.LineWidth, 2)))
+                                args.To.Distance(SweetHeart.Position) < Math.Pow(args.SData.LineWidth, 2)))
                             {
                                 _instantDamage.Add(Game.Time + 2, (float)attacker.GetSpellDamage(SweetHeart, slot));
                             }

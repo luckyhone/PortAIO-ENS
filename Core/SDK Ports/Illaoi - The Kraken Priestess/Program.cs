@@ -155,7 +155,7 @@ namespace Flowers__Illaoi
         private static void LoadEvent()
         {
             AntiGapcloser.OnGapcloser += OnGapCloser;
-            AIBaseClient.OnProcessSpellCast += OnSpellCast;
+            AIBaseClient.OnDoCast += OnSpellCast;
             Orbwalker.OnAfterAttack += OnAction;
             Game.OnUpdate += OnUpdate;
             Drawing.OnDraw += OnDraw;

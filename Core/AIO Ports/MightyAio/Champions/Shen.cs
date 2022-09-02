@@ -126,7 +126,7 @@ namespace MightyAio.Champions
                 });
             Game.OnUpdate += Game_OnUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += AIBaseClientOnProcessSpellCast;
+            AIBaseClient.OnDoCast += AIBaseClientOnProcessSpellCast;
             AntiGapcloser.OnGapcloser += (sender, args) =>
             {
                 if (_e.IsReady() && sender.IsValidTarget(_e.Range) && _menu["E"].GetValue<MenuBool>("EG").Enabled)

@@ -47,7 +47,7 @@ namespace EzAIO.Champions.Jhin
             Orbwalker.OnBeforeAttack += OnBeforeAttack;
             GameEvent.OnGameTick += OnGameUpdate;
             Teleport.OnTeleport += OnTeleport;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Spellbook.OnCastSpell += OnCastSpell;
             Drawing.OnDraw += OnDraw;
 
@@ -113,7 +113,7 @@ namespace EzAIO.Champions.Jhin
             if (!Extension.IsUltShooting())
             {
                 Extension.UltimateShootsCount = 0;
-                Extension.End = args.End;
+                Extension.End = args.To;
             }
             else
             {

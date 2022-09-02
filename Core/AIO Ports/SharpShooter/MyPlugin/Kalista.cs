@@ -85,7 +85,7 @@
             DrawOption.AddDamageIndicatorToHero(false, false, true, false, false);
 
             Game.OnUpdate += OnUpdate;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Orbwalker.OnAfterAttack += OnAfterAttack;
             Orbwalker.OnBeforeAttack += OnBeforeAttack;
             Orbwalker.OnNonKillableMinion += OnNonKillableMinon;

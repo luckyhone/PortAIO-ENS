@@ -106,7 +106,7 @@ namespace Flowers_Series.Plugings
             Orbwalker.OnBeforeAttack += OnBeforeAttack;
             Interrupter.OnInterrupterSpell += OnInterruptableTarget;
             AntiGapcloser.OnGapcloser += OnGapCloser;
-            AIBaseClient.OnProcessSpellCast += OnProcessSpellCast;
+            AIBaseClient.OnDoCast += OnProcessSpellCast;
             Drawing.OnDraw += OnDraw;
             Drawing.OnEndScene += OnEndScene;
         }

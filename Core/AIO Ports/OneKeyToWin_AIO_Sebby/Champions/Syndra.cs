@@ -79,7 +79,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
             Game.OnUpdate += Game_OnGameUpdate;
             GameObject.OnCreate += Obj_AI_Base_OnCreate;
             Drawing.OnDraw += Drawing_OnDraw;
-            AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+            AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             Interrupter.OnInterrupterSpell += Interrupter2_OnInterruptableTarget;
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
         }
@@ -88,8 +88,8 @@ namespace OneKeyToWin_AIO_Sebby.Champions
         {
             if (sender.IsMe && args.Slot == SpellSlot.Q && EQcastNow && E.IsReady())
             {
-                var customeDelay = Q.Delay - (E.Delay + ((Player.Distance(args.End)) / E.Speed));
-                DelayAction.Add((int)(customeDelay * 1000), () => E.Cast(args.End));
+                var customeDelay = Q.Delay - (E.Delay + ((Player.Distance(args.To)) / E.Speed));
+                DelayAction.Add((int)(customeDelay * 1000), () => E.Cast(args.To));
             }
         }
 

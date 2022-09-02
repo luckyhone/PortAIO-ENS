@@ -60,8 +60,8 @@ namespace SPrediction
                 EnemyInfo.Add((uint)enemy.NetworkId, new EnemyData(new List<Vector2>()));
 
             AIBaseClient.OnNewPath += AIBaseClient_OnNewPath;
-            AIBaseClient.OnDoCast += AIBaseClient_OnDoCast;
-            AIBaseClient.OnProcessSpellCast += AIBaseClient_OnProcessSpellCast;
+            AIBaseClient.OnProcessSpellCast += AIBaseClient_OnDoCast;
+            AIBaseClient.OnDoCast += AIBaseClient_OnProcessSpellCast;
         }
 
         /// <summary>

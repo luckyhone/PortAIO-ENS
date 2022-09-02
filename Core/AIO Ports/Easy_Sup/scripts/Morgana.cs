@@ -80,7 +80,7 @@ namespace Easy_Sup.scripts
             AntiGapcloser.OnGapcloser += AntiGapcloser_OnEnemyGapcloser;
             try
             {
-                AIBaseClient.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast;
+                AIBaseClient.OnDoCast += Obj_AI_Base_OnProcessSpellCast;
             }
             catch { }
         }
@@ -342,7 +342,7 @@ namespace Easy_Sup.scripts
             var attacker = ObjectManager.Get<AIHeroClient>().First(x => x.NetworkId == sender.NetworkId);
             foreach (var ally in GameObjects.AllyHeroes.Where(x => x.IsValidTarget(_e.Range, false)))
             {
-                var detectRange = ally.Position + (args.End - ally.Position).Normalized() * ally.Distance(args.End);
+                var detectRange = ally.Position + (args.To - ally.Position).Normalized() * ally.Distance(args.To);
                 if (detectRange.Distance(ally.Position) > ally.AttackRange - ally.BoundingRadius)
                     continue;
 
