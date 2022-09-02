@@ -42,7 +42,7 @@ namespace PortAIO
                     };
                     break;
                 case "Akali":
-                    champ = new[] { "KDA Akali", "MightyAIO" };
+                    champ = new[] { "KDA Akali", "MightyAIO","StormAIO" };
                     break;
                 case "Alistar":
                     champ = new string[]
@@ -57,7 +57,7 @@ namespace PortAIO
                 case "Ashe":
                     champ = new string[]
                     {
-                        "OKTW", "SharpShooter", "[SDK] Flowers' Series", "Flowers' ADC Series"
+                        "OKTW", "SharpShooter", "[SDK] Flowers' Series", "Flowers' ADC Series","StormAIO"
                     };
                     break;
                 case "Blitzcrank":
@@ -89,7 +89,7 @@ namespace PortAIO
                     break;
                 case "Chogath":
                     champ = new string[]
-                        { "MightyAIO" };
+                        { "MightyAIO", "StormAIO" };
                     break;
                 case "Corki":
                     champ = new string[]
@@ -128,6 +128,12 @@ namespace PortAIO
                     champ = new[]
                     {
                         "BadaoGangplank", "Bangplank", "BePlank", "e.Motion Gangplank", "GangplankBuddy", "Entropy.AIO"
+                    };
+                    break;
+                case "Garen":
+                    champ = new[]
+                    {
+                        "StormAIO"
                     };
                     break;
                 case "Graves":
@@ -177,7 +183,7 @@ namespace PortAIO
                     };
                     break;
                 case "Katarina":
-                    champ = new[] { "NoobAIO" };
+                    champ = new[] { "NoobAIO","StormAIO" };
                     break;
                 case "Kayn":
                     champ = new[] { "NoobAIO" };
@@ -186,6 +192,12 @@ namespace PortAIO
                     champ = new string[]
                     {
                         "OKTW"
+                    };
+                    break;
+                case "KogMaw":
+                    champ = new string[]
+                    {
+                        "StormAIO"
                     };
                     break;
                 case "Leblanc":
@@ -203,13 +215,19 @@ namespace PortAIO
                 case "Lucian":
                     champ = new[]
                     {
-                        "OKTW", "SharpShooter", "[SDK] ExorAIO", "Flowers' ADC Series", "EzAIO", "MightyAIO"
+                        "OKTW", "SharpShooter", "[SDK] ExorAIO", "Flowers' ADC Series", "EzAIO", "MightyAIO","StormAIO"
                     };
                     break;
                 case "Lux":
                     champ = new[]
                     {
                         "OKTW", "M00N Lux", "LyrdumAIO", "Easy_Sup"
+                    };
+                    break;
+                case "Maokai":
+                    champ = new[]
+                    {
+                        "StormAIO"
                     };
                     break;
                 case "MasterYi":
@@ -232,6 +250,9 @@ namespace PortAIO
                     break;
                 case "Pyke":
                     champ = new string[] { "Easy_Sup" };
+                    break;
+                case "Rengar":
+                    champ = new string[] { "StormAIO" };
                     break;
                 case "Riven":
                     champ = new string[]
@@ -289,7 +310,13 @@ namespace PortAIO
                 case "Twitch":
                     champ = new string[]
                     {
-                        "SharpShooter", "[SDK] ExorAIO", "NoobAIO"
+                        "SharpShooter", "[SDK] ExorAIO", "NoobAIO","StormAIO"
+                    };
+                    break;
+                case "Urgot":
+                    champ = new string[]
+                    {
+                        "StormAIO"
                     };
                     break;
                 case "Varus":
@@ -310,6 +337,18 @@ namespace PortAIO
                         "Badao's Viktor", "[SDK] Flowers' Series", "[SDK] Flowers' Viktor"
                     };
                     break;
+                case "Vladimir":
+                    champ = new[]
+                    {
+                        "StormAIO"
+                    };
+                    break;
+                case "Warwick":
+                    champ = new[]
+                    {
+                        "StormAIO"
+                    };
+                    break;
                 case "Xayah":
                     champ = new[] { "SharpShooter" };
                     break;
@@ -319,8 +358,14 @@ namespace PortAIO
                         "Flowers' Yasuo"
                     };
                     break;
+                case "Yone":
+                    champ = new[]
+                    {
+                        "StormAIO"
+                    };
+                    break;
                 case "Yorick":
-                    champ = new[] { "MightyAIO" };
+                    champ = new[] { "MightyAIO","StormAIO" };
                     break;
                 case "Yuumi":
                     champ = new[] { "MightyAIO" };
@@ -331,7 +376,7 @@ namespace PortAIO
                 case "Zed":
                     champ = new[]
                     {
-                        "Korean Zed", "SharpyAIO", "Ze-D is Back"
+                        "Korean Zed", "SharpyAIO", "Ze-D is Back","StormAIO"
                     };
                     break;
                 case "Zoe":

@@ -197,6 +197,9 @@ namespace PortAIO
                         case 1: // MightyAIO
                             MightyAio.Program.Loads();
                             break;
+                        case 2: //StormAIO
+                            StormAIO.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -235,6 +238,9 @@ namespace PortAIO
                             break;
                         case 3: // Flowers' ADC Series
                             Flowers_ADC_Series.Program.Loads();
+                            break;
+                        case 4: // StormAIO
+                            StormAIO.Program.Loads();
                             break;
                     }
 
@@ -313,8 +319,11 @@ namespace PortAIO
                 case "Chogath":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
-                        case 1: // MightyAIO
+                        case 0: // MightyAIO
                             MightyAio.Program.Loads();
+                            break;
+                        case 1: // StormAIO
+                            StormAIO.Program.Loads();
                             break;
                     }
 
@@ -417,6 +426,15 @@ namespace PortAIO
                             break;
                         case 5: // Entropy.AIO
                             Entropy.AIO.Program.Loads();
+                            break;
+                    }
+
+                    break;
+                case "Garen":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // StormAIO
+                            StormAIO.Program.Loads();
                             break;
                     }
 
@@ -574,6 +592,9 @@ namespace PortAIO
                         case 0: // NoobAIO
                             NoobAIO.Program.Loads();
                             break;
+                        case 1: // StormAIO
+                            StormAIO.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -591,6 +612,15 @@ namespace PortAIO
                     {
                         case 0: // OKTW
                             OneKeyToWin_AIO_Sebby.Program.GameOnOnGameLoad();
+                            break;
+                    }
+
+                    break;
+                case "KogMaw":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // StormAIO
+                            StormAIO.Program.Loads();
                             break;
                     }
 
@@ -643,6 +673,9 @@ namespace PortAIO
                         case 5: // MightyAIO
                             MightyAio.Program.Loads();
                             break;
+                        case 6: // StormAIO
+                            StormAIO.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -660,6 +693,15 @@ namespace PortAIO
                             break;
                         case 3: // Easy_Sup
                             Easy_Sup.Program.Loads();
+                            break;
+                    }
+
+                    break;
+                case "Maokai":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // OKTW
+                            StormAIO.Program.Loads();
                             break;
                     }
 
@@ -696,6 +738,15 @@ namespace PortAIO
                     {
                         case 0: // Easy_Sup
                             Easy_Sup.Program.Loads();
+                            break;
+                    }
+
+                    break;
+                case "Rengar":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // StormAIO
+                            StormAIO.Program.Loads();
                             break;
                     }
 
@@ -826,14 +877,26 @@ namespace PortAIO
                 case "Twitch":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
-                        case 3: // SharpShooter
+                        case 0: // SharpShooter
                             SharpShooter.MyLoader.Loads();
                             break;
-                        case 5: // ExorAIO
+                        case 1: // ExorAIO
                             ExorAIO.Program.Loads();
                             break;
-                        case 15: // NoobAIO
+                        case 2: // NoobAIO
                             NoobAIO.Program.Loads();
+                            break;
+                        case 3: // StormAIO
+                            StormAIO.Program.Loads();
+                            break;
+                    }
+
+                    break;
+                case "Urgot":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // StormAIO
+                            StormAIO.Program.Loads();
                             break;
                     }
 
@@ -892,6 +955,23 @@ namespace PortAIO
                     }
 
                     break;
+                case "Vladimir":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // StormAIO
+                            StormAIO.Program.Loads();
+                            break;
+                    }
+                    break;
+                case "Warwick":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // StormAIO
+                            StormAIO.Program.Loads();
+                            break;
+                    }
+                    break;
+
                 case "Xayah":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
@@ -910,11 +990,23 @@ namespace PortAIO
                     }
 
                     break;
+                case "Yone":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: //StormAIO
+                            StormAIO.Program.Loads();
+                            break;
+                    }
+
+                    break;
                 case "Yorick":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
                         case 0: // MightyAIO
                             MightyAio.Program.Loads();
+                            break;
+                        case 1: //StormAIO
+                            StormAIO.Program.Loads();
                             break;
                     }
 
@@ -948,6 +1040,9 @@ namespace PortAIO
                             break;
                         case 2: // Ze-D Is Back
                             zedisback.Program.Loads();
+                            break;
+                        case 3: // StormAIO
+                            StormAIO.Program.Loads();
                             break;
                     }
 
