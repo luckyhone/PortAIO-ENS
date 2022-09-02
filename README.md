@@ -16,7 +16,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Blitzcrank x3.
     - Brand x1.
     - Caitlyn x6.
-    - Camille x3.
+    - Camille x4.
     - Cassiopeia x2.
     - Cho'Gath x2.
     - Corki x3.
