@@ -106,7 +106,22 @@ namespace ExorAIO.Champions.Kalista
             {
                 return;
             }
+            if (Orbwalker.ActiveMode != OrbwalkerMode.None)
+            {
 
+                var target = Orbwalker.GetTarget();
+                if (target != null && target.IsValidTarget())
+                {
+                    if (Variables.GameTimeTickCount >= Orbwalker.LastAutoAttackTick + 1)
+                        ObjectManager.Player.IssueOrder(GameObjectOrder.MoveTo, Game.CursorPos);
+                    if (Variables.GameTimeTickCount >= Orbwalker.LastAutoAttackTick + (ObjectManager.Player.AttackDelay * 1000) - 180f)
+                        ObjectManager.Player.IssueOrder(GameObjectOrder.AttackUnit, target);
+                }
+                else
+                {
+                    ObjectManager.Player.IssueOrder(GameObjectOrder.MoveTo, Game.CursorPos);
+                }
+            }
             /// <summary>
             ///     Initializes the Automatic actions.
             /// </summary>

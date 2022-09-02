@@ -70,6 +70,22 @@ namespace HERMES_Kalista.MyLogic.Others
 
         public static void OnUpdate(EventArgs args)
         {
+            if (Orbwalker.ActiveMode != OrbwalkerMode.None)
+            {
+
+                var target = Orbwalker.GetTarget();
+                if (target != null && target.IsValidTarget())
+                {
+                    if (Variables.GameTimeTickCount >= Orbwalker.LastAutoAttackTick + 1)
+                        ObjectManager.Player.IssueOrder(GameObjectOrder.MoveTo, Game.CursorPos);
+                    if (Variables.GameTimeTickCount >= Orbwalker.LastAutoAttackTick + (ObjectManager.Player.AttackDelay * 1000) - 180f)
+                        ObjectManager.Player.IssueOrder(GameObjectOrder.AttackUnit, target);
+                }
+                else
+                {
+                    ObjectManager.Player.IssueOrder(GameObjectOrder.MoveTo, Game.CursorPos);
+                }
+            }
             if (!Program.ComboMenu.GetValue<MenuBool>("RComboSupport").Enabled || ObjectManager.Player.IsRecalling() || ObjectManager.Player.InFountain())
                 return;
 
