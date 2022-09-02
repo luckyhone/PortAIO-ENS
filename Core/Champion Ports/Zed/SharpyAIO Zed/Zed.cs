@@ -70,7 +70,7 @@ namespace Sharpy_AIO.Plugins
         {
             Game.Print("Sharpy AIO :: Zed Loaded :)");
 
-            Q = new Spell(SpellSlot.Q, 900f) { MinHitChance = HitChance.High };
+            Q = new Spell(SpellSlot.Q, 925f) { MinHitChance = HitChance.High };
             W = new Spell(SpellSlot.W, 700f);
             E = new Spell(SpellSlot.E, 290f);
             R = new Spell(SpellSlot.R, 625f);
