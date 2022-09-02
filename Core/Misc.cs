@@ -28,7 +28,12 @@ namespace PortAIO
             switch (GameObjects.Player.CharacterName)
             {
                 #region Dual-Ports
-
+                case "Aatrox":
+                    champ = new[]
+                    {
+                        "Entropy.AIO"
+                    };
+                    break;
                 case "Ahri":
                     champ = new[]
                     {

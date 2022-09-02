@@ -1,6 +1,7 @@
 ﻿using System;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
+using SharpDX;
 
 namespace PortAIO.Library_Ports.Entropy.Lib.Constants
 {
@@ -19,6 +20,10 @@ namespace PortAIO.Library_Ports.Entropy.Lib.Constants
             }
 
             return 999f;
+        }
+        public static Vector3 PosAfterTime(AIBaseClient unit, float time)
+        {
+            return Prediction.GetPrediction(unit, time).CastPosition;
         }
         public static float TimeForAutoAttackToReachTarget(this AttackableUnit target, AIBaseClient source = null)
         {

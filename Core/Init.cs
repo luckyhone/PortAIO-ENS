@@ -146,6 +146,15 @@ namespace PortAIO
         {
             switch (ObjectManager.Player.CharacterName)
             {
+                case "Aatrox":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // Entropy.AIO
+                            Entropy.AIO.Program.Loads();
+                            break;
+                    }
+
+                    break;
                 case "Ahri":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {

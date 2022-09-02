@@ -7,6 +7,7 @@ PortAIO is a version of PortAIO by berb but made for EnsoulSharp. This is a proj
 Only scripts that have "[Listo]" written in the menu work.
 
 - Format:  [Champion] [number of scripts]
+    - Aatrox x1.
     - Ahri x9.
     - Akali x2.
     - Alistar x1.
