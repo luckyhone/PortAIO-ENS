@@ -222,9 +222,9 @@
         {
             var minions = GetMinions(Me.Position, Q.Range);
 
-            if (minions.Count() >= Menu["Darius_QMenu"]["LaneMin"].GetValue<MenuSlider>().Value && 
-                Menu["Darius_QMenu"]["LaneClear"].GetValue<MenuBool>().Enabled &&
-                Me.ManaPercent >= Menu["Darius_QMenu"]["LaneMana"].GetValue<MenuSlider>().Value)
+            if (minions.Count() >= Menu["Darius_LaneClear"]["QMin"].GetValue<MenuSlider>().Value && 
+                Menu["Darius_LaneClear"]["Q"].GetValue<MenuBool>().Enabled &&
+                Me.ManaPercent >= Menu["Darius_LaneClear"]["Mana"].GetValue<MenuSlider>().Value)
             {
                 Q.Cast();
             }
