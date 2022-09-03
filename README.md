@@ -17,7 +17,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Brand x1.
     - Caitlyn x6.
     - Camille x4.
-    - Cassiopeia x2.
+    - Cassiopeia x3.
     - Cho'Gath x2.
     - Corki x3.
     - Darius x3.
@@ -31,14 +31,14 @@ Only scripts that have "[Listo]" written in the menu work.
     - Illaoi x4.
     - Jax x2.
     - Jayce x2.
-    - Jhin x3.
+    - Jhin x4.
     - Jinx x8.
     - Kalista x7.
     - Karthus x4.
     - Katarina x2.
     - Kayn x1.
     - Kindred x1.
-    - Kog'Maw x1.
+    - Kog'Maw x2.
     - LeBlanc x1.
     - Leona x1.
     - Lillia x1.
