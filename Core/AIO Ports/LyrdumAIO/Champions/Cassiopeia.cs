@@ -334,6 +334,7 @@ namespace LyrdumAIO.Champions
             if (E.IsReady())
             {
                 var target = E.GetTarget();
+                if(target == null) return;
                 E.Cast(target);
                 
             }
@@ -344,7 +345,7 @@ namespace LyrdumAIO.Champions
             if (E.IsReady())
             {
                 var target = E.GetTarget();
-
+                if(target == null) return;
                 if (target.HasBuffOfType(BuffType.Poison))
                     E.Cast(target);
 
