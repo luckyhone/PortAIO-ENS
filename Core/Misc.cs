@@ -60,6 +60,12 @@ namespace PortAIO
                         "OKTW", "SharpShooter", "[SDK] Flowers' Series", "Flowers' ADC Series","StormAIO"
                     };
                     break;
+                case "Bard":
+                    champ = new string[]
+                    {
+                        "Entropy.AIO"
+                    };
+                    break;
                 case "Blitzcrank":
                     champ = new string[]
                     {
@@ -384,7 +390,7 @@ namespace PortAIO
                     break;
                 default:
                     hasDualPort = false;
-                    dualPort.Add(new MenuSeparator("info1", "There are no dual-port for this champion."));
+                    dualPort.Add(new MenuSeparator("info1", $"There are no dual-port for {ObjectManager.Player.CharacterName}."));
                     dualPort.Add(new MenuSeparator("info2", "Feel free to request one."));
                     break;
 

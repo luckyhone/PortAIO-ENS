@@ -167,22 +167,22 @@ namespace PortAIO
                         case 2: // EloFactory
                             EloFactory_Ahri.Program.Game_OnGameLoad();
                             break;
-                        case 4: // xSalice
+                        case 3: // xSalice
                             xSalice_Reworked.Program.LoadReligion();
                             break;
-                        case 5: // BadaoSeries
+                        case 4: // BadaoSeries
                             BadaoSeries.Program.OnLoad();
                             break;
-                        case 6: // AhriSharp
+                        case 5: // AhriSharp
                             AhriSharp.Program.Game_OnGameLoad();
                             break;
-                        case 7: // Flowers' Series
+                        case 6: // Flowers' Series
                             Flowers_Series.Program.Loads();
                             break;
-                        case 8: // Babehri
+                        case 7: // Babehri
                             Babehri.Program.Game_OnGameLoad();
                             break;
-                        case 9: // Entropy.AIO
+                        case 8: // Entropy.AIO
                             Entropy.AIO.Program.Loads();
                             break;
                     }
@@ -241,6 +241,15 @@ namespace PortAIO
                             break;
                         case 4: // StormAIO
                             StormAIO.Program.Loads();
+                            break;
+                    }
+
+                    break;
+                case "Bard":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // OKTW
+                            Entropy.AIO.Program.Loads();
                             break;
                     }
 

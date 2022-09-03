@@ -67,8 +67,8 @@ namespace Entropy.AIO.Bases
 
             return menuBool;
         }
-        
-        private void OnRender(EventArgs args)
+
+        protected void OnRender(EventArgs args)
         {
             foreach (var spell in this.Spells)
             {

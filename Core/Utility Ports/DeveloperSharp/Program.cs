@@ -29,6 +29,7 @@ namespace DeveloperSharp
             Drawing.OnDraw += OnDraw;
             AIBaseClient.OnDoCast += OnProcessSpellCast;
         }
+        
 
         private static void OnProcessSpellCast(AIBaseClient sender, AIBaseClientProcessSpellCastEventArgs args)
         {
@@ -177,6 +178,7 @@ namespace DeveloperSharp
                 if (obj is MissileClient && obj.Name != "missile")
                 {
                     var missile = obj as MissileClient;
+                    Game.Print(missile.Name);
                     Drawing.DrawText(X, Y + 40, Config["color"].GetValue<MenuColor>().Color.ToSystemColor(),
                         "Missile Speed: " + missile.SData.MissileSpeed);
                     Drawing.DrawText(X, Y + 50, Config["color"].GetValue<MenuColor>().Color.ToSystemColor(),
