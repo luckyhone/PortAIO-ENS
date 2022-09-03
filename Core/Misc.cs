@@ -90,7 +90,7 @@ namespace PortAIO
                 case "Cassiopeia":
                     champ = new string[]
                     {
-                        "[SDK] ExorAIO", "LyrdumAIO"
+                        "[SDK] ExorAIO", "LyrdumAIO","Entropy.AIO"
                     };
                     break;
                 case "Chogath":

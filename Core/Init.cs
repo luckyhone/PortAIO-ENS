@@ -325,6 +325,9 @@ namespace PortAIO
                         case 1: // LyrdumAIO
                             LyrdumAIO.Program.Loads();
                             break;
+                        case 2: // EntropyAIO
+                            Entropy.AIO.Program.Loads();
+                            break;
                     }
 
                     break;
