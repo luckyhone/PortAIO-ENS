@@ -23,6 +23,7 @@ namespace HERMES_Kalista.MyLogic.Others
                     Items.UseItem(ObjectManager.Player,(int)ItemId.Control_Ward);
                 }
             }
+            
 
             var enemyVayne = GameObjects.EnemyHeroes.FirstOrDefault(e => e.CharacterName == "Vayne");
             if (enemyVayne != null && enemyVayne.Distance(GameObjects.Player) < 700 && enemyVayne.HasBuff("VayneInquisition"))

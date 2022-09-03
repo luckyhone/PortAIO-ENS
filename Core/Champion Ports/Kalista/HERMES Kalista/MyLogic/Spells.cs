@@ -41,7 +41,7 @@ namespace HERMES_Kalista.MyLogic
                 case OrbwalkerMode.Combo:
                     if (Program.E.IsReady())
                     {
-                        if (Program.ComboMenu.GetValue<MenuBool>("EComboMinionReset").Enabled &&
+                        if (Program.ComboMenu["EComboMinionReset"].GetValue<MenuBool>().Enabled &&
                             GameObjects.GetMinions(Program.E.Range).Any(m => m.IsRendKillable()))
                         {
                             if (
@@ -49,13 +49,13 @@ namespace HERMES_Kalista.MyLogic
                                     .Select(en => en.GetRendBuff())
                                     .Any(buf => buf != null &&
                                                 buf.Count >= Program.ComboMenu
-                                                    .GetValue<MenuSlider>("EComboMinionResetStacks").Value))
+                                                    .GetValue<MenuSlider>("EComboMinionResetStacksNew").Value))
                             {
                                 Program.E.Cast();
                                 return;
                             }
 
-                            if (Program.ComboMenu.GetValue<MenuBool>("UseE2Tilt").Enabled)
+                            if (Program.ComboMenu["UseE2Tilt"].GetValue<MenuBool>().Enabled)
                             {
                                 if (ObjectManager.Player.CountEnemyHeroesInRange(300) == 0)
                                 {
@@ -73,8 +73,8 @@ namespace HERMES_Kalista.MyLogic
                         }
                     }
 
-                    if (Program.ComboMenu.GetValue<MenuBool>("QCombo").Enabled &&
-                        ObjectManager.Player.ManaPercent > Program.ComboMenu.GetValue<MenuSlider>("QMinMana").Value &&
+                    if (Program.ComboMenu["QCombo"].GetValue<MenuBool>().Enabled &&
+                        ObjectManager.Player.ManaPercent > Program.ComboMenu["QMinMana"].GetValue<MenuSlider>().Value &&
                         Program.Q.IsReady())
                     {
                         var target = TargetSelector.GetTarget(Program.Q.Range, DamageType.Physical);
@@ -82,6 +82,14 @@ namespace HERMES_Kalista.MyLogic
                         {
                             Program.Q.Cast(target);
                             return;
+                        }
+                    }
+                    if(Orbwalker.GetTarget() == null && Orbwalker.CanAttack() && Program.ComboMenu["MinionOrbwalking"].GetValue<MenuBool>().Enabled){
+                        var minions = GameObjects.EnemyMinions.Where(e => e.InAutoAttackRange()).OrderByDescending(e => e.Health);
+
+                        if (minions.Count() > 0)
+                        {
+                            Orbwalker.Attack(minions.First());
                         }
                     }
                     break;
