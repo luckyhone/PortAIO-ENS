@@ -15,7 +15,7 @@ namespace Evade
     {
         public const bool PrintSpellData = false;
         public const bool Debug = false;
-        public const bool TestOnAllies = true;
+        public const bool TestOnAllies = false;
         public const int SkillShotsExtraRadius = 13;
         public const int SkillShotsExtraRange = 20;
         public const int GridSize = 10;
