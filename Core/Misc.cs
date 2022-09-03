@@ -166,7 +166,7 @@ namespace PortAIO
                 case "Jhin":
                     champ = new[]
                     {
-                        "OKTW", "[SDK] ExorAIO", "EzAIO"
+                        "OKTW", "[SDK] ExorAIO", "EzAIO","SharpShooter"
                     };
                     break;
                 case "Jinx":
@@ -203,7 +203,7 @@ namespace PortAIO
                 case "KogMaw":
                     champ = new string[]
                     {
-                        "StormAIO"
+                        "StormAIO","SharpShooter"
                     };
                     break;
                 case "Leblanc":

@@ -520,8 +520,11 @@ namespace PortAIO
                         case 1: // ExorAIO
                             ExorAIO.Program.Loads();
                             break;
-                        case 2:
+                        case 2: // EzAIO
                             EzAIO.Program.Loads();
+                            break;
+                        case 3: // SharpShooter
+                            SharpShooter.MyLoader.Loads();
                             break;
                     }
 
@@ -636,6 +639,9 @@ namespace PortAIO
                     {
                         case 0: // StormAIO
                             StormAIO.Program.Loads();
+                            break;
+                        case 1: // SharpShooter
+                            SharpShooter.MyLoader.Loads();
                             break;
                     }
 

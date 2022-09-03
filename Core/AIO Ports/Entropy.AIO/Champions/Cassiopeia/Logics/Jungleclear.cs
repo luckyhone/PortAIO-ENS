@@ -74,7 +74,11 @@ namespace Entropy.AIO.Cassiopeia.Logics
             var minions = GameObjects.Jungle.FirstOrDefault(x => x.IsValidTarget(Q.Range));
             if (minions != null)
             {
-                Q.Cast(minions);
+                var qinpunt = Q.GetPrediction(minions);
+                if (qinpunt.Hitchance >= HitChance.Low)
+                {
+                    Q.Cast(qinpunt.CastPosition);
+                }
             }
         }
     }

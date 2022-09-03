@@ -292,7 +292,7 @@ namespace hCamille.Champions
                     Spells.Q.Cast();
                 }
 
-                if (Spells.W.IsReady() && Utilities.Enabled("w.combo") && target.IsValidTarget(Spells.W.Range) && 
+                if (Spells.W.IsReady() && Menus.Config["Combo Settings"]["w.combo"].GetValue<MenuBool>().Enabled && target.IsValidTarget(Spells.W.Range) && 
                     Environment.TickCount - Spells.E.LastCastAttemptTime > 1200)
                 {
                     switch (Menus.Config["w.mode"].GetValue<MenuList>().Index)

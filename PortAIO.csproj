@@ -387,8 +387,10 @@
     <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\Ezreal.cs" />
     <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\Graves.cs" />
     <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\Jayce.cs" />
+    <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\Jhin.cs" />
     <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\Jinx.cs" />
     <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\Kalista.cs" />
+    <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\KogMaw.cs" />
     <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\Lucian.cs" />
     <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\Sivir.cs" />
     <Compile Include="Core\AIO Ports\SharpShooter\MyPlugin\TwistedFate.cs" />
