@@ -601,9 +601,9 @@ namespace OneKeyToWin_AIO_Sebby.Core
                     if (hero.Hero.IsEnemy)
                         barPos = barPos + new Vector2(-50, -30);
 
-                    Drawing.DrawLine(barPos + new Vector2(7, 34), barPos + new Vector2(115, 34), 9,
+                    Drawing.DrawLine(barPos + new Vector2(7, 35), barPos + new Vector2(115, 35), 12,
                         System.Drawing.Color.DimGray);
-                    Drawing.DrawLine(barPos + new Vector2(8, 35), barPos + new Vector2(113, 35), 7,
+                    Drawing.DrawLine(barPos + new Vector2(8, 35), barPos + new Vector2(113, 35), 8,
                         System.Drawing.Color.Black);
 
                     var qCal = Math.Max(Math.Min((q.CooldownExpires - Game.Time) / q.Cooldown, 1), 0);
@@ -827,9 +827,9 @@ namespace OneKeyToWin_AIO_Sebby.Core
                         hudSprite.Position = hudPos - new Vector2(12, 10);
                         hudSprite.OnEndScene();
 
-                        var vec1manaB = new Vector2(hudPos.X - 9, hudPos.Y + 48);
-                        var vec2manaB = new Vector2(hudPos.X - 8 + 50 + 3, hudPos.Y + 48);
-                        Drawing.DrawLine(vec1manaB, vec2manaB, 18, System.Drawing.Color.DarkGoldenrod);
+                        var vec1manaB = new Vector2(hudPos.X - 9, hudPos.Y + 49);
+                        var vec2manaB = new Vector2(hudPos.X - 8 + 50 + 3, hudPos.Y + 49);
+                        Drawing.DrawLine(vec1manaB, vec2manaB, 19, System.Drawing.Color.DarkGoldenrod);
 
                         var vec1hpB = new Vector2(hudPos.X - 8, hudPos.Y + 49);
                         var vec2hpB = new Vector2(hudPos.X - 8 + 50 + 2, hudPos.Y + 49);
@@ -875,8 +875,8 @@ namespace OneKeyToWin_AIO_Sebby.Core
                                 vec2rec = new Vector2(hudPos.X - 8 + 50 + 2, hudPos.Y + 36);
                                 Drawing.DrawLine(vec1rec, vec2rec, 12, System.Drawing.Color.Black);
 
-                                vec1rec = new Vector2(hudPos.X - 7, hudPos.Y + 37);
-                                vec2rec = new Vector2(hudPos.X - 7 + 100 * recallPercent / 2, hudPos.Y + 37);
+                                vec1rec = new Vector2(hudPos.X - 7, hudPos.Y + 36);
+                                vec2rec = new Vector2(hudPos.X - 7 + 100 * recallPercent / 2, hudPos.Y + 36);
                                 Drawing.DrawLine(vec1rec, vec2rec, 10, System.Drawing.Color.Yellow);
 
                                 if (blink)
