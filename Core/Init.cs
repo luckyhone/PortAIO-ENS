@@ -78,6 +78,15 @@ namespace PortAIO
                         break;
                 }
             }
+            if (Misc.menu["enableSkinChanger"].GetValue<MenuBool>().Enabled)
+            {
+                switch (Misc.menu["SkinChanger"].GetValue<MenuList>().Index)
+                {
+                    case 0: // EnsoulSharp.SkinHack
+                        EnsoulSharp.SkinHack.Program.Loads();
+                        break;
+                }
+            }
 
             /*if (Misc.menu["Utilitiesports"].GetValue<MenuBool>("enablePredictioner").Enabled)
             {
@@ -245,6 +254,15 @@ namespace PortAIO
                     }
 
                     break;
+                case "AurelionSol":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // OlympusAIO
+                            OlympusAIO.OlympusAIO.Loads();
+                            break;
+                    }
+
+                    break;
                 case "Bard":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
@@ -394,6 +412,15 @@ namespace PortAIO
                     }
 
                     break;
+                case "Evelynn":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // OlympusAIO
+                            OlympusAIO.OlympusAIO.Loads();
+                            break;
+                    }
+
+                    break;
                 case "Ezreal":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
@@ -465,6 +492,15 @@ namespace PortAIO
                             break;
                         case 2: // ExorAIO
                             ExorAIO.Program.Loads();
+                            break;
+                    }
+
+                    break;
+                case "Heimerdinger":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // Olympus
+                            OlympusAIO.OlympusAIO.Loads();
                             break;
                     }
 
@@ -556,6 +592,9 @@ namespace PortAIO
                         case 7: // MigthyAIO
                             MightyAio.Program.Loads();
                             break;
+                        case 8: // Nicky.Jinx
+                            NickyJinx.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -613,6 +652,9 @@ namespace PortAIO
                         /*case 1: // StormAIO
                             StormAIO.Program.Loads();
                             break;*/
+                        case 1: // Nicky.Katarina
+                            Nicky_Katarina.Katarina.OnLoad();
+                            break;
                     }
 
                     break;
@@ -664,11 +706,20 @@ namespace PortAIO
                     }
 
                     break;
-                case "Lillia":
+                /*case "Lillia":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
                         case 0: // MightyAIO
                             MightyAio.Program.Loads();
+                            break;
+                    }
+
+                    break;*/
+                case "Lissandra":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // OlympusAIO
+                            OlympusAIO.OlympusAIO.Loads();
                             break;
                     }
 
@@ -742,6 +793,9 @@ namespace PortAIO
                         case 0: // Easy_Sup
                             Easy_Sup.Program.Loads();
                             break;
+                        case 1: // Danz0r AIO
+                            Danz0r_Morgana.Danz0r_Morgana.On_LoadGame();
+                            break;
                     }
 
                     break;
@@ -750,6 +804,15 @@ namespace PortAIO
                     {
                         case 0: // Entropy.AIO
                             Entropy.AIO.Program.Loads();
+                            break;
+                    }
+
+                    break;
+                case "Poppy":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // OlympusAIO
+                            OlympusAIO.OlympusAIO.Loads();
                             break;
                     }
 
@@ -862,6 +925,15 @@ namespace PortAIO
                     }
 
                     break;
+                case "Teemo":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // Olympus
+                            OlympusAIO.OlympusAIO.Loads();
+                            break;
+                    }
+
+                    break;
                 case "Thresh":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
@@ -957,6 +1029,15 @@ namespace PortAIO
                             break;
                         case 5: // EzAIO
                             EzAIO.Program.Loads();
+                            break;
+                    }
+
+                    break;
+                case "Veigar":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // Olympus.Veigar
+                            Olympus_Veigar.Program.Loads();
                             break;
                     }
 

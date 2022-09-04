@@ -336,6 +336,21 @@
     <Compile Include="Core\AIO Ports\NoobAIO\Misc\Rundown.cs" />
     <Compile Include="Core\AIO Ports\NoobAIO\Misc\TFCardSelector.cs" />
     <Compile Include="Core\AIO Ports\NoobAIO\Program.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Champions\AurelionSol.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Champions\Evelynn.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Champions\Heimerdinger.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Champions\Lissandra.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Champions\Poppy.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Champions\Teemo.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\General\DamageIndicator.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\General\Methods.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Helpers\DamageManager.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Helpers\EnvironmentManager.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Helpers\ManaManager.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Helpers\MenuManager.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Helpers\SpellManager.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\Helpers\UtilityManager.cs" />
+    <Compile Include="Core\AIO Ports\OlympusAIO\OlympusAIO.cs" />
     <Compile Include="Core\AIO Ports\OneKeyToWin_AIO_Sebby\Base.cs" />
     <Compile Include="Core\AIO Ports\OneKeyToWin_AIO_Sebby\Champions\Ahri.cs" />
     <Compile Include="Core\AIO Ports\OneKeyToWin_AIO_Sebby\Champions\Annie.cs" />
@@ -512,6 +527,9 @@
     <Compile Include="Core\Champion Ports\Illaoi\IllaoiSOH\Program.cs" />
     <Compile Include="Core\Champion Ports\Jinx\ADCPackage\Jinx.cs" />
     <Compile Include="Core\Champion Ports\Jinx\GENESIS Jinx\Program.cs" />
+    <Compile Include="Core\Champion Ports\Jinx\NickyJinx\IsMenu.cs" />
+    <Compile Include="Core\Champion Ports\Jinx\NickyJinx\JinxLoading.cs" />
+    <Compile Include="Core\Champion Ports\Jinx\NickyJinx\Program.cs" />
     <Compile Include="Core\Champion Ports\Kalista\EnsoulSharp.Kalista\Kalista.cs" />
     <Compile Include="Core\Champion Ports\Kalista\EnsoulSharp.Kalista\MenuWrapper.cs" />
     <Compile Include="Core\Champion Ports\Kalista\EnsoulSharp.Kalista\Program.cs" />
@@ -539,7 +557,9 @@
     <Compile Include="Core\Champion Ports\Karthus\Flowers' Karthus\Prediction\xcsoftPrediction.cs" />
     <Compile Include="Core\Champion Ports\Karthus\Flowers' Karthus\Program.cs" />
     <Compile Include="Core\Champion Ports\Karthus\KimbaengKarthus\Program.cs" />
+    <Compile Include="Core\Champion Ports\Katarina\NickyKatarina\Nicky_Katarina.cs" />
     <Compile Include="Core\Champion Ports\Lux\M00NLUX\Program.cs" />
+    <Compile Include="Core\Champion Ports\Morgana\Danz0r Morgana.cs" />
     <Compile Include="Core\Champion Ports\Syndra\BadaoSyndra\OrbManager.cs" />
     <Compile Include="Core\Champion Ports\Syndra\BadaoSyndra\Syndra.cs" />
     <Compile Include="Core\Champion Ports\Thresh\Slutty Thresh\MenuConfig.cs" />
@@ -550,6 +570,7 @@
     <Compile Include="Core\Champion Ports\Varus\ElVarus\ElVarusMenu.cs" />
     <Compile Include="Core\Champion Ports\Varus\ElVarus\Varus.cs" />
     <Compile Include="Core\Champion Ports\Vayne\hi_im_gosu\Program.cs" />
+    <Compile Include="Core\Champion Ports\Veigar\Olympus_Veigar\Veigar.cs" />
     <Compile Include="Core\Champion Ports\Viktor\Viktor - Badao\Program.cs" />
     <Compile Include="Core\Champion Ports\Yasuo\Flowers Yasuo\MyBase\MyChampions.cs" />
     <Compile Include="Core\Champion Ports\Yasuo\Flowers Yasuo\MyBase\MyLogic.cs" />
@@ -982,6 +1003,7 @@
     <Compile Include="Core\Utility Ports\ShadowTracker\Menu.cs" />
     <Compile Include="Core\Utility Ports\ShadowTracker\OnDraw.cs" />
     <Compile Include="Core\Utility Ports\ShadowTracker\Program.cs" />
+    <Compile Include="Core\Utility Ports\SkinHack\Program.cs" />
     <Compile Include="Core\Utility Ports\SPredictioner\EventHandlers.cs" />
     <Compile Include="Core\Utility Ports\SPredictioner\ShineCommon\Utility.cs" />
     <Compile Include="Core\Utility Ports\SPredictioner\SpellData.cs" />

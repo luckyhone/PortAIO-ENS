@@ -46,7 +46,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Lux x4.
     - Maokai x1.
     - Master Yi x1.
-    - Morgana x1.
+    - Morgana x2.
     - Pyke x1.
     - Rengar x1.
     - Riven x1.
@@ -90,6 +90,10 @@ Dual Utilities
     - Evade:
 
         + Evade#.
+
+    - SkinChanger:
+    
+        + SkinHack.
 
 Standalone Utilitie
 

@@ -60,6 +60,12 @@ namespace PortAIO
                         "OKTW", "SharpShooter", "[SDK] Flowers' Series", "Flowers' ADC Series","StormAIO"
                     };
                     break;
+                case "AurelionSol":
+                    champ = new string[]
+                    {
+                        "OlympusAIO"
+                    };
+                    break;
                 case "Bard":
                     champ = new string[]
                     {
@@ -121,6 +127,9 @@ namespace PortAIO
                         "OKTW"
                     };
                     break;
+                case "Evelynn":
+                    champ = new[] { "OlympusAIO" };
+                    break;
                 case "Ezreal":
                     champ = new[] { "OKTW", "EzAIO", "SharpShooter", "MightyAIO" };
                     break;
@@ -148,6 +157,12 @@ namespace PortAIO
                         "OKTW", "SharpShooter", "[SDK] ExorAIO"
                     };
                     break;
+                case "Heimerdinger":
+                    champ = new string[]
+                    {
+                        "OlympusAIO"
+                    };
+                    break;
                 case "Illaoi":
                     champ = new[]
                     {
@@ -173,7 +188,7 @@ namespace PortAIO
                     champ = new[]
                     {
                         "OKTW", "EzAIO", "ADCPackage", "GENESIS Jinx", "SharpShooter", "xSalice", "[SDK] ExorAIO",
-                        "MightyAIO"
+                        "MightyAIO","Nicky.Jinx"
                     };
                     break;
                 case "Kalista":
@@ -189,7 +204,7 @@ namespace PortAIO
                     };
                     break;
                 case "Katarina":
-                    champ = new[] { "NoobAIO"/*"StormAIO"*/ };
+                    champ = new[] { "NoobAIO"/*"StormAIO"*/,"Nicky.Katarina" };
                     break;
                 case "Kayn":
                     champ = new[] { "NoobAIO" };
@@ -215,8 +230,11 @@ namespace PortAIO
                         "Z.Aio"
                     };
                     break;
-                case "Lillia":
+                /*case "Lillia":
                     champ = new string[] { "MightyAIO" };
+                    break;*/
+                case "Lissandra":
+                    champ = new string[] { "OlympusAIO" };
                     break;
                 case "Lucian":
                     champ = new[]
@@ -245,13 +263,19 @@ namespace PortAIO
                 case "Morgana":
                     champ = new string[]
                     {
-                        "Easy_Sup"
+                        "Easy_Sup","Danz0r AIO"
                     };
                     break;
                 case "Neeko":
                     champ = new[]
                     {
                         "Entropy.AIO"
+                    };
+                    break;
+                case "Poppy":
+                    champ = new[]
+                    {
+                        "OlympusAIO"
                     };
                     break;
                 case "Pyke":
@@ -301,6 +325,9 @@ namespace PortAIO
                 case "Taliyah":
                     champ = new string[] { "[SDK] ExorAIO" };
                     break;
+                case "Teemo":
+                    champ = new string[] { "OlympusAIO" };
+                    break;
                 case "Thresh":
                     champ = new[]
                     {
@@ -335,6 +362,12 @@ namespace PortAIO
                     champ = new[]
                     {
                         "OKTW", "SharpShooter", "hi im gosu", "[SDK] ExorAIO", "[SDK] Flowers' Series", "EzAIO"
+                    };
+                    break;
+                case "Veigar":
+                    champ = new[]
+                    {
+                        "Olympus.Veigar"
                     };
                     break;
                 case "Viktor":
@@ -407,6 +440,8 @@ namespace PortAIO
             dutility.Add(new MenuList("Tracker", "Which Tracker?", new[] { "NabbTracker", "Tracker#" }));
             dutility.Add(new MenuBool("enableEvade", "Enable Evade", false));
             dutility.Add(new MenuList("Evade", "Which Evade?", new[] { "Evade#" }));
+            dutility.Add(new MenuBool("enableSkinChanger", "Enable Skin Changer", false));
+            dutility.Add(new MenuList("SkinChanger", "Which Skin Changer?", new[] { "EnsoulSharp.SkinHack" }));
             //dutility.Add(new MenuBool("enablePredictioner", "Enable Predictioner", false));
             /*dutility.Add(new MenuList("Predictioner", "Which Predictioner?",
                 new[] {"SPredictioner", "OKTWPredictioner", "L#Predictioner"}));*/
