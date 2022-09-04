@@ -204,11 +204,11 @@ namespace Evade
                 new SpellData
                 {
                     ChampionName = "Aatrox",
-                    SpellName = "AatroxQ1",
+                    SpellName = "AatroxQ",
                     Slot = SpellSlot.Q,
                     Type = SkillShotType.SkillshotLine,
-                    Delay = 500,
-                    Range = 700,
+                    Delay = 600,
+                    Range = 600,
                     Radius = 90,
                     MissileSpeed = int.MaxValue,
                     FixedRange = false,
@@ -216,6 +216,41 @@ namespace Evade
                     DangerValue = 3,
                     IsDangerous = true,
                     SourceObjectName = "Aatrox_Base_Q_Indicator_01",
+                });
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Aatrox",
+                    SpellName = "AatroxQ2",
+                    Slot = SpellSlot.Q,
+                    Type = SkillShotType.SkillshotLine,
+                    Delay = 600,
+                    Range = 475,
+                    Radius = 350,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 3,
+                    IsDangerous = true,
+                    SourceObjectName = "Aatrox_Base_Q_Indicator_02",
+                });
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Aatrox",
+                    SpellName = "AatroxQ3",
+                    Slot = SpellSlot.Q,
+                    Type = SkillShotType.SkillshotCircle,
+                    Delay = 600,
+                    Range = 500,
+                    Radius = 300,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = false,
+                    AddHitbox = true,
+                    DangerValue = 3,
+                    IsDangerous = true,
+                    FollowCaster = true,
+                    SourceObjectName = "Aatrox_Base_Q_Indicator_03",
                 });
 
             Spells.Add(
