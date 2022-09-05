@@ -7,6 +7,7 @@ using EnsoulSharp.SDK.Utility;
 using StormAIO.utilities;
 using Color = System.Drawing.Color;
 using Menu = EnsoulSharp.SDK.MenuUI.Menu;
+using Render = LeagueSharpCommon.Render;
 
 namespace StormAIO.Champions
 {
@@ -408,8 +409,8 @@ namespace StormAIO.Champions
 
         private static void CastR()
         {
-          if (R.GetTarget() == null || !R.IsReady()) return;
-          if (R.GetTarget().HealthPercent > ComboMenu.RBool.ActiveValue) return;
+          if (R.GetTarget() == null || !R.IsReady() || !ComboMenu.RBool.Enabled) return;
+          if (R.GetTarget().HealthPercent <= ComboMenu.RBool.ActiveValue) return;
           var Rpre = R.GetPrediction(R.GetTarget());
           if (Rpre.Hitchance >= HitChance.High) R.Cast(Rpre.CastPosition);
         }

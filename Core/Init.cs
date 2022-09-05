@@ -266,15 +266,6 @@ namespace PortAIO
                     }
 
                     break;
-                case "Bard":
-                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
-                    {
-                        case 0: // OKTW
-                            Entropy.AIO.Program.Loads();
-                            break;
-                    }
-
-                    break;
                 case "Blitzcrank":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {

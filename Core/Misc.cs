@@ -66,12 +66,6 @@ namespace PortAIO
                         "OlympusAIO"
                     };
                     break;
-                case "Bard":
-                    champ = new string[]
-                    {
-                        "Entropy.AIO"
-                    };
-                    break;
                 case "Blitzcrank":
                     champ = new string[]
                     {
