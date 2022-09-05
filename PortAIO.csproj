@@ -500,6 +500,10 @@
     <Compile Include="Core\Champion Ports\Camille\hCamille\Extensions\Utilities.cs" />
     <Compile Include="Core\Champion Ports\Camille\hCamille\Program.cs" />
     <Compile Include="Core\Champion Ports\Camille\Lord's Camille\Program.cs" />
+    <Compile Include="Core\Champion Ports\Cassiopeia\Pentakill Cassiopeia\Controller\MenuController.cs" />
+    <Compile Include="Core\Champion Ports\Cassiopeia\Pentakill Cassiopeia\GameLogic.cs" />
+    <Compile Include="Core\Champion Ports\Cassiopeia\Pentakill Cassiopeia\Program.cs" />
+    <Compile Include="Core\Champion Ports\Cassiopeia\Pentakill Cassiopeia\Util\SpellDamage.cs" />
     <Compile Include="Core\Champion Ports\Gangplank\BadaoGangplank\BadaoChampion\BadaoGangplank\BadaoGangplank.cs" />
     <Compile Include="Core\Champion Ports\Gangplank\BadaoGangplank\BadaoChampion\BadaoGangplank\BadaoGangplankAuto.cs" />
     <Compile Include="Core\Champion Ports\Gangplank\BadaoGangplank\BadaoChampion\BadaoGangplank\BadaoGangplankBarrels.cs" />

@@ -410,14 +410,15 @@ namespace StormAIO.Champions
         private static void CastR()
         {
           if (R.GetTarget() == null || !R.IsReady() || !ComboMenu.RBool.Enabled) return;
-          if (R.GetTarget().HealthPercent <= ComboMenu.RBool.ActiveValue) return;
+          if (R.GetTarget().HealthPercent >= ComboMenu.RBool.ActiveValue) return;
           var Rpre = R.GetPrediction(R.GetTarget());
           if (Rpre.Hitchance >= HitChance.High) R.Cast(Rpre.CastPosition);
         }
 
         private static void CastUlt()
         {
-            if (R.GetTarget() == null || !ComboMenu.RCount.Enabled ) return;
+            if (R.GetTarget() == null || !ComboMenu.RCount.Enabled || !ComboMenu.RBool.Enabled ) return;
+            if (R.GetTarget().HealthPercent >= ComboMenu.RBool.ActiveValue) return;
             if (R.GetPrediction(R.GetTarget()).AoeTargetsHitCount < ComboMenu.RCount.ActiveValue)
                 R.Cast(R.GetTarget());
         }
