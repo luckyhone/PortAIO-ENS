@@ -35,7 +35,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Jax x2.
     - Jayce x2.
     - Jhin x4.
-    - Jinx x8.
+    - Jinx x9.
     - Kalista x7.
     - Karthus x5.
     - Katarina x2.
