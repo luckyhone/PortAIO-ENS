@@ -340,6 +340,9 @@ namespace PortAIO
                         case 2: // EntropyAIO
                             Entropy.AIO.Program.Loads();
                             break;
+                        case 3: // Pentakill Cassiopeia
+                            Pentakill_Cassiopeia.Program.Loads();
+                            break;
                     }
 
                     break;

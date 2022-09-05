@@ -18,7 +18,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Brand x1.
     - Caitlyn x6.
     - Camille x4.
-    - Cassiopeia x3.
+    - Cassiopeia x4.
     - Cho'Gath x2.
     - Corki x3.
     - Darius x3.
