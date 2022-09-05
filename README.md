@@ -11,8 +11,9 @@ Only scripts that have "[Listo]" written in the menu work.
     - Ahri x9.
     - Akali x3.
     - Alistar x1.
-    - Annie x2.
+    - Annie x3.
     - Ashe x5.
+    - Aurelion Sol x1.
     - Blitzcrank x3.
     - Brand x1.
     - Caitlyn x6.
@@ -23,30 +24,33 @@ Only scripts that have "[Listo]" written in the menu work.
     - Darius x3.
     - Draven x3.
     - Ekko x1.
+    - Evelynn x1.
     - Ezreal x4.
     - Fizz x1.
     - Gangplank x6.
     - Garen x1.
     - Graves x3.
+    - Heimerdinger x1.
     - Illaoi x4.
     - Jax x2.
     - Jayce x2.
     - Jhin x4.
     - Jinx x8.
     - Kalista x7.
-    - Karthus x4.
+    - Karthus x5.
     - Katarina x2.
     - Kayn x1.
     - Kindred x1.
     - Kog'Maw x2.
     - LeBlanc x1.
     - Leona x1.
-    - Lillia x1.
+    - Lissandra x1.
     - Lucian x7.
     - Lux x4.
     - Maokai x1.
     - Master Yi x1.
     - Morgana x2.
+    - Poppy x1.
     - Pyke x1.
     - Rengar x1.
     - Riven x1.
@@ -58,12 +62,14 @@ Only scripts that have "[Listo]" written in the menu work.
     - Soraka x1.
     - Syndra x2.
     - Taliyah x1.
+    - Teemo x1.
     - Thresh x4.
     - TwistedFate x3.
     - Twitch x4.
     - Urgot x1.
     - Varus x3.
     - Vayne x6.
+    - Veigar x1.
     - Viktor x3.
     - Vladimir x1.
     - Warwick x1.
@@ -92,7 +98,7 @@ Dual Utilities
         + Evade#.
 
     - SkinChanger:
-    
+
         + SkinHack.
 
 Standalone Utilitie
