@@ -51,7 +51,7 @@ namespace PortAIO
                 case "Annie":
                     champ = new string[]
                     {
-                        "OKTW", "Flowers' Annie"
+                        "OKTW", "Flowers' Annie","Olympus.Annie"
                     };
                     break;
                 case "Ashe":
@@ -200,7 +200,7 @@ namespace PortAIO
                 case "Karthus":
                     champ = new string[]
                     {
-                        "OKTW", "KimbaengKarthus", "Flowers' Karthus", "LyrdumAIO"
+                        "OKTW", "KimbaengKarthus", "Flowers' Karthus", "LyrdumAIO","Olympus.Karthus"
                     };
                     break;
                 case "Katarina":

@@ -230,6 +230,9 @@ namespace PortAIO
                         case 1: // Flower's Annie
                             Flowers__Annie.Program.Game_OnGameLoad();
                             break;
+                        case 2: // Olympus.Annie
+                            Olympus_Annie.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -639,6 +642,9 @@ namespace PortAIO
                             break;
                         case 3: // LyrdumAIO
                             LyrdumAIO.Program.Loads();
+                            break;
+                        case 4: // Olympus.Karthus
+                            Olympus_Karthus.Program.Loads();
                             break;
                     }
 
