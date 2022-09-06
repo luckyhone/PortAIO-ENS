@@ -57,6 +57,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Senna x1.
     - Shen x1.
     - Shyvana x1.
+    - Singed x1.
     - Sivir x3.
     - Skarner x1.
     - Soraka x1.
