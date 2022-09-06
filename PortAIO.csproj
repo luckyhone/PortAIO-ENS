@@ -566,6 +566,9 @@
     <Compile Include="Core\Champion Ports\Katarina\NickyKatarina\Nicky_Katarina.cs" />
     <Compile Include="Core\Champion Ports\Lux\M00NLUX\Program.cs" />
     <Compile Include="Core\Champion Ports\Morgana\Danz0r Morgana.cs" />
+    <Compile Include="Core\Champion Ports\Singed\ElSinged\Drawings.cs" />
+    <Compile Include="Core\Champion Ports\Singed\ElSinged\ElSingedMenu.cs" />
+    <Compile Include="Core\Champion Ports\Singed\ElSinged\Singed.cs" />
     <Compile Include="Core\Champion Ports\Syndra\BadaoSyndra\OrbManager.cs" />
     <Compile Include="Core\Champion Ports\Syndra\BadaoSyndra\Syndra.cs" />
     <Compile Include="Core\Champion Ports\Thresh\Slutty Thresh\MenuConfig.cs" />

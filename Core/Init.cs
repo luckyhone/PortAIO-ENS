@@ -871,6 +871,15 @@ namespace PortAIO
                     }
 
                     break;
+                case "Singed":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // ElSinged
+                            ElSinged.Singed.Game_OnGameLoad();
+                            break;
+                    }
+
+                    break;
                 case "Sivir":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {

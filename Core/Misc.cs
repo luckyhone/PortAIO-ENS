@@ -295,6 +295,12 @@ namespace PortAIO
                     champ = new string[]
                         { "NoobAIO" };
                     break;
+                case "Singed":
+                    champ = new[]
+                    {
+                        "ElSinged"
+                    };
+                    break;
                 case "Sivir":
                     champ = new string[]
                     {
