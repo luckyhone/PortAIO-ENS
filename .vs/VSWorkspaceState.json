@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\Core",
+    "\\Core\\Utility Ports",
+    "\\Core\\Utility Ports\\ElUtilitySuite",
+    "\\Core\\Utility Ports\\ElUtilitySuite\\Trackers",
+    "\\Properties",
+    "\\Resources",
+    "\\Resources\\ElUtility"
+  ],
+  "SelectedNode": "\\Resources\\ElUtility\\CD_summonersmite.png",
+  "PreviewInSolutionExplorer": false
+}
