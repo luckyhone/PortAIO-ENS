@@ -491,6 +491,10 @@
     <Compile Include="Core\Champion Ports\Annie\Flowers' Annie\MenuExtensions.cs" />
     <Compile Include="Core\Champion Ports\Annie\Flowers' Annie\Program.cs" />
     <Compile Include="Core\Champion Ports\Annie\Olympus_Annie\Annie.cs" />
+    <Compile Include="Core\Champion Ports\AurelionSol\Zypppy AurelionSol\AurelionSol.cs" />
+    <Compile Include="Core\Champion Ports\AurelionSol\Zypppy AurelionSol\GameObjects.cs" />
+    <Compile Include="Core\Champion Ports\AurelionSol\Zypppy AurelionSol\Invulnerable.cs" />
+    <Compile Include="Core\Champion Ports\AurelionSol\Zypppy AurelionSol\Program.cs" />
     <Compile Include="Core\Champion Ports\Caitlyn\Caitlyn_Master_Headshot\Program.cs" />
     <Compile Include="Core\Champion Ports\Caitlyn\SluttyCaitlyn\Program.cs" />
     <Compile Include="Core\Champion Ports\Camille\CamilleSharp\Evadeable.cs" />

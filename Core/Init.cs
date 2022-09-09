@@ -263,6 +263,9 @@ namespace PortAIO
                         case 0: // OlympusAIO
                             OlympusAIO.OlympusAIO.Loads();
                             break;
+                        case 1: // Zypppy
+                            Zypppy_AurelionSol.Program.GameEvents_GameStart();
+                            break;
                     }
 
                     break;

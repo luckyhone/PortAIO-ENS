@@ -63,7 +63,7 @@ namespace PortAIO
                 case "AurelionSol":
                     champ = new string[]
                     {
-                        "OlympusAIO"
+                        "OlympusAIO","Zypppy AurelionSol"
                     };
                     break;
                 case "Blitzcrank":
