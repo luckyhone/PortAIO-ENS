@@ -13,7 +13,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Alistar x1.
     - Annie x3.
     - Ashe x5.
-    - Aurelion Sol x1.
+    - Aurelion Sol x2.
     - Blitzcrank x3.
     - Brand x1.
     - Caitlyn x6.
