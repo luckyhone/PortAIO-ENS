@@ -283,7 +283,7 @@ namespace NoobAIO.Champions
                 {
                     if (sender.IsValidTarget(sender.AttackRange + sender.BoundingRadius + 100))
                     {
-                        q.Cast();
+                        q.CastOnUnit(sender);
                     }
                 }
 
@@ -292,7 +292,7 @@ namespace NoobAIO.Champions
                     if (args.EndPosition.DistanceToPlayer() <= 250 ||
                         sender.PreviousPosition.DistanceToPlayer() <= 300)
                     {
-                        q.Cast();
+                        q.CastOnUnit(sender);
                     }
                 }
 
@@ -300,7 +300,7 @@ namespace NoobAIO.Champions
                 {
                     if (sender.PreviousPosition.DistanceToPlayer() <= 300)
                     {
-                        q.Cast();
+                        q.CastOnUnit(sender);
                     }
                 }
             }
