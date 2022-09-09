@@ -138,13 +138,6 @@ namespace Nicky_Katarina
             DrawMenu.Add(Draws.DR);
             DrawMenu.Add(Draws.DaggerD);
             MenuKat.Add(DrawMenu);
-            //Flee
-            var FleeMenu = new Menu("flee", "Flee");
-            FleeMenu.Add(new MenuBool("fleew", "Use W to Flee"));
-            FleeMenu.Add(new MenuBool("fleee", "Use E to Flee"));
-            FleeMenu.Add(new MenuBool("dagger", "^- Use E on Daggers"));
-            //Loading
-            MenuKat.Add(FleeMenu);
             MenuKat.Attach();
             
             Game.Print("<font color = '#FFFFFF' > [Nicky -> Katarina]");
@@ -454,13 +447,13 @@ namespace Nicky_Katarina
                 }
                 if (GameObjects.Player.HasBuff("katarinarsound"))
                 {
-                    if (target.Distance(GameObjects.Player) >= R.Range - 100 && target != null && E.IsReady() && ComboKat.E.Enabled )
+                    if (target.Distance(GameObjects.Player) >= R.Range - 100 && E.IsReady() && ComboKat.E.Enabled )
                     {
                         GameObjects.Player.IssueOrder(GameObjectOrder.MoveTo, Game.CursorPos);
                         var dagger = ObjectManager.Get<AIBaseClient>().Where(a => a.Name == "HiddenMinion" && a.IsValid && !a.IsDead);
-                        foreach (var daggers in GameObjects.AllGameObjects)
+                        foreach (var daggers in GameObjects.AllGameObjects.Where(x=>x.Name == "HiddenMinion" && !x.IsDead && x.IsValid))
                         {
-                            if (daggers.Name == "HiddenMinion" && !daggers.IsDead && daggers.IsValid && E.IsReady())
+                            if (E.IsReady())
                             {
                                 if (target.Distance(daggers) < 450 &&
                                     target.IsValidTarget(E.Range) && E.IsReady())
@@ -481,7 +474,7 @@ namespace Nicky_Katarina
                                     E.Cast(target.Position.Extend(GameObjects.Player.Position, -50));
                                 }
                             }
-                            if (dagger.Count() == 0)
+                            if (!dagger.Any())
                             {
 
                                 E.Cast(target.Position.Extend(GameObjects.Player.Position, -50));
@@ -493,9 +486,9 @@ namespace Nicky_Katarina
                     {
 
                         var dagger = ObjectManager.Get<AIBaseClient>().Where(a => a.Name == "HiddenMinion" && a.IsValid && !a.IsDead);
-                        foreach (var daggers in GameObjects.AllGameObjects)
+                        foreach (var daggers in GameObjects.AllGameObjects.Where(x=>x.Name == "HiddenMinion" && !x.IsDead && x.IsValid))
                         {
-                            if (daggers.Name == "HiddenMinion" && !daggers.IsDead && daggers.IsValid && E.IsReady())
+                            if (E.IsReady())
                             {
                                 GameObjects.Player.IssueOrder(GameObjectOrder.MoveTo, Game.CursorPos);
                                 if (ComboKat.E.Enabled)
@@ -521,18 +514,16 @@ namespace Nicky_Katarina
                                     }
                                 }
 
-                                if (dagger.Count() == 0 && E.IsReady())
+                                if (!dagger.Any() && E.IsReady())
                                 {
                                     Player.IssueOrder(GameObjectOrder.MoveTo, Game.CursorPos);
                                     E.Cast(target.Position.Extend(GameObjects.Player.Position, -50));
                                 }
                             }
 
-                            if (target.IsValidTarget(Q.Range) && Q.IsReady() && ComboKat.Q.Enabled)
-                            {
-                                Player.IssueOrder(GameObjectOrder.MoveTo, Game.CursorPos);
-                                Q.CastOnUnit(target);
-                            }
+                            if (!target.IsValidTarget(Q.Range) || !Q.IsReady() || !ComboKat.Q.Enabled) continue;
+                            Player.IssueOrder(GameObjectOrder.MoveTo, Game.CursorPos);
+                            Q.CastOnUnit(target);
 
                         }
 
