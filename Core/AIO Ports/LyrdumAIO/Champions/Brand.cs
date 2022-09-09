@@ -60,6 +60,7 @@ namespace LyrdumAIO.Champions
 
             var menuRR = new Menu("semiR", "☠ 𝐒𝐄𝐌𝐈 𝐊𝐄𝐘𝐒");
             menuRR.Add(new MenuKeyBind("farm", "Lane Clear spells", Keys.Select, KeyBindType.Toggle));
+            menuRR.Add(new MenuKeyBind("SemiR", "Semi R Key", Keys.T, KeyBindType.Press));
 
             var menuK = new Menu("skinslide", "🤖 𝐒𝐊𝐈𝐍 𝐂𝐇𝐀𝐍𝐆𝐄𝐑 ");
             menuK.Add(new MenuSliderButton("skin", "SkinID", 0, 0, 20, false));
@@ -192,6 +193,7 @@ namespace LyrdumAIO.Champions
             if (Q.IsReady())
             {
                 var target = Q.GetTarget(); ;
+                if(target == null) return;
                 var input = Q.GetPrediction(target);
 
                 if (!target.IsValidTarget(Q.Range))
@@ -218,6 +220,7 @@ namespace LyrdumAIO.Champions
             if (W.IsReady())
             {
                 var target = W.GetTarget();
+                if(target == null) return;
                 var input = W.GetPrediction(target, true);
 
                 if (!target.IsValidTarget(W.Range))
@@ -234,7 +237,9 @@ namespace LyrdumAIO.Champions
         {
             if (E.IsReady())
             {
-                var target = E.GetTarget(); ;
+                var target = E.GetTarget(); 
+                if(target == null) return;
+
 
                 if (!target.IsValidTarget(E.Range))
                     return;
@@ -248,7 +253,8 @@ namespace LyrdumAIO.Champions
             if (R.IsReady())
             {
                 var target = R.GetTarget(R.Range);
-
+                
+                if(target == null) return;
                 
                 if (target.CountEnemyHeroesInRange(600f) > 0 && target.InRange(R.Range))
                 {
