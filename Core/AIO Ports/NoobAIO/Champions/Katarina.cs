@@ -48,18 +48,18 @@ namespace NoobAIO.Champions
             Menu.Add(harassMenu);
 
             // Lane clear
-            var laneclearMenu = new Menu("Clear", "Farming")
+            /*var laneclearMenu = new Menu("Clear", "Farming")
             {
                 new MenuSeparator("Head1", "Lane Clear"),
                 new MenuBool("laneclearQ", "Use Q"),
-                new MenuBool("laneclearW", "Use W"),
+                //new MenuBool("laneclearW", "Use W"),
                 new MenuBool("laneclearE", "Use E"),
                 new MenuSeparator("Head2", "Jungle Clear"),
                 new MenuBool("jungleclearQ", "Use Q"),
                 new MenuBool("jungleclearW", "Use W"),
-                new MenuBool("jungleclearE", "Use E")
+                //new MenuBool("jungleclearE", "Use E")
             };
-            Menu.Add(laneclearMenu);
+            Menu.Add(laneclearMenu);*/
 
             // Kill steal
             var killstealMenu = new Menu("KillSteal", "Kill Steal")
@@ -222,50 +222,14 @@ namespace NoobAIO.Champions
                             }
                             foreach (var daggers in GameObjects.AllGameObjects)
                             {
-                                if (!SaveE)
+                                
+                                if (daggers.Name == "HiddenMinion" && !daggers.IsDead && daggers.IsValid)
                                 {
-                                    if (daggers.Name == "HiddenMinion" && !daggers.IsDead && daggers.IsValid)
+                                    if (target.Distance(daggers) < 450 && target.IsValidTarget(e.Range))
                                     {
-                                        if (target.Distance(daggers) < 450 && target.IsValidTarget(e.Range))
-                                        {
-                                            e.Cast(daggers.Position.Extend(target.Position, 200));
-                                        }
-                                        else
-                                        {
-                                            if (eMode.Index == 0)
-                                            {
-                                                e.Cast(target.Position.Extend(Player.Position, -50));
-                                            }
-                                            else if (eMode.Index == 1)
-                                            {
-                                                e.Cast(target.Position.Extend(Player.Position, 50));
-                                            }
-                                        }
-                                        if (daggers.Distance(Player) > e.Range)
-                                        {
-                                            if (eMode.Index == 0)
-                                            {
-                                                e.Cast(target.Position.Extend(Player.Position, -50));
-                                            }
-                                            else if (eMode.Index == 1)
-                                            {
-                                                e.Cast(target.Position.Extend(Player.Position, 50));
-                                            }
-                                        }
-                                        if (daggers.Distance(target) > 450)
-                                        {
-
-                                            if (eMode.Index == 0)
-                                            {
-                                                e.Cast(target.Position.Extend(Player.Position, -50));
-                                            }
-                                            else if (eMode.Index == 1)
-                                            {
-                                                e.Cast(target.Position.Extend(Player.Position, 50));
-                                            }
-                                        }
+                                        e.Cast(daggers.Position.Extend(target.Position, 200));
                                     }
-                                    if (!Daggers.Any())
+                                    else
                                     {
                                         if (eMode.Index == 0)
                                         {
@@ -274,27 +238,6 @@ namespace NoobAIO.Champions
                                         else if (eMode.Index == 1)
                                         {
                                             e.Cast(target.Position.Extend(Player.Position, 50));
-                                        }
-                                    }
-                                }
-                                if (SaveE)
-                                {
-                                    if (daggers.Name == "HiddenMinion" && !daggers.IsDead && daggers.IsValid)
-                                    {
-                                        if (target.Distance(daggers) < 450 && target.IsValidTarget(e.Range))
-                                        {
-                                            e.Cast(daggers.Position.Extend(target.Position, 200));
-                                        }
-                                        else
-                                        {
-                                            if (eMode.Index == 0)
-                                            {
-                                                e.Cast(target.Position.Extend(Player.Position, -50));
-                                            }
-                                            else if (eMode.Index == 1)
-                                            {
-                                                e.Cast(target.Position.Extend(Player.Position, 50));
-                                            }
                                         }
                                     }
                                 }
@@ -478,7 +421,6 @@ namespace NoobAIO.Champions
         }
         private static void DoLaneclear()
         {
-
         }
         private static void Active()
         {            
