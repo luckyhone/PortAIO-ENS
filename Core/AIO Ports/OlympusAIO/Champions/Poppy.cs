@@ -127,9 +127,9 @@ namespace OlympusAIO.Champions
                 if (sender.IsMe || sender.IsAlly || objPlayer.IsDead)
                     return;
 
-                if (MenuManager.MiscGapcloserMenu["W"].GetValue<MenuBool>().Enabled && SpellManager.E.IsReady() && sender.IsFacing(objPlayer) && sender.IsValidTarget(SpellManager.E.Range))
+                if (MenuManager.MiscGapcloserMenu["W"].GetValue<MenuBool>().Enabled && SpellManager.W.IsReady() && sender.IsFacing(objPlayer) && sender.IsValidTarget(SpellManager.E.Range))
                 {
-                    SpellManager.E.CastOnUnit(sender);
+                    SpellManager.W.Cast();
                 }
             }
         }
@@ -321,12 +321,7 @@ namespace OlympusAIO.Champions
 
                     if (firstMob != null && firstMob.IsValidTarget(SpellManager.Q.Range))
                     {
-                        var getPrediction = SpellManager.Q.GetPrediction(firstMob, true);
-
-                        if (getPrediction.Hitchance >= HitChance.Medium)
-                        {
-                            SpellManager.Q.Cast(getPrediction.CastPosition);
-                        }
+                        SpellManager.Q.Cast(firstMob.Position);
                     }
                 }
                 if (MenuManager.JungleClearMenu["E"].GetValue<MenuBool>().Enabled && SpellManager.E.IsReady())
