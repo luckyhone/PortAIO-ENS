@@ -281,7 +281,7 @@ namespace PortAIO
                 case "Brand":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
-                        case 14: // LyrdumAIO
+                        case 0: // LyrdumAIO
                             LyrdumAIO.Program.Loads();
                             break;
                     }
