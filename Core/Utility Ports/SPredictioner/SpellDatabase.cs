@@ -4162,6 +4162,23 @@ namespace SPredictioner
                     IsDangerous = false,
                     MissileSpellName = "ZacQ",
                 });
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "Zac",
+                    SpellName = "ZacR",
+                    Slot = SpellSlot.Q,
+                    Type = SpellType.Line,
+                    Delay = 500,
+                    Range = 550,
+                    Radius = 120,
+                    MissileSpeed = int.MaxValue,
+                    FixedRange = true,
+                    AddHitbox = true,
+                    DangerValue = 2,
+                    IsDangerous = false,
+                    MissileSpellName = "ZacR",
+                });
 
             #endregion Zac
 

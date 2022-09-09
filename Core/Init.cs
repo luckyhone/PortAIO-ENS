@@ -63,8 +63,8 @@ namespace PortAIO
                     case 1: // Tracker#
                         Tracker.Program.Loads();
                         break;
-                    case 2: // Entropy.Awareness
-                        //Entropy.Awareness.Program.Loads();
+                    case 2: // ElUtilitySuite
+                        ElUtilitySuite.Entry.OnLoad();
                         break;
                 }
             }

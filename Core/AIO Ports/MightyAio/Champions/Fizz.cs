@@ -123,7 +123,7 @@ namespace MightyAio.Champions
             var miscMenu = new Menu("Misc", "Misc")
             {
                 new MenuBool("UseETower", "Dodge tower shots with E"),
-                new MenuSlider("setskin", "set skin", 14, 0, 15)
+                //new MenuSlider("setskin", "set skin", 14, 0, 15)
             };
             Menu.Add(miscMenu);
 
@@ -360,9 +360,9 @@ namespace MightyAio.Champions
                 Emote();
             }
 
-            var getskin = Menu["Misc"].GetValue<MenuSlider>("setskin").Value;
+            //var getskin = Menu["Misc"].GetValue<MenuSlider>("setskin").Value;
 
-            Player.SetSkin(getskin);
+            //Player.SetSkin(getskin);
             if (Player.HasItem(ItemId.Zhonyas_Hourglass) && Player.HealthPercent < 20) Player.UseItem(3157);
 
             foreach (
@@ -569,7 +569,7 @@ namespace MightyAio.Champions
                 if (minion.IsValidTarget(E.Range) &&
                     Efarmpos.MinionsHit >= 3 && laneE.Count >= 3 &&
                     Player.Spellbook.GetSpell(SpellSlot.E).Name == "FizzE" && usee)
-                    E.Cast(minion);
+                    E.Cast(minion.Position);
             }
 
             foreach (var jgl in allJgl)
@@ -584,7 +584,7 @@ namespace MightyAio.Champions
                 if (jgl.IsValidTarget(E.Range) &&
                     jfarmpos.MinionsHit >= 3 && laneJ.Count >= 3 &&
                     Player.Spellbook.GetSpell(SpellSlot.E).Name == "FizzE")
-                    E.Cast(jgl);
+                    E.Cast(jgl.Position);
             }
         }
 

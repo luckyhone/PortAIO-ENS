@@ -94,6 +94,8 @@ Dual Utilities
 
         + Tracker#.
 
+        + ElUtilitySuite
+
     - Evade:
 
         + Evade#.

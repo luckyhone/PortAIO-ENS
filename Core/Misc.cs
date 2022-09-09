@@ -437,7 +437,7 @@ namespace PortAIO
 
             var dutility = new Menu("Utilitiesports", "Dual-Utilities");
             dutility.Add(new MenuBool("enableTracker", "Enable Tracker", false));
-            dutility.Add(new MenuList("Tracker", "Which Tracker?", new[] { "NabbTracker", "Tracker#" }));
+            dutility.Add(new MenuList("Tracker", "Which Tracker?", new[] { "NabbTracker", "Tracker#","ElUtilitySuite" }));
             dutility.Add(new MenuBool("enableEvade", "Enable Evade", false));
             dutility.Add(new MenuList("Evade", "Which Evade?", new[] { "Evade#" }));
             dutility.Add(new MenuBool("enableSkinChanger", "Enable Skin Changer", false));
