@@ -1161,7 +1161,7 @@ namespace PortAIO
                 case "Zoe":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
-                        case 0: // Korean Zed
+                        case 0: // MightyAIO
                             MightyAio.Program.Loads();
                             break;
                     }
