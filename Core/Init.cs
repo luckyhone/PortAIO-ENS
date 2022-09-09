@@ -658,15 +658,6 @@ namespace PortAIO
                     }
 
                     break;
-                case "Kayn":
-                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
-                    {
-                        case 0: // NoobAIO
-                            NoobAIO.Program.Loads();
-                            break;
-                    }
-
-                    break;
                 case "Kindred":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {

@@ -39,7 +39,6 @@ Only scripts that have "[Listo]" written in the menu work.
     - Kalista x7.
     - Karthus x5.
     - Katarina x2.
-    - Kayn x1.
     - Kindred x1.
     - Kog'Maw x2.
     - LeBlanc x1.

@@ -200,9 +200,6 @@ namespace PortAIO
                 case "Katarina":
                     champ = new[] { "NoobAIO"/*"StormAIO"*/,"Nicky.Katarina" };
                     break;
-                case "Kayn":
-                    champ = new[] { "NoobAIO" };
-                    break;
                 case "Kindred":
                     champ = new string[]
                     {

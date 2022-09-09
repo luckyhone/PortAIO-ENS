@@ -39,9 +39,6 @@ namespace NoobAIO
                 case "Katarina":
                     new Katarina();
                     break;
-                case "Kayn":
-                    new Kayn();
-                    break;
                 /*case "Poppy":
                     new Kayn();
                     break;*/
