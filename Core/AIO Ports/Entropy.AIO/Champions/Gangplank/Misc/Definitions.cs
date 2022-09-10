@@ -10,10 +10,12 @@ namespace Entropy.AIO.Gangplank.Misc
         public static float ExplosionRadius = 355f;
         public static float ChainRadius     = 690f;
 
+        private static AIHeroClient LocalPlayer => ObjectManager.Player;
+
         public static int LastQCast;
         public static int LastECast;
 
-        public static AIHeroClient Player => ObjectManager.Player;
+        public static AIHeroClient Player => LocalPlayer;
         //public static bool CanCastE => Game.TickCount - LastECast >= 250;
 
         public static float GetDecayRate()

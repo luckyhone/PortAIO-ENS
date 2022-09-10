@@ -5,11 +5,11 @@ using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.Utility;
 using Entropy.AIO.Bases;
 using Entropy.AIO.Gangplank.Misc;
-using Flowers_Karthus.Common;
 using Flowers_Viktor;
 using PortAIO.Library_Ports.Entropy.Lib.Geometry;
 using SharpDX;
 using static Entropy.AIO.Gangplank.Components;
+using Geometry = LeagueSharpCommon.Geometry.Geometry;
 
 namespace Entropy.AIO.Gangplank.Logics
 {
@@ -18,10 +18,10 @@ namespace Entropy.AIO.Gangplank.Logics
     {
         public static void DoCombo()
         {
-            /*if (Orbwalker.Is)
+            if (ObjectManager.Player.IsWindingUp)
             {
                 return;
-            }*/
+            }
 
             var target = TargetSelector.GetTarget(E.Range + Definitions.ExplosionRadius,DamageType.Physical);
             if (target == null)
@@ -100,7 +100,7 @@ namespace Entropy.AIO.Gangplank.Logics
                         {
                             //Try to set up the triple barrel ourselves.
                             if (ComboMenu.Triple.Enabled &&
-                                chainedBarrels.Any(x => x.Object.DistanceToPlayer() <= Q.Range &&
+                                chainedBarrels.Any(x => x.Object.Distance(Definitions.Player) <= Q.Range &&
                                                         x.TimeAt1HP - Environment.TickCount          <= 250     &&
                                                         E.Ammo                                > 1        &&
                                                         x.Object.Distance(target) <=
@@ -108,7 +108,7 @@ namespace Entropy.AIO.Gangplank.Logics
                                                         x.Object.Distance(target) > Definitions.ChainRadius) &&
                                 target.Distance(Definitions.Player) <= E.Range + Definitions.ExplosionRadius)
                             {
-                                var bestCastPos = ExtendEx.Extend(nearestBarrel.ServerPosition,
+                                var bestCastPos = Geometry.Extend(nearestBarrel.ServerPosition,
                                                                   target.Position,
                                                                   Definitions.ChainRadius - 5);
                                 BarrelManager.CastE(bestCastPos);
@@ -131,7 +131,8 @@ namespace Entropy.AIO.Gangplank.Logics
                                         }
                                         else if (nearestBarrel.CanAA                                          &&
                                                  nearestBarrel.Object.InAutoAttackRange(Definitions.Player) &&
-                                                 Orbwalker.CanAttack())
+                                                 Orbwalker.CanAttack()                                        &&
+                                                 !ObjectManager.Player.IsWindingUp)
                                         {
                                             Orbwalker.Attack(nearestBarrel.Object);
                                         }

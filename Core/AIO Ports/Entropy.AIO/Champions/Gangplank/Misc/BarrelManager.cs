@@ -5,6 +5,7 @@ using EnsoulSharp.SDK;
 using PortAIO.Library_Ports.Entropy.Lib.Geometry;
 using SharpDX;
 using static Entropy.AIO.Bases.ChampionBase;
+using static Entropy.AIO.Gangplank.Components;
 
 namespace Entropy.AIO.Gangplank.Misc
 {
@@ -21,17 +22,17 @@ namespace Entropy.AIO.Gangplank.Misc
 
         public static bool ShouldCastOnPosition(Vector3 position)
         {
-            return !CastedBarrels.Any(x => Vector3Extensions.Distance(x, position) <= 100);
+            return !CastedBarrels.Any(x => Vector3.Distance(x,position) <= 100);
         }
 
         public static bool BarrelWillHit(Barrel barrel, AIBaseClient target)
         {
-            return GameObjectExtensions.Distance(barrel.Object, target) <= Definitions.ExplosionRadius;
+            return Vector3.Distance(barrel.Object.Position,target.Position) <= Definitions.ExplosionRadius;
         }
 
         public static bool BarrelWillHit(Barrel barrel, Vector3 position)
         {
-            return GameObjectExtensions.Distance(barrel.Object, position) <= Definitions.ExplosionRadius;
+            return Vector3.Distance(barrel.Object.Position,position) <= Definitions.ExplosionRadius;
         }
 
         public static List<AIHeroClient> GetEnemiesInChainRadius(Barrel barrel, bool outsideExplosionRadius = true)
@@ -39,17 +40,17 @@ namespace Entropy.AIO.Gangplank.Misc
             if (outsideExplosionRadius)
             {
                 return GameObjects.EnemyHeroes.Where(x => x.IsValidTarget() &&
-                                                          GameObjectExtensions.Distance(barrel.Object, x) <=
+                                                          Vector3.Distance(barrel.Object.Position,x.Position) <=
                                                           Definitions.ChainRadius + Definitions.ExplosionRadius    &&
-                                                          GameObjectExtensions.Distance(barrel.Object, x) >= Definitions.ExplosionRadius &&
-                                                          GameObjectExtensions.Distance(x, Player)        <= E.Range).
+                                                          Vector3.Distance(barrel.Object.Position,x.Position) >= Definitions.ExplosionRadius &&
+                                                          Vector3.Distance(x.Position,Player.Position)        <= E.Range).
                                    ToList();
             }
 
             return GameObjects.EnemyHeroes.Where(x => x.IsValidTarget() &&
-                                                      GameObjectExtensions.Distance(barrel.Object, x) <=
+                                                      Vector3.Distance(barrel.Object.Position,x.Position) <=
                                                       Definitions.ChainRadius + Definitions.ExplosionRadius &&
-                                                      GameObjectExtensions.Distance(x, Player) <= E.Range).
+                                                      Vector3.Distance(x.Position,Player.Position) <= E.Range).
                                ToList();
         }
 
@@ -62,13 +63,13 @@ namespace Entropy.AIO.Gangplank.Misc
                 barrelsWillHit.AddRange(GetBarrelsThatWillHit(enemy));
             }
 
-            return barrelsWillHit.Distinct().OrderBy(x => GameObjectExtensions.Distance(x.Object, Player)).ToList();
+            return barrelsWillHit.Distinct().OrderBy(x => Vector3.Distance(x.Object.Position,Player.Position)).ToList();
         }
 
         public static List<Barrel> GetBarrelsThatWillHit(AIBaseClient target)
         {
-            return Barrels.Where(x => GameObjectExtensions.Distance(x.Object, target) <= Definitions.ExplosionRadius).
-                           OrderBy(x => GameObjectExtensions.Distance(x.Object, Player)).
+            return Barrels.Where(x => Vector3.Distance(x.Object.Position,target.Position) <= Definitions.ExplosionRadius).
+                           OrderBy(x => Vector3.Distance(x.Object.Position,Player.Position)).
                            ToList();
         }
 
@@ -79,7 +80,7 @@ namespace Entropy.AIO.Gangplank.Misc
             while (true)
             {
                 var barrelToAdd = Barrels.FirstOrDefault(x => !x.Object.IsDead &&
-                                                              GameObjectExtensions.Distance(x.Object, barrel.Object) <=
+                                                              Vector3.Distance(x.Object.Position,barrel.Object.Position) <=
                                                               Definitions.ChainRadius        &&
                                                               x.NetworkId != currentBarrelId &&
                                                               !barrels.Contains(x));
@@ -99,22 +100,22 @@ namespace Entropy.AIO.Gangplank.Misc
 
         public static Barrel GetBestBarrelToQ(List<Barrel> barrels)
         {
-            return barrels.Where(x => !x.Object.IsDead && x.CanQ && x.Object.InRange(Player, Q.Range)).
+            return barrels.Where(x => !x.Object.IsDead && x.CanQ && x.Object.IsInRange(Player, Q.Range)).
                            OrderBy(x => x.Created).
                            FirstOrDefault();
         }
 
         public static Barrel GetNearestBarrel()
         {
-            return Barrels.Where(x => !x.Object.IsDead && GameObjectExtensions.Distance(x.Object, Player) <= E.Range).
-                           OrderBy(x => GameObjectExtensions.Distance(x.Object, Player)).
+            return Barrels.Where(x => !x.Object.IsDead && Vector3.Distance(x.Object.Position,Player.Position) <= E.Range).
+                           OrderBy(x => Vector3.Distance(x.Object.Position,Player.Position)).
                            FirstOrDefault();
         }
 
         public static Barrel GetNearestBarrel(Vector3 position)
         {
-            return Barrels.Where(x => !x.Object.IsDead && GameObjectExtensions.Distance(x.Object, Player) <= E.Range).
-                           OrderBy(x => GameObjectExtensions.Distance(x.Object, position)).
+            return Barrels.Where(x => !x.Object.IsDead && Vector3.Distance(x.Object.Position,Player.Position) <= E.Range).
+                           OrderBy(x => Vector3.Distance(x.Object.Position,position)).
                            FirstOrDefault();
         }
 
@@ -125,10 +126,10 @@ namespace Entropy.AIO.Gangplank.Misc
             //var pred = PredictionZ.GetPrediction(input);
             var pred         = E.GetPrediction(target);
             var castPosition = pred.CastPosition;
-            if (Components.ComboMenu.EMax.Enabled &&
+            if (ComboMenu.EMax.Enabled &&
                 DistanceEx.Distance(barrel.Object, castPosition) <= Definitions.ChainRadius + Definitions.ExplosionRadius)
             {
-                var bestCastPos = ExtendEx.Extend(barrel.ServerPosition,
+                var bestCastPos = LeagueSharpCommon.Geometry.Geometry.Extend(barrel.ServerPosition,
                                                   usePred ? castPosition : target.Position,
                                                   Definitions.ChainRadius - 5);
                 return bestCastPos;
@@ -141,7 +142,7 @@ namespace Entropy.AIO.Gangplank.Misc
 
             if (DistanceEx.Distance(barrel.Object, castPosition) <= Definitions.ChainRadius + Definitions.ExplosionRadius)
             {
-                var bestCastPos = ExtendEx.Extend(barrel.ServerPosition,
+                var bestCastPos = LeagueSharpCommon.Geometry.Geometry.Extend(barrel.ServerPosition,
                                                   usePred ? castPosition : target.Position,
                                                   Definitions.ChainRadius - 5);
                 return bestCastPos;
@@ -152,14 +153,14 @@ namespace Entropy.AIO.Gangplank.Misc
 
         public static Vector3 GetBestChainPosition(Vector3 position, Barrel barrel)
         {
-            if (GameObjectExtensions.Distance(barrel.Object, position) <= Definitions.ChainRadius)
+            if (Vector3.Distance(barrel.Object.Position,position) <= Definitions.ChainRadius)
             {
                 return position;
             }
 
-            if (GameObjectExtensions.Distance(barrel.Object, position) <= Definitions.ChainRadius + Definitions.ExplosionRadius)
+            if (Vector3.Distance(barrel.Object.Position,position) <= Definitions.ChainRadius + Definitions.ExplosionRadius)
             {
-                var bestCastPos = ExtendEx.Extend(barrel.ServerPosition, position, Definitions.ChainRadius - 5);
+                var bestCastPos = LeagueSharpCommon.Geometry.Geometry.Extend(barrel.ServerPosition, position, Definitions.ChainRadius - 5);
                 return bestCastPos;
             }
 

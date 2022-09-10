@@ -26,7 +26,7 @@ namespace Entropy.AIO.Gangplank.Misc
         public float   Health         => Object.Health;
         public Vector3 Position       => Object.Position;
         public Vector3 ServerPosition => Object.Position;
-        public uint    NetworkId      => (uint)Object.NetworkId;
+        public int    NetworkId      => Object.NetworkId;
 
         public float CanQTime =>
             TimeAt1HP - 250f - Definitions.DistanceFrom(Object) / 2000f * 1000 + Game.Ping * 1.5f;
@@ -46,7 +46,7 @@ namespace Entropy.AIO.Gangplank.Misc
 
         public void Decay(int delay)
         {
-            DelayAction.Add(delay, Decay);
+            DelayAction.Add(delay,Decay);
         }
 
         public static implicit operator Barrel(GameObject barrel)
