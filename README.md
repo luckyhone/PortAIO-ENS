@@ -27,7 +27,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Evelynn x1.
     - Ezreal x4.
     - Fizz x1.
-    - Gangplank x6.
+    - Gangplank x7.
     - Garen x1.
     - Graves x3.
     - Heimerdinger x1.
@@ -68,7 +68,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Twitch x4.
     - Urgot x1.
     - Varus x3.
-    - Vayne x6.
+    - Vayne x7.
     - Veigar x1.
     - Viktor x3.
     - Vladimir x1.
