@@ -170,6 +170,7 @@ namespace Evade
 
             Menu.Add(
                 new MenuKeyBind("Enabled", "Enabled",Keys.K, KeyBindType.Toggle, true)).AddPermashow( "Evade");
+            Menu.Add(new MenuKeyBind("dontDodge","Dont dodge key",Keys.Z,KeyBindType.Press)).AddPermashow();
 
             Menu.Add(
                 new MenuKeyBind("OnlyDangerous", "Dodge only dangerous",Keys.Space, KeyBindType.Press)).AddPermashow();

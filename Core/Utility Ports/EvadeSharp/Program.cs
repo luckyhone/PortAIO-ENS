@@ -627,7 +627,7 @@ namespace Evade
             }
 
             //Evading disabled
-            if (!Config.Menu["Enabled"].GetValue<MenuKeyBind>().Active)
+            if (!Config.Menu["Enabled"].GetValue<MenuKeyBind>().Active || Config.Menu["dontDodge"].GetValue<MenuKeyBind>().Active)
             {
                 Evading = false;
                 return;
@@ -849,7 +849,7 @@ namespace Evade
             }
 
             //Evading disabled
-            if (!Config.Menu["Enabled"].GetValue<MenuKeyBind>().Active)
+            if (!Config.Menu["Enabled"].GetValue<MenuKeyBind>().Active || Config.Menu["dontDodge"].GetValue<MenuKeyBind>().Active)
                 return;
 
             if (EvadeSpellDatabase.Spells.Any(evadeSpell => evadeSpell.Name == "Walking" && !evadeSpell.Enabled))
@@ -1460,8 +1460,8 @@ namespace Evade
             //Draw the polygon for each skillshot.
             foreach (var skillshot in DetectedSkillshots)
             {
-                skillshot.Draw((skillshot.Evade() && Config.Menu["Enabled"].GetValue<MenuKeyBind>().Active)
-                        ? Config.drawings["EnabledColor"].GetValue<MenuColor>().Color.ToSystemColor()
+                skillshot.Draw((skillshot.Evade() && (Config.Menu["Enabled"].GetValue<MenuKeyBind>().Active || !Config.Menu["dontDodge"].GetValue<MenuKeyBind>().Active) )
+            ? Config.drawings["EnabledColor"].GetValue<MenuColor>().Color.ToSystemColor()
                         : Config.drawings["DisabledColor"].GetValue<MenuColor>().Color.ToSystemColor(), missileColor.Color.ToSystemColor(), Border);
             }
 
