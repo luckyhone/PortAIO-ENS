@@ -110,13 +110,13 @@ namespace ElUtilitySuite.Vendor.SFX
                 {
                     Directory.CreateDirectory(CacheDir);
                 }
-                Console.WriteLine(Game.Version);
+                //Console.WriteLine(Game.Version);
                 string path = Path.Combine(CacheDir, $"1{Game.Version.Substring(0, 4)}");
                 if (!Directory.Exists(path))
                 {
                     Directory.CreateDirectory(path);
                 }
-                Console.WriteLine(Game.Version);
+                //Console.WriteLine(Game.Version);
                 path = Path.Combine(path, uniqueId);
                 if (!Directory.Exists(path))
                 {

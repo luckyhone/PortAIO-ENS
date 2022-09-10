@@ -89,7 +89,7 @@ namespace ElUtilitySuite.Trackers
             var predicate = new Func<Menu, bool>(x => x.Name == "Trackers");
             var menu = rootMenu.Components.All(x => x.Key != "Trackers")
                 ? rootMenu.Add(new Menu("Trackers", "Trackers"))
-                : rootMenu["Trackers"].Parent;
+                : rootMenu["healthbuilding"].Parent;;
 
             var ssMenu = menu.Add(new Menu("lastpostracker","Last position tracker"));
             {
@@ -357,7 +357,7 @@ namespace ElUtilitySuite.Trackers
                             lp.LastSeen = Game.Time;
                         }
                     }
-                    if (!lp.Hero.IsHPBarRendered && !lp.Hero.IsDead)
+                    if (!lp.Hero.IsVisible && !lp.Hero.IsDead)
                     {
                         var pos = lp.Teleported ? this.spawnPoint : lp.LastPosition;
                         var mpPos = Drawing.WorldToMinimap(pos);

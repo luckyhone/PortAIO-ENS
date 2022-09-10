@@ -81,7 +81,7 @@ namespace ElUtilitySuite.Trackers
         {
             var predicate = new Func<Menu, bool>(x => x.Name == "Trackers");
             var menu = rootMenu.Components.All(x => x.Key == "Trackers")
-                           ? rootMenu["Trackers"].Parent
+                           ? rootMenu["healthbuilding"].Parent
                            : rootMenu.Add(new Menu("Trackers", "Trackers"));
 
             var enemySidebarMenu =
