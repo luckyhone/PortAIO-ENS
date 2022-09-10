@@ -136,7 +136,7 @@ namespace PortAIO
                 case "Gangplank":
                     champ = new[]
                     {
-                        "BadaoGangplank", "Bangplank", "BePlank", "e.Motion Gangplank", "GangplankBuddy", "Entropy.AIO"
+                        "BadaoGangplank", "Bangplank", "BePlank", "e.Motion Gangplank", "GangplankBuddy", "Entropy.AIO","Perplexed Gangplank"
                     };
                     break;
                 case "Garen":
@@ -358,7 +358,7 @@ namespace PortAIO
                 case "Vayne":
                     champ = new[]
                     {
-                        "OKTW", "SharpShooter", "hi im gosu", "[SDK] ExorAIO", "[SDK] Flowers' Series", "EzAIO"
+                        "OKTW", "SharpShooter", "hi im gosu", "[SDK] ExorAIO", "[SDK] Flowers' Series", "EzAIO","hi im gosu Reborn"
                     };
                     break;
                 case "Veigar":

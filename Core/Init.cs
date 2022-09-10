@@ -469,6 +469,9 @@ namespace PortAIO
                         case 5: // Entropy.AIO
                             Entropy.AIO.Program.Loads();
                             break;
+                        case 6: // Perplexed Gangplank
+                            Perplexed_Gangplank.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -1032,6 +1035,9 @@ namespace PortAIO
                             break;
                         case 5: // EzAIO
                             EzAIO.Program.Loads();
+                            break;
+                        case 6: // hi im gosu Reborn
+                            hi_im_gosu_Reborn.Vayne.Loads();
                             break;
                     }
 
