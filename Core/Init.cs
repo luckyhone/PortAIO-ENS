@@ -269,15 +269,40 @@ namespace PortAIO
                     }
 
                     break;
+                /*case "Bard":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // FreshBooster
+                            FreshBooster.Program.Game_OnGameLoad();
+                            break;
+                    }
+
+                    break;*/
                 case "Blitzcrank":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
-                        case 0: // Z.Aio
+                        case 0: // Flower's Series
+                            Flowers_Series.Program.Loads();
+                            break;
+                        case 1: // Z.Aio
                             Z.aio.Program.Loads();
                             break;
-                        case 1: // Easy_Sup
+                        case 2: // Easy_Sup
                             Easy_Sup.Program.Loads();
                             break;
+                        case 3: // FreshBooster
+                            FreshBooster.Program.Game_OnGameLoad();
+                            break;
+                    }
+
+                    break;
+                case "Braum":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // FreshBooster
+                            FreshBooster.Program.Game_OnGameLoad();
+                            break;
+                        
                     }
 
                     break;

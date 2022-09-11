@@ -97,12 +97,12 @@
             {
                 var text = "";
 
-                if (Menu["Key"].GetValue<MenuKeyBind>().Active)
+                if (Menu["Blitzcrank_Key"].GetValue<MenuKeyBind>().Active)
                     text = "On";
-                if (!Menu["Key"].GetValue<MenuKeyBind>().Active)
+                if (!Menu["Blitzcrank_Key"].GetValue<MenuKeyBind>().Active)
                     text = "Off";
 
-                Drawing.DrawText(Me.HPBarPosition.X + 30, Me.HPBarPosition.Y - 40, System.Drawing.Color.Red, "Auto Q (" + Menu["Key"].GetValue<MenuKeyBind>().Key + "): ");
+                Drawing.DrawText(Me.HPBarPosition.X + 30, Me.HPBarPosition.Y - 40, System.Drawing.Color.Red, "Auto Q (" + Menu["Blitzcrank_Key"].GetValue<MenuKeyBind>().Key + "): ");
                 Drawing.DrawText(Me.HPBarPosition.X + 115, Me.HPBarPosition.Y - 40, System.Drawing.Color.Yellow, text);
             }
 

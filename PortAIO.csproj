@@ -305,6 +305,9 @@
     <Compile Include="Core\AIO Ports\Flowers' Series\Utility\Cleaness.cs" />
     <Compile Include="Core\AIO Ports\Flowers' Series\Utility\Humanizer.cs" />
     <Compile Include="Core\AIO Ports\Flowers' Series\Utility\TurnAround.cs" />
+    <Compile Include="Core\AIO Ports\FreshBooster\FreshCommon.cs" />
+    <Compile Include="Core\AIO Ports\FreshBooster\Loader.cs" />
+    <Compile Include="Core\AIO Ports\FreshBooster\Program.cs" />
     <Compile Include="Core\AIO Ports\LyrdumAIO\Champions\Brand.cs" />
     <Compile Include="Core\AIO Ports\LyrdumAIO\Champions\Cassiopeia.cs" />
     <Compile Include="Core\AIO Ports\LyrdumAIO\Champions\Karthus.cs" />
@@ -495,6 +498,9 @@
     <Compile Include="Core\Champion Ports\AurelionSol\Zypppy AurelionSol\GameObjects.cs" />
     <Compile Include="Core\Champion Ports\AurelionSol\Zypppy AurelionSol\Invulnerable.cs" />
     <Compile Include="Core\Champion Ports\AurelionSol\Zypppy AurelionSol\Program.cs" />
+    <Compile Include="Core\Champion Ports\Bard\FreshBooster Bard\Bard.cs" />
+    <Compile Include="Core\Champion Ports\Blitzcrank\FreshBooster Blitzcrank\Blitzcrank.cs" />
+    <Compile Include="Core\Champion Ports\Braum\FreshBooster Braum\Braum.cs" />
     <Compile Include="Core\Champion Ports\Caitlyn\Caitlyn_Master_Headshot\Program.cs" />
     <Compile Include="Core\Champion Ports\Caitlyn\SluttyCaitlyn\Program.cs" />
     <Compile Include="Core\Champion Ports\Camille\CamilleSharp\Evadeable.cs" />
@@ -1463,6 +1469,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Core\Champion Ports\Bard" />
     <Folder Include="Core\Utility Ports\ElUtilitySuite\Utility" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

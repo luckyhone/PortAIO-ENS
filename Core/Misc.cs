@@ -66,10 +66,22 @@ namespace PortAIO
                         "OlympusAIO","Zypppy AurelionSol"
                     };
                     break;
+                /*case "Bard":
+                    champ = new string[]
+                    {
+                        "FreshBooster"
+                    };
+                    break;*/
                 case "Blitzcrank":
                     champ = new string[]
                     {
-                        "[SDK] Flowers' Series", "Z.Aio", "Easy_Sup"
+                        "[SDK] Flowers' Series", "Z.Aio", "Easy_Sup","FreshBooster"
+                    };
+                    break;
+                case "Braum":
+                    champ = new string[]
+                    {
+                        "FreshBooster"
                     };
                     break;
                 case "Brand":
