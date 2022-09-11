@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using SharpDX;
@@ -20,6 +21,10 @@ namespace PortAIO.Library_Ports.Entropy.Lib.Constants
             }
 
             return 999f;
+        }
+        public static int EnemyMinionsCount(this AIBaseClient target, float range)
+        {
+            return GameObjects.EnemyMinions.Count(m => m.IsValidTarget(range));
         }
         public static Vector3 PosAfterTime(AIBaseClient unit, float time)
         {
