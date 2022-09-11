@@ -95,6 +95,23 @@ namespace Evade
                 SpellName = "6656Cast",
                 Type = SkillShotType.SkillshotMissileLine
             });
+            Spells.Add(
+                new SpellData
+                {
+                    ChampionName = "AllChampions",
+                    DangerValue = 2,
+                    MissileSpeed = 1500,
+                    Radius = 80,
+                    Range = 1600,
+                    Delay = 250,
+                    FixedRange = true,
+                    IsDangerous = true,
+                    AddHitbox = true,
+                    Slot = SpellSlot.Q,
+                    SpellName = "SummonerSnowball",
+                    MissileSpellName = "PoroSnowballMissile",
+                    Type = SkillShotType.SkillshotMissileLine
+                });
 
             Spells.Add(
             new SpellData

@@ -35,7 +35,7 @@ namespace DeveloperSharp
         {
             if (sender.IsMe)
             {
-                //Chat.Print("Detected Spell Name: " + args.SData.Name + " Missile Name: " + args.SData.MissileBoneName + " Issued By: " + sender.BaseSkinName);
+                //Game.Print("Detected Spell Name: " + args.SData.Name + " Missile Name: " + args.SData.Name + " Issued By: " + sender.CharacterName);
             }
         }
 
