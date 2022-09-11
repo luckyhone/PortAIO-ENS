@@ -14,8 +14,9 @@ Only scripts that have "[Listo]" written in the menu work.
     - Annie x3.
     - Ashe x5.
     - Aurelion Sol x2.
-    - Blitzcrank x3.
+    - Blitzcrank x5.
     - Brand x1.
+    - Braum x1.
     - Caitlyn x6.
     - Camille x4.
     - Cassiopeia x4.
