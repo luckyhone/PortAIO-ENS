@@ -254,6 +254,9 @@ namespace PortAIO
                         case 4: // StormAIO
                             StormAIO.Program.Loads();
                             break;
+                        case 5: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -334,6 +337,9 @@ namespace PortAIO
                         case 4: // ChallengerSeriesAIO
                             Challenger_Series.Program.Loads();
                             break;
+                        case 5: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -410,6 +416,9 @@ namespace PortAIO
                         case 2: // Flowers' Series
                             Flowers_Series.Program.Loads();
                             break;
+                        case 3: // Entropy.AIO
+                            Entropy.AIO.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -424,6 +433,9 @@ namespace PortAIO
                             break;
                         case 2: // Tyler1
                             Tyler1.Program.Loads();
+                            break;
+                        case 3: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
                             break;
                     }
 
@@ -590,6 +602,9 @@ namespace PortAIO
                         case 3: // SharpShooter
                             SharpShooter.MyLoader.Loads();
                             break;
+                        case 4: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -623,6 +638,9 @@ namespace PortAIO
                         case 8: // Nicky.Jinx
                             NickyJinx.Program.Loads();
                             break;
+                        case 9: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -649,6 +667,9 @@ namespace PortAIO
                             break;
                         case 6: // ChallengerSeriesAIO
                             Challenger_Series.Program.Loads();
+                            break;
+                        case 7: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
                             break;
                     }
 
@@ -770,6 +791,9 @@ namespace PortAIO
                         case 6: // StormAIO
                             StormAIO.Program.Loads();
                             break;
+                        case 7: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -835,6 +859,15 @@ namespace PortAIO
                     {
                         case 0: // OlympusAIO
                             OlympusAIO.OlympusAIO.Loads();
+                            break;
+                    }
+
+                    break;
+                case "Quinn":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
                             break;
                     }
 
@@ -914,6 +947,9 @@ namespace PortAIO
                         case 2: // Flowers' Series
                             Flowers_Series.Program.Loads();
                             break;
+                        case 3: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -983,6 +1019,16 @@ namespace PortAIO
                     }
 
                     break;
+                case "Tristana":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
+                            break;
+                        
+                    }
+
+                    break;
                 case "TwistedFate":
                     switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
                     {
@@ -1037,6 +1083,9 @@ namespace PortAIO
                         case 2: // Sharpshooter
                             SharpShooter.MyLoader.Loads();
                             break;
+                        case 3: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
+                            break;
                     }
 
                     break;
@@ -1063,6 +1112,9 @@ namespace PortAIO
                             break;
                         case 6: // hi im gosu Reborn
                             hi_im_gosu_Reborn.Vayne.Loads();
+                            break;
+                        case 7: // Hikicarry ADC
+                            HikiCarry.Program.Loads();
                             break;
                     }
 
