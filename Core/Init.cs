@@ -401,6 +401,12 @@ namespace PortAIO
                         case 1: // SharpShooter 
                             SharpShooter.MyLoader.Loads();
                             break;
+                        case 2: // ExorAIO
+                            ExorAIO.Program.Loads();
+                            break;
+                        case 3: // hikiMarksman
+                            hikiMarksmanRework.Program.Game_OnGameLoad();
+                            break;
                     }
 
                     break;
@@ -436,6 +442,9 @@ namespace PortAIO
                             break;
                         case 3: // Hikicarry ADC
                             HikiCarry.Program.Loads();
+                            break;
+                        case 4: // hikiMarksman
+                            hikiMarksmanRework.Program.Game_OnGameLoad();
                             break;
                     }
 
@@ -533,6 +542,9 @@ namespace PortAIO
                         case 2: // ExorAIO
                             ExorAIO.Program.Loads();
                             break;
+                        case 3: // hikiMarksman
+                            hikiMarksmanRework.Program.Game_OnGameLoad();
+                            break;
                     }
 
                     break;
@@ -559,6 +571,15 @@ namespace PortAIO
                             break;
                         case 3: // IllaoiSOH
                             IllaoiSOH.Program.Game_OnGameLoad();
+                            break;
+                    }
+
+                    break;
+                case "Irelia":
+                    switch (Misc.menu[ObjectManager.Player.CharacterName.ToString()].GetValue<MenuList>().Index)
+                    {
+                        case 0: // Entropy.AIO
+                            Entropy.AIO.Program.Loads();
                             break;
                     }
 
@@ -794,6 +815,9 @@ namespace PortAIO
                         case 7: // Hikicarry ADC
                             HikiCarry.Program.Loads();
                             break;
+                        case 8: // hikiMarksman
+                            hikiMarksmanRework.Program.Game_OnGameLoad();
+                            break;
                     }
 
                     break;
@@ -949,6 +973,9 @@ namespace PortAIO
                             break;
                         case 3: // Hikicarry ADC
                             HikiCarry.Program.Loads();
+                            break;
+                        case 4 : // hikiMarksman
+                            hikiMarksmanRework.Program.Game_OnGameLoad();
                             break;
                     }
 
@@ -1115,6 +1142,9 @@ namespace PortAIO
                             break;
                         case 7: // Hikicarry ADC
                             HikiCarry.Program.Loads();
+                            break;
+                        case 8: // hikiMarksman
+                            hikiMarksmanRework.Program.Game_OnGameLoad();
                             break;
                     }
 

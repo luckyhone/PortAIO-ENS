@@ -173,7 +173,7 @@ namespace HikiCarry.Champions
                         break;
                     case 1: // Circle
                         var circlepoly = new LeagueSharpCommon.Geometry.Geometry.Polygon.Circle(ObjectManager.Player.Position.Extend(Game.CursorPos, Utilities.Slider("catch.radius")), 
-                            Utilities.Slider("catch.radius"),100);
+                            Utilities.Slider("catch.radius"),50);
                         circlepoly.Draw(Color.Gold.ToSystemColor());
                         break;
                 }

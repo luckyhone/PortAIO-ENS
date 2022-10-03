@@ -14,7 +14,7 @@ namespace Entropy.AIO.General
 
         //Commit: ChampName:Description(day/month/year)
         //If more than 1 champ use NEW: Champion1, Champion2 Added!(day/month/year)
-        private const string Commit = "Added Darius! (11/09/2022)";
+        private const string Commit = "Added Irelia! (03/10/2022)";
 
         public static void Initialize()
         {

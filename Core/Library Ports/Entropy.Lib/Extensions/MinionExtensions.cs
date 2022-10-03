@@ -41,5 +41,9 @@ namespace PortAIO.Library_Ports.Entropy.Lib.Extensions
 
             return 999f;
         }
+        public static bool IsLaneMinion(this AIMinionClient minion)
+        {
+            return minion.Name.Contains("OrderMinion") || minion.Name.Contains("ChaosMinion");
+        }
     }
 }

@@ -21,18 +21,19 @@ Only scripts that have "[Listo]" written in the menu work.
     - Camille x4.
     - Cassiopeia x4.
     - Cho'Gath x2.
-    - Corki x3.
+    - Corki x4.
     - Darius x4.
-    - Draven x4.
+    - Draven x5.
     - Ekko x1.
     - Evelynn x1.
     - Ezreal x4.
     - Fizz x1.
     - Gangplank x7.
     - Garen x1.
-    - Graves x3.
+    - Graves x4.
     - Heimerdinger x1.
     - Illaoi x4.
+    - Irelia x1.
     - Jax x2.
     - Jayce x2.
     - Jhin x5.
@@ -45,7 +46,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - LeBlanc x1.
     - Leona x1.
     - Lissandra x1.
-    - Lucian x8.
+    - Lucian x9.
     - Lux x4.
     - Maokai x1.
     - Master Yi x1.
@@ -59,7 +60,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Shen x1.
     - Shyvana x1.
     - Singed x1.
-    - Sivir x4.
+    - Sivir x5.
     - Skarner x1.
     - Soraka x1.
     - Syndra x2.

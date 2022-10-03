@@ -112,7 +112,7 @@ namespace PortAIO
                 case "Corki":
                     champ = new string[]
                     {
-                        "OKTW", "SharpShooter", "[SDK] ExorAIO"
+                        "OKTW", "SharpShooter", "[SDK] ExorAIO","hikiMarksman"
                     };
                     break;
                 case "Darius":
@@ -124,7 +124,7 @@ namespace PortAIO
                 case "Draven":
                     champ = new[]
                     {
-                        "SharpShooter", "[SDK] ExorAIO", "[SDK] Tyler1.exe","Hikicarry ADC"
+                        "SharpShooter", "[SDK] ExorAIO", "[SDK] Tyler1.exe","Hikicarry ADC","hikiMarksman"
                     };
                     break;
                 case "Ekko":
@@ -160,7 +160,7 @@ namespace PortAIO
                 case "Graves":
                     champ = new string[]
                     {
-                        "OKTW", "SharpShooter", "[SDK] ExorAIO"
+                        "OKTW", "SharpShooter", "[SDK] ExorAIO","hikiMarksman"
                     };
                     break;
                 case "Heimerdinger":
@@ -173,6 +173,12 @@ namespace PortAIO
                     champ = new[]
                     {
                         "Tentacle Kitty", "[SDK] Flowers' Series", "[SDK] Kraken Priestess", "IllaoiSOH"
+                    };
+                    break;
+                case "Irelia":
+                    champ = new[]
+                    {
+                        "Entropy.AIO"
                     };
                     break;
                 case "Jax":
@@ -242,7 +248,7 @@ namespace PortAIO
                 case "Lucian":
                     champ = new[]
                     {
-                        "OKTW", "SharpShooter", "[SDK] ExorAIO", "Flowers' ADC Series", "EzAIO", "MightyAIO","StormAIO","Hikicarry ADC"
+                        "OKTW", "SharpShooter", "[SDK] ExorAIO", "Flowers' ADC Series", "EzAIO", "MightyAIO","StormAIO","Hikicarry ADC","hikiMarksman"
                     };
                     break;
                 case "Lux":
@@ -319,7 +325,7 @@ namespace PortAIO
                 case "Sivir":
                     champ = new string[]
                     {
-                        "OKTW", "SharpShooter", "[SDK] Flowers' Series","Hikicarry ADC"
+                        "OKTW", "SharpShooter", "[SDK] Flowers' Series","Hikicarry ADC","hikiMarksman"
                     };
                     break;
                 case "Skarner":
