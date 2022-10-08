@@ -1,4 +1,5 @@
 using EnsoulSharp;
+using EnsoulSharp.SDK.Rendering;
 
 namespace Nicky_Katarina
 {
@@ -617,16 +618,16 @@ namespace Nicky_Katarina
             }
             if (Draws.DQ.Enabled && Q.IsReady())
             {
-                Render.Circle.DrawCircle(GameObjects.Player.Position, Q.Range, Color.Red);
+                CircleRender.Draw(GameObjects.Player.Position, Q.Range, Color.Red.ToSharpDxColor());
             }
 
             if (Draws.DE.Enabled &&  E.IsReady())
             {
-                Render.Circle.DrawCircle(GameObjects.Player.Position, E.Range, Color.Crimson);
+                CircleRender.Draw(GameObjects.Player.Position, E.Range, Color.Crimson.ToSharpDxColor());
             }
             if (Draws.DR.Enabled &&  R.IsReady())
             {
-                Render.Circle.DrawCircle(GameObjects.Player.Position, R.Range, Color.Crimson);
+                CircleRender.Draw(GameObjects.Player.Position, R.Range, Color.Crimson.ToSharpDxColor());
             }
 
             if (Draws.DaggerD.Enabled)
@@ -637,13 +638,13 @@ namespace Nicky_Katarina
                     {
                         if (daggers.CountEnemyHeroesInRange(450) != 0)
                         {
-                            Render.Circle.DrawCircle(daggers.Position, 355, Color.LawnGreen);
-                            Render.Circle.DrawCircle(daggers.Position, 150, Color.LawnGreen);
+                            CircleRender.Draw(daggers.Position, 355, Color.LawnGreen.ToSharpDxColor());
+                            CircleRender.Draw(daggers.Position, 150, Color.LawnGreen.ToSharpDxColor());
                         }
                         if (daggers.CountEnemyHeroesInRange(450) == 0)
                         {
-                            Render.Circle.DrawCircle(daggers.Position, 355, Color.Red);
-                            Render.Circle.DrawCircle(daggers.Position, 150, Color.Red);
+                            CircleRender.Draw(daggers.Position, 355, Color.Red.ToSharpDxColor());
+                            CircleRender.Draw(daggers.Position, 150, Color.Red.ToSharpDxColor());
                         }
                     }
                 }

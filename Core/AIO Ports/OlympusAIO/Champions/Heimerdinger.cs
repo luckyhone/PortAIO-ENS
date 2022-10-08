@@ -6,6 +6,7 @@ using System.Text;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using EnsoulSharp.SDK.Utility;
 using Entropy.AIO.Bases;
 using SharpDX;
@@ -102,19 +103,19 @@ namespace OlympusAIO.Champions
 
                 if (MenuManager.SpellRangesMenu["QRange"].GetValue<MenuBool>().Enabled && SpellManager.Q.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, SpellManager.Q.Range , System.Drawing.Color.White);
+                    CircleRender.Draw(objPlayer.Position, SpellManager.Q.Range , Color.White);
                 }
                 if (MenuManager.SpellRangesMenu["WRange"].GetValue<MenuBool>().Enabled)
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, SpellManager.W.Range, System.Drawing.Color.DodgerBlue);
+                    CircleRender.Draw(objPlayer.Position, SpellManager.W.Range, Color.DodgerBlue);
                 }
                 if (MenuManager.SpellRangesMenu["ERange"].GetValue<MenuBool>().Enabled && SpellManager.E.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, SpellManager.E.Range, System.Drawing.Color.Azure);
+                    CircleRender.Draw(objPlayer.Position, SpellManager.E.Range, Color.Azure);
                 }
                 if (MenuManager.SpellRangesMenu["RRange"].GetValue<MenuBool>().Enabled && SpellManager.R.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, SpellManager.R.Range, System.Drawing.Color.Cyan);
+                    CircleRender.Draw(objPlayer.Position, SpellManager.R.Range, Color.Cyan);
                 }
             }
             public static void OnInterrupterSpell(AIHeroClient sender, Interrupter.InterruptSpellArgs args)

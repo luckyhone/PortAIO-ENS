@@ -1,7 +1,9 @@
 ﻿ using EnsoulSharp;
  using EnsoulSharp.SDK;
  using EnsoulSharp.SDK.MenuUI;
+ using EnsoulSharp.SDK.Rendering;
  using HERMES_Kalista.MyLogic.Others;
+ using SharpDX;
 
  namespace Flowers_Series.Plugings
 {
@@ -509,7 +511,7 @@
 
             if (Menu["Ashe_Draw"]["W"].GetValue<MenuBool>().Enabled && W.IsReady())
             {
-                Render.Circle.DrawCircle(Me.Position, W.Range, System.Drawing.Color.OrangeRed, 2);
+                CircleRender.Draw(Me.Position, W.Range, Color.OrangeRed, 2);
             }
 
             if (Menu["Ashe_Draw"]["Damage"].GetValue<MenuBool>().Enabled)

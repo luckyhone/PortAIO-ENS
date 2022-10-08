@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using EnsoulSharp.SDK.Rendering;
 
 namespace OneKeyToWin_AIO_Sebby.Champions
 {
@@ -201,12 +202,12 @@ namespace OneKeyToWin_AIO_Sebby.Champions
                 {
                     if (Q.IsReady())
                     {
-                        Render.Circle.DrawCircle(Player.Position, Q.Range, System.Drawing.Color.Cyan, 1);
+                        CircleRender.Draw(Player.Position, Q.Range, Color.Cyan, 1);
                     }
                 }
                 else
                 {
-                    Render.Circle.DrawCircle(Player.Position, Q.Range, System.Drawing.Color.Cyan, 1);
+                        CircleRender.Draw(Player.Position, Q.Range, Color.Cyan, 1);
                 }
             }
 
@@ -218,7 +219,7 @@ namespace OneKeyToWin_AIO_Sebby.Champions
                 {
                     if (Q.GetDamage(target) * 2 > target.Health)
                     {
-                        Render.Circle.DrawCircle(target.PreviousPosition, 200, System.Drawing.Color.Red);
+                        CircleRender.Draw(target.PreviousPosition, 200, Color.Red);
                         Drawing.DrawText(Drawing.Width * 0.1f, Drawing.Height * 0.4f, System.Drawing.Color.Red, "Full Q can kill: " + target.CharacterName + " have: " + target.Health + " hp");
                     }
                 }

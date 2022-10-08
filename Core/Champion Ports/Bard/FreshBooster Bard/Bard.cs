@@ -3,6 +3,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using Render = EnsoulSharp.SDK.Render;
 using Color = System.Drawing.Color;
 using static FreshBooster.FreshCommon;
@@ -112,13 +113,13 @@ namespace FreshBooster.Champion
             {
                 if (Player.IsDead) return;
                 if (_MainMenu["Bard_Draw_Q"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(Player.Position, _Q.Range, Color.White, 1);
+                    CircleRender.Draw(Player.Position, _Q.Range, Color.White.ToSharpDxColor(), 1);
                 if (_MainMenu["Bard_Draw_W"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(Player.Position, _W.Range, Color.White, 1);
+                    CircleRender.Draw(Player.Position, _W.Range, Color.White.ToSharpDxColor(), 1);
                 if (_MainMenu["Bard_Draw_E"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(Player.Position, _W.Range, Color.White, 1);
+                    CircleRender.Draw(Player.Position, _W.Range, Color.White.ToSharpDxColor(), 1);
                 if (_MainMenu["Bard_Draw_R"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(Player.Position, _R.Range, Color.White, 1);
+                    CircleRender.Draw(Player.Position, _R.Range, Color.White.ToSharpDxColor(), 1);
                 if (_MainMenu["Bard_Draw_R1"].GetValue<MenuBool>().Enabled)
                     LeagueSharpCommon.Utility.DrawCircle(Player.Position, _R.Range, Color.White, 1, 23, true);
                 var QTarget = TargetSelector.GetTarget(_Q.Range, DamageType.Magical);
@@ -126,7 +127,7 @@ namespace FreshBooster.Champion
                     Drawing.DrawCircle(QTarget.Position, 150,1, Color.Green);
                 if (_MainMenu["BardRKey"].GetValue<MenuKeyBind>().Active)
                 {
-                    Render.Circle.DrawCircle(Game.CursorPos, 340, Color.Aqua);
+                    CircleRender.Draw(Game.CursorPos, 340, Color.Aqua.ToSharpDxColor());
                     //Drawing.DrawCircle(Game.CursorPos, _R.Range, Color.AliceBlue);
                 }                
             }

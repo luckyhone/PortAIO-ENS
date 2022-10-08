@@ -7,12 +7,14 @@ using System.Text;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using EnsoulSharp.SDK.Utility;
 using Entropy.AIO.Bases;
 using SharpDX;
 
 using OlympusAIO.General;
 using OlympusAIO.Helpers;
+using Color = SharpDX.Color;
 using MenuManager = OlympusAIO.Helpers.MenuManager;
 
 namespace OlympusAIO.Champions
@@ -124,17 +126,17 @@ namespace OlympusAIO.Champions
 
                 if (MenuManager.SpellRangesMenu["QRange"].GetValue<MenuBool>().Enabled && SpellManager.Q.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, SpellManager.Q.Range, System.Drawing.Color.White);
+                    CircleRender.Draw(objPlayer.Position, SpellManager.Q.Range, Color.White);
                 }
                 if (MenuManager.SpellRangesMenu["RRange"].GetValue<MenuBool>().Enabled && SpellManager.R.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, SpellManager.R.Range, System.Drawing.Color.Cyan);
+                    CircleRender.Draw(objPlayer.Position, SpellManager.R.Range, Color.Cyan);
                 }
                 if (MenuManager.DrawingsMiscMenu["ShroomPos"].GetValue<MenuBool>().Enabled)
                 {
                     foreach (var place in Shrooms.Where(x => x.Position.IsOnScreen() && x.Position.DistanceToPlayer() <= 1600))
                     {
-                        Render.Circle.DrawCircle(place.Position, 80, Misc.IsShroomed(place.Position) ? System.Drawing.Color.Red : System.Drawing.Color.Lime);
+                        CircleRender.Draw(place.Position, 80, Misc.IsShroomed(place.Position) ? Color.Red : Color.Lime);
                     }
                 }
             }

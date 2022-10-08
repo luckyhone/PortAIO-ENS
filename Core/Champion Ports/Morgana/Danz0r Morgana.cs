@@ -4,6 +4,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using Entropy.AIO.Bases;
 using SPrediction;
 
@@ -806,22 +807,22 @@ namespace Danz0r_Morgana
 
             if (Qd.Enabled && q.IsReady() || comboQRange.Interacting)
             {
-                Render.Circle.DrawCircle(GameObjects.Player.Position, q.Range, Color.FromArgb(48, 120, 252), 1);
+                CircleRender.Draw(GameObjects.Player.Position, q.Range, Color.FromArgb(48, 120, 252).ToSharpDxColor(), 1);
             }
 
             if (Wd.Enabled && w.IsReady() || comboWRange.Interacting)
             {
-                Render.Circle.DrawCircle(GameObjects.Player.Position, w.Range, Color.FromArgb(120, 120, 252), 1);
+                CircleRender.Draw(GameObjects.Player.Position, w.Range, Color.FromArgb(120, 120, 252).ToSharpDxColor(), 1);
             }
 
             if (Ed.Enabled && e.IsReady() || comboERange.Interacting)
             {
-                Render.Circle.DrawCircle(GameObjects.Player.Position, e.Range, Color.FromArgb(120, 252, 252), 1);
+                CircleRender.Draw(GameObjects.Player.Position, e.Range, Color.FromArgb(120, 252, 252).ToSharpDxColor(), 1);
             }
 
             if (Rd.Enabled && r.IsReady() || comboRRange.Interacting)
             {
-                Render.Circle.DrawCircle(GameObjects.Player.Position, r.Range, Color.FromArgb(255, 10, 10), 1);
+                CircleRender.Draw(GameObjects.Player.Position, r.Range, Color.FromArgb(255, 10, 10).ToSharpDxColor(), 1);
 
             }
             

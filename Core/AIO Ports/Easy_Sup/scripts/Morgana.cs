@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnsoulSharp.SDK.Rendering;
 using Color = System.Drawing.Color;
 
 namespace Easy_Sup.scripts
@@ -196,8 +197,8 @@ namespace Easy_Sup.scripts
         {
             if (_q.IsReady())
             {
-                Render.Circle.DrawCircle(Me.Position, _q.Range,
-                    System.Drawing.Color.FromArgb(155, System.Drawing.Color.DeepPink), 4);
+                CircleRender.Draw(Me.Position, _q.Range,
+                    System.Drawing.Color.FromArgb(155, System.Drawing.Color.DeepPink).ToSharpDxColor(), 4);
             }
             if (ObjectManager.Player.IsDead || ObjectManager.Player.IsRecalling() || MenuGUI.IsChatOpen || ObjectManager.Player.IsWindingUp)
             {

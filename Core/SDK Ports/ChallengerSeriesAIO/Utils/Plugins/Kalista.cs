@@ -5,6 +5,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using Evade;
 
 namespace Challenger_Series.Utils.Plugins
@@ -88,17 +89,17 @@ namespace Challenger_Series.Utils.Plugins
             base.OnDraw(args);
             if (DrawERangeBool.Enabled)
             {
-                Render.Circle.DrawCircle(
+                CircleRender.Draw(
                     ObjectManager.Player.Position,
                     1000,
-                    Color.LightGreen);
+                    Color.LightGreen.ToSharpDxColor());
             }
             if (DrawRRangeBool.Enabled)
             {
-                Render.Circle.DrawCircle(
+                CircleRender.Draw(
                     ObjectManager.Player.Position,
                     1400,
-                    Color.DarkRed);
+                    Color.DarkRed.ToSharpDxColor());
             }
         }
 

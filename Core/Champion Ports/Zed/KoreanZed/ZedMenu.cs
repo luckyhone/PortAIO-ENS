@@ -277,15 +277,12 @@ namespace KoreanZed
                     foreach (AIHeroClient objAiHero in GameObjects.EnemyHeroes)
                     {
                         if (!MainMenu["koreanzed.harasmenu.blacklist"]
-                            .GetValue<MenuBool>("koreanzed.harasmenu.blacklist." +
-                                                objAiHero.CharacterName.ToLowerInvariant()).Enabled)
+                                .GetValue<MenuBool>("koreanzed.harasmenu.blacklist." +
+                                                    objAiHero.CharacterName.ToLowerInvariant()).Enabled)
                         {
                             blackList.Add(objAiHero);
                         }
-                        /*if (!GetParamBool("koreanzed.harasmenu.blacklist." + objAiHero.CharacterName.ToLowerInvariant()))
-                        {
-                            
-                        }*/
+
                     }
                     break;
 
@@ -297,11 +294,9 @@ namespace KoreanZed
                                                     objAiHero.CharacterName.ToLowerInvariant()).Enabled)
                         {
                             blackList.Add(objAiHero);
-
                         }
-                        /*if (!GetParamBool("koreanzed.combomenu.blockult." + objAiHero.CharacterName.ToLowerInvariant()))
-                        {
-                        }*/
+
+
                     }
                     break;
             }

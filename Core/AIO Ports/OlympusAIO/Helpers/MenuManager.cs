@@ -83,8 +83,8 @@ namespace OlympusAIO.Helpers
                 if (!OlympusAIO.SupportedChampions.All(x => !string.Equals(x, OlympusAIO.objPlayer.CharacterName, StringComparison.CurrentCultureIgnoreCase)))
                 {
                     AddBool(OlympusAIO.MainMenu, "DisableManaManagerIfBlueBuff", "Ignore Mana Manager If Blue Buff", true);
-                    AddKeyBind(OlympusAIO.MainMenu, "SpellFarm", "Enabled Spell Farm", Keys.J, KeyBindType.Toggle).SetValue(true).Permashow(true, "Enabled Spell Farm [MouseWheel] &");
-                    AddKeyBind(OlympusAIO.MainMenu, "SpellHarass", "Enabled Spell Harass", Keys.H, KeyBindType.Toggle).SetValue(true).Permashow();
+                    AddKeyBind(OlympusAIO.MainMenu, "SpellFarm", "Enabled Spell Farm", Keys.J, KeyBindType.Toggle).SetValue(true).AddPermashow( "Enabled Spell Farm [MouseWheel] &");
+                    AddKeyBind(OlympusAIO.MainMenu, "SpellHarass", "Enabled Spell Harass", Keys.H, KeyBindType.Toggle).SetValue(true).AddPermashow();
 
                     AddSeparator(OlympusAIO.MainMenu, "ChampionSettings", "Champion Settings");
                     OlympusAIO.MainMenu.Add(ComboMenu);
@@ -111,7 +111,7 @@ namespace OlympusAIO.Helpers
                 AddSlider(ComboMenu, "WHits", "Min Hits", 1, 1, 3);
 
                 AddSeparator(ComboMenu, "RSettings", "R Settings");
-                AddKeyBind(ComboMenu, "SemiRKey", "Semi-Manual R Key:", Keys.T, KeyBindType.Press).Permashow();
+                AddKeyBind(ComboMenu, "SemiRKey", "Semi-Manual R Key:", Keys.T, KeyBindType.Press).AddPermashow();
                 AddSlider(ComboMenu, "RHits", "R Hits", 1, 1, 3);
 
                 AddBool(HarassMenu, "Q", "Use Q", true);
@@ -194,7 +194,7 @@ namespace OlympusAIO.Helpers
                 AddBool(ComboMenu, "EOnlyIfFullyAllured", "Only If Enemy Is Fully Allured", true);
 
                 AddSeparator(ComboMenu, "RSettings", "R Settings");
-                AddKeyBind(ComboMenu, "SemiRKey", "Semi-Manual R Key:", Keys.T, KeyBindType.Press).Permashow();
+                AddKeyBind(ComboMenu, "SemiRKey", "Semi-Manual R Key:", Keys.T, KeyBindType.Press).AddPermashow();
                 AddSliderBool(ComboMenu, "RAoE", "If can hit >= x", 2, 1, 5, true);
                 AddSlider(ComboMenu, "RSafetyRange", "Safety Range", 450, 200, 800);
                 {
@@ -410,7 +410,7 @@ namespace OlympusAIO.Helpers
                 AddSeparator(LastHitMenu, "ManaManager", "Mana Manager");
                 AddSlider(LastHitMenu, "MinMana", "Min. Mana", 50, 0, 100);
 
-                AddKeyBind(MiscMenu, "Flee", "Flee Key:", Keys.Z, KeyBindType.Press).Permashow();
+                AddKeyBind(MiscMenu, "Flee", "Flee Key:", Keys.Z, KeyBindType.Press).AddPermashow();
 
                 AddBool(MiscKillSteal, "Disable", "Disable", false);
 
@@ -461,7 +461,7 @@ namespace OlympusAIO.Helpers
                 AddBool(ComboMenu, "EWall", "Only To near walls", true);
                 AddBool(ComboMenu, "ETower", "Block E when enemy is under turret", true);
                 AddBool(ComboMenu, "EFlash", "Use Flash + E to wall", true);
-                AddKeyBind(ComboMenu, "EFlashForced", "Force Flash+E Key", Keys.T, KeyBindType.Press).Permashow();
+                AddKeyBind(ComboMenu, "EFlashForced", "Force Flash+E Key", Keys.T, KeyBindType.Press).AddPermashow();
 
                 AddSeparator(ComboMenu, "RSettings", "R Settings");
                 AddBool(ComboMenu, "RDefense", "Use R when Player is in danger", true);
@@ -577,7 +577,7 @@ namespace OlympusAIO.Helpers
                 AddSeparator(LastHitMenu, "ManaManager", "Mana Manager");
                 AddSlider(LastHitMenu, "MinMana", "If Mana >= x", 40, 0, 100);
 
-                AddKeyBind(MiscMenu, "Flee", "Flee Key:", Keys.Z, KeyBindType.Press).Permashow();
+                AddKeyBind(MiscMenu, "Flee", "Flee Key:", Keys.Z, KeyBindType.Press).AddPermashow();
 
                 AddBool(MiscMenu, "AutoW", "Auto W", false);
                 AddBool(MiscMenu, "AutoR", "Auto Place Shrooms", true);

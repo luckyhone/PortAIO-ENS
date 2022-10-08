@@ -4,6 +4,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 
 namespace Challenger_Series.Utils.Logic
 {
@@ -50,7 +51,7 @@ namespace Challenger_Series.Utils.Logic
                 {
                     foreach (var savedLocation in _core.Positions.Where(pos => pos.Distance(ObjectManager.Player.Position) < 4000))
                     {
-                        Render.Circle.DrawCircle(savedLocation, 60, savedLocation.Distance(ObjectManager.Player.Position) < _spellToUse.Range ? Color.Gold : Color.White);
+                        CircleRender.Draw(savedLocation, 60, savedLocation.Distance(ObjectManager.Player.Position) < _spellToUse.Range ? Color.Gold.ToSharpDxColor() : Color.White.ToSharpDxColor());
                     }
                     if (_spellToUse.IsReady())
                     {

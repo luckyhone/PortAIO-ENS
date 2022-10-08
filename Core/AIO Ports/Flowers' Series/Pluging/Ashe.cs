@@ -2,6 +2,7 @@
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using LeagueSharpCommon;
 using LeagueSharpCommon.Geometry;
 using SPrediction;
@@ -480,12 +481,12 @@ namespace Flowers_ADC_Series.Pluging
             {
                 if (Menu.GetBool("DrawW") && W.IsReady())
                 {
-                    Render.Circle.DrawCircle(Me.Position, W.Range, Color.FromArgb(9, 253, 242), 1);
+                    CircleRender.Draw(Me.Position, W.Range, Color.FromArgb(9, 253, 242).ToSharpDxColor(), 1);
                 }
 
                 if (Menu.GetBool("DrawR") && R.IsReady())
                 {
-                    Render.Circle.DrawCircle(Me.Position, R.Range, Color.FromArgb(19, 130, 234), 1);
+                    CircleRender.Draw(Me.Position, R.Range, Color.FromArgb(19, 130, 234).ToSharpDxColor(), 1);
                 }
             }
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using EnsoulSharp.SDK.Rendering;
 
 namespace OneKeyToWin_AIO_Sebby.Champions
 {
@@ -141,12 +142,12 @@ namespace OneKeyToWin_AIO_Sebby.Champions
                 {
                     if (W.IsReady())
                     {
-                        Render.Circle.DrawCircle(Player.Position, W.Range, System.Drawing.Color.Orange, 1);
+                        CircleRender.Draw(Player.Position, W.Range, Color.Orange, 1);
                     }
                 }
                 else
                 {
-                    Render.Circle.DrawCircle(Player.Position, W.Range, System.Drawing.Color.Orange, 1);
+                    CircleRender.Draw(Player.Position, W.Range, Color.Orange, 1);
                 }
             }
         }

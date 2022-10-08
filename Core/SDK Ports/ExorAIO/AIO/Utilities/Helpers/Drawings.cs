@@ -2,6 +2,7 @@
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 
 #pragma warning disable 1587
 
@@ -172,18 +173,18 @@ namespace ExorAIO.Utilities
                     {
                         if (Vars.Menu["drawings"]["q"] != null && Vars.Menu["drawings"]["q"].GetValue<MenuBool>().Enabled)
                         {
-                            Render.Circle.DrawCircle(
+                            CircleRender.Draw(
                                 GameObjects.Player.Position,
                                 GameObjects.Player.CharacterName.Equals("Jinx") && GameObjects.Player.HasBuff("JinxQ")
                                     ? Vars.PowPow.Range
                                     : Vars.Q.Range,
-                                Color.LightGreen,
+                                Color.LightGreen.ToSharpDxColor(),
                                 2);
                         }
                         if (Vars.Menu["drawings"]["qe"] != null
                             && Vars.Menu["drawings"]["qe"].GetValue<MenuBool>().Enabled)
                         {
-                            Render.Circle.DrawCircle(GameObjects.Player.Position, Vars.Q2.Range, Color.Yellow, 2);
+                            CircleRender.Draw(GameObjects.Player.Position, Vars.Q2.Range, Color.Yellow.ToSharpDxColor(), 2);
                         }
                     }
 
@@ -194,7 +195,7 @@ namespace ExorAIO.Utilities
                     {
                         if (Vars.Menu["drawings"]["w"] != null && Vars.Menu["drawings"]["w"].GetValue<MenuBool>().Enabled)
                         {
-                            Render.Circle.DrawCircle(GameObjects.Player.Position, Vars.W.Range, Color.Purple, 2);
+                            CircleRender.Draw(GameObjects.Player.Position, Vars.W.Range, Color.Purple.ToSharpDxColor(), 2);
                         }
                     }
 
@@ -205,7 +206,7 @@ namespace ExorAIO.Utilities
                     {
                         if (Vars.Menu["drawings"]["e"] != null && Vars.Menu["drawings"]["e"].GetValue<MenuBool>().Enabled)
                         {
-                            Render.Circle.DrawCircle(GameObjects.Player.Position, Vars.E.Range, Color.Cyan, 2);
+                            CircleRender.Draw(GameObjects.Player.Position, Vars.E.Range, Color.Cyan.ToSharpDxColor(), 2);
                         }
                     }
 
@@ -220,12 +221,12 @@ namespace ExorAIO.Utilities
                             {
                                 Geometry.DrawCircleOnMinimap(GameObjects.Player.Position, Vars.R.Range, Color.White);
                             }
-                            Render.Circle.DrawCircle(GameObjects.Player.Position, Vars.R.Range, Color.Red, 2);
+                            CircleRender.Draw(GameObjects.Player.Position, Vars.R.Range, Color.Red.ToSharpDxColor(), 2);
                         }
                         if (Vars.Menu["drawings"]["r2"] != null
                             && Vars.Menu["drawings"]["r2"].GetValue<MenuBool>().Enabled)
                         {
-                            Render.Circle.DrawCircle(GameObjects.Player.Position, Vars.R2.Range, Color.Blue, 2);
+                            CircleRender.Draw(GameObjects.Player.Position, Vars.R2.Range, Color.Blue.ToSharpDxColor(), 2);
                         }
                     }
                 };

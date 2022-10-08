@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using EnsoulSharp.SDK.Utility;
 using HERMES_Kalista.MyLogic.Others;
 using SharpDX;
@@ -455,7 +456,7 @@ using SharpDX.IO;
                     foreach (var AXE in reticles)
                     {
                         var AXEToScreen = Drawing.WorldToScreen(AXE.Position);
-                        Render.Circle.DrawCircle(AXE.Position, 140, DrawingCololor, 8);
+                        CircleRender.Draw(AXE.Position, 140, DrawingCololor.ToSharpDxColor(), 8);
                     }
 
                 Drawing.DrawLine(PlayerPosToScreen, Drawing.WorldToScreen(reticles[0].Position), 8, DrawingCololor);
@@ -474,7 +475,7 @@ using SharpDX.IO;
                         ObjectManager.Get<GameObject>()
                             .Any(x => x.Name.Contains("Draven_") && x.Name.Contains("_Q_reticle_self") && !x.IsDead))
                     {
-                        Render.Circle.DrawCircle(Game.CursorPos, MaxDistToMouse.Value, DrawingCololor, 8);
+                        CircleRender.Draw(Game.CursorPos, MaxDistToMouse.Value, DrawingCololor.ToSharpDxColor(), 8);
                     }
             }
         }

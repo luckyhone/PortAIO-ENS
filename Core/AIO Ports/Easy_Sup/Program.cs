@@ -9,6 +9,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnsoulSharp.SDK.Rendering;
+using EnsoulSharp.SDK.Rendering.Caches;
 
 namespace Easy_Sup
 {
@@ -39,7 +41,7 @@ namespace Easy_Sup
 
 
 
-        private static Render.Sprite logo;
+        private static SpriteCache logo;
 
         public static void Loads()
         {

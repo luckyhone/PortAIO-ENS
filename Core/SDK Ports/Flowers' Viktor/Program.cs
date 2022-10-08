@@ -1,6 +1,7 @@
 ﻿ using EnsoulSharp;
  using EnsoulSharp.SDK;
  using EnsoulSharp.SDK.MenuUI;
+ using EnsoulSharp.SDK.Rendering;
  using EnsoulSharp.SDK.Utility;
  using HERMES_Kalista.MyLogic.Others;
  using SebbyLib;
@@ -163,25 +164,25 @@
         private static void OnDraw(EventArgs args)
         {
             if (DrawQ.Enabled && Q.IsReady())
-                Render.Circle.DrawCircle(Me.Position, Q.Range, System.Drawing.Color.SkyBlue);
+                CircleRender.Draw(Me.Position, Q.Range, Color.SkyBlue);
 
             if (DrawW.Enabled && W.IsReady())
-                Render.Circle.DrawCircle(Me.Position, W.Range, System.Drawing.Color.YellowGreen);
+                CircleRender.Draw(Me.Position, W.Range, Color.YellowGreen);
 
             if (DrawE.Enabled)
-                Render.Circle.DrawCircle(Me.Position, E.Range, System.Drawing.Color.PaleGoldenrod);
+                CircleRender.Draw(Me.Position, E.Range, Color.PaleGoldenrod);
 
             if (DrawEMax.Enabled)
-                Render.Circle.DrawCircle(Me.Position, E2.Range, System.Drawing.Color.Red);
+                CircleRender.Draw(Me.Position, E2.Range, Color.Red);
 
             if (DrawR.Enabled && R.IsReady())
-                Render.Circle.DrawCircle(Me.Position, R.Range, System.Drawing.Color.LightSkyBlue);
+                CircleRender.Draw(Me.Position, R.Range, Color.LightSkyBlue);
 
             if (DrawTarget.Enabled && (Orbwalker.ActiveMode == OrbwalkerMode.Combo || Orbwalker.ActiveMode == OrbwalkerMode.Harass))
             {
                 if (Target != null)
                 {
-                    Render.Circle.DrawCircle(Target.Position, Target.BoundingRadius, System.Drawing.Color.Red, 2);
+                    CircleRender.Draw(Target.Position, Target.BoundingRadius, Color.Red, 2);
                 }
             }
         }

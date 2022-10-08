@@ -1,6 +1,7 @@
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using EnsoulSharp.SDK.Utility;
 using Entropy.AIO.Utility;
 using Entropy.Lib.Render;
@@ -370,10 +371,10 @@ namespace ElUtilitySuite.Trackers
                             {
                                 if (map && pos.IsOnScreen(50))
                                 {
-                                    Render.Circle.DrawCircle(
+                                    CircleRender.Draw(
                                         pos,
                                         radius,
-                                        circleColor.ToSystemColor(),
+                                        circleColor,
                                         circleThickness,
                                         true);
                                 }

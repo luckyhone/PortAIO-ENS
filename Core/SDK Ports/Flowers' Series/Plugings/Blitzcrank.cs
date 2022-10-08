@@ -1,6 +1,8 @@
 ﻿ using EnsoulSharp;
  using EnsoulSharp.SDK;
  using EnsoulSharp.SDK.MenuUI;
+ using EnsoulSharp.SDK.Rendering;
+ using SharpDX;
 
  namespace Flowers_Series.Plugings
 {
@@ -88,10 +90,10 @@
             }
 
             if (Menu["Blitzcrank_Draw"]["Q"].GetValue<MenuBool>().Enabled && Q.IsReady())
-                Render.Circle.DrawCircle(Me.Position, Q.Range, System.Drawing.Color.AliceBlue);
+                CircleRender.Draw(Me.Position, Q.Range, Color.AliceBlue);
 
             if (Menu["Blitzcrank_Draw"]["R"].GetValue<MenuBool>().Enabled && R.IsReady())
-                Render.Circle.DrawCircle(Me.Position, R.Range, System.Drawing.Color.AliceBlue);
+                CircleRender.Draw(Me.Position, R.Range, Color.AliceBlue);
 
             if (Menu["Blitzcrank_Draw"]["Auto"].GetValue<MenuBool>().Enabled)
             {

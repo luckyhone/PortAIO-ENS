@@ -442,7 +442,7 @@ namespace PortAIO
                 case "Zed":
                     champ = new[]
                     {
-                        "Korean Zed", "SharpyAIO", "Ze-D is Back","StormAIO"
+                        "Korean Zed", "SharpyAIO", "Ze-D is Back","StormAIO","iDZed"
                     };
                     break;
                 case "Zoe":

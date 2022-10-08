@@ -19,9 +19,9 @@ namespace Flowers_Yasuo.MyCommon
                 if (mainMenu != null)
                 {
                     mainMenu.Add(new MenuSeparator("MyManaManager.SpellFarmSettings", ":: Spell Farm Logic"));
-                    mainMenu.Add(new MenuBool("MyManaManager.SpellFarm", "Use Spell To Farm(Mouse Scrool)")).Permashow();
+                    mainMenu.Add(new MenuBool("MyManaManager.SpellFarm", "Use Spell To Farm(Mouse Scrool)")).AddPermashow();
                     mainMenu.Add(new MenuKeyBind("MyManaManager.SpellHarass", "Use Spell To Harass(In Clear Mode)",
-                        Keys.H, KeyBindType.Toggle){Active = true}).Permashow();
+                        Keys.H, KeyBindType.Toggle){Active = true}).AddPermashow();
 
                     Game.OnWndProc += delegate (GameWndEventArgs Args)
                     {

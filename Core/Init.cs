@@ -2,6 +2,7 @@ using System;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using iDZed;
 
 namespace PortAIO
 {
@@ -1261,6 +1262,9 @@ namespace PortAIO
                             break;
                         case 3: // StormAIO
                             StormAIO.Program.Loads();
+                            break;
+                        case 4: // iDZed
+                            Zed.OnLoad();
                             break;
                     }
 

@@ -318,17 +318,17 @@ namespace Perplexed_Gangplank
         private static void Render_OnPresent(EventArgs args)
         {
             if (MenuManager.Drawing["drawQ"].GetValue<MenuBool>().Enabled)
-                Render.Circle.DrawCircle(Player.Position, SpellManager.Q.Range, Color.White.ToSystemColor());
+                CircleRender.Draw(Player.Position, SpellManager.Q.Range, Color.White);
             if (MenuManager.Drawing["drawE"].GetValue<MenuBool>().Enabled)
-                Render.Circle.DrawCircle(Player.Position, SpellManager.E.Range, Color.Orange.ToSystemColor());
+                CircleRender.Draw(Player.Position, SpellManager.E.Range, Color.Orange);
             //Render.Text(Player.ServerPosition.ToScreenPosition(), Color.Red, $"Barrels will hit: {BarrelManager.GetBarrelsThatWillHit().Count}");
             foreach (var barrel in BarrelManager.Barrels)
             {
                 //Render.Text(barrel.ServerPosition.ToScreenPosition(), Color.Red, $"Chain: {BarrelManager.GetChainedBarrels(barrel).Count}");
                 if (MenuManager.Drawing["drawBarrelExplode"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(barrel.Position, SpellManager.ExplosionRadius, Color.Gold.ToSystemColor());
+                    CircleRender.Draw(barrel.Position, SpellManager.ExplosionRadius, Color.Gold);
                 if (MenuManager.Drawing["drawBarrelChain"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(barrel.Position, SpellManager.ChainRadius, Color.Orange.ToSystemColor());
+                    CircleRender.Draw(barrel.Position, SpellManager.ChainRadius, Color.Orange);
             }
         }
     }

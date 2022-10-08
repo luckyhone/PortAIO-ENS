@@ -1,6 +1,8 @@
 ﻿ using EnsoulSharp;
  using EnsoulSharp.SDK;
  using EnsoulSharp.SDK.MenuUI;
+ using EnsoulSharp.SDK.Rendering;
+ using SharpDX;
 
  namespace Flowers_Series.Plugings
 {
@@ -264,13 +266,13 @@
                 return;
 
             if (Menu["Darius_Draw"]["Q"].GetValue<MenuBool>().Enabled)
-                Render.Circle.DrawCircle(Me.Position, Q.Range, System.Drawing.Color.BlueViolet);
+                CircleRender.Draw(Me.Position, Q.Range, Color.BlueViolet);
 
             if (Menu["Darius_Draw"]["E"].GetValue<MenuBool>().Enabled && E.IsReady())
-                Render.Circle.DrawCircle(Me.Position, E.Range, System.Drawing.Color.Blue);
+                CircleRender.Draw(Me.Position, E.Range, Color.Blue);
 
             if (Menu["Darius_Draw"]["R"].GetValue<MenuBool>().Enabled && R.IsReady())
-                Render.Circle.DrawCircle(Me.Position, E.Range, System.Drawing.Color.White);
+                CircleRender.Draw(Me.Position, E.Range, Color.White);
 
             if (Menu["Darius_Draw"]["RD"].GetValue<MenuBool>().Enabled)
             {

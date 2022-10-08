@@ -28,7 +28,7 @@ namespace hikiMarksmanRework.Champions
             DravenOnLoad();
         }
 
-        private static readonly Render.Sprite HikiSprite = new Render.Sprite(PortAIO.Properties.Resources.logo, new Vector2((Drawing.Width / 2) - 500, (Drawing.Height / 2) - 350));
+        private static readonly LeagueSharpCommon.Render.Sprite HikiSprite = new LeagueSharpCommon.Render.Sprite(PortAIO.Properties.Resources.logo, new Vector2((Drawing.Width / 2) - 500, (Drawing.Height / 2) - 350));
         private static void DravenOnLoad()
         {
             DravenMenu.Config =
@@ -43,7 +43,7 @@ namespace hikiMarksmanRework.Champions
             Game.Print("<font color='#ff3232'>If you like this assembly feel free to upvote on Assembly Database</font>");
             
             HikiSprite.Layer = 0;
-            HikiSprite.Draw();
+            //HikiSprite.Draw();
             DelayAction.Add(8000, () => HikiSprite.Dispose());
 
             Game.OnUpdate += DravenOnUpdate;

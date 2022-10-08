@@ -83,7 +83,7 @@ Only scripts that have "[Listo]" written in the menu work.
     - Yorick x2.
     - Yuumi x1.
     - Zac x1.
-    - Zed x4.
+    - Zed x5.
     - Zoe x1.
 
 #

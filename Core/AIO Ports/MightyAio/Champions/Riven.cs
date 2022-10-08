@@ -4,8 +4,10 @@ using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
 using EnsoulSharp.SDK.Utility;
+using Entropy.Lib.Render;
 using SharpDX;
 using HPB;
+using Render = LeagueSharpCommon.Render;
 
 namespace MightyAio.Champions
 {
@@ -19,7 +21,7 @@ namespace MightyAio.Champions
         private const string IsSecondR = "RivenIzunaBlade";
         private static readonly SpellSlot Flash = Player.GetSpellSlot("summonerFlash");
         private static Spell Q, Q1, W, E, R;
-        private static Render.Text Timer, Timer2;
+        private static LeagueSharpCommon.Render.Text Timer, Timer2;
         private static bool forceQ;
         private static bool forceW;
         private static bool forceR;

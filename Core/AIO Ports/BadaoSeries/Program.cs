@@ -4,6 +4,7 @@ using System.Reflection.Emit;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using LeagueSharpCommon.Notifications;
 
 namespace BadaoSeries
 {
@@ -101,7 +102,7 @@ namespace BadaoSeries
     {
         public static void Notif(string msg, int time)
         {
-            var x = new Notification("BadaoSeries", msg);
+            var x = new Notification("BadaoSeries");
         }
 
         public static MenuSeparator Separator(Menu subMenu, string name, string display)

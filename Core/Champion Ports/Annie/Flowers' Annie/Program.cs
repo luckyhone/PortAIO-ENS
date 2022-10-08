@@ -1,7 +1,9 @@
 ﻿ using EnsoulSharp;
  using EnsoulSharp.SDK;
  using EnsoulSharp.SDK.MenuUI;
+ using EnsoulSharp.SDK.Rendering;
  using LeagueSharpCommon;
+ using SharpDX;
  using SPrediction;
  using KeyBindType = EnsoulSharp.SDK.MenuUI.KeyBindType;
  using Keys = EnsoulSharp.SDK.MenuUI.Keys;
@@ -694,19 +696,19 @@
 
             // Draw Q Range
             if (Q.IsReady() && Menu.GetBool("DrawQ"))
-                Render.Circle.DrawCircle(Me.Position, Q.Range, System.Drawing.Color.AliceBlue);
+                CircleRender.Draw(Me.Position, Q.Range, Color.AliceBlue);
 
             // Draw W Range
             if (W.IsReady() && Menu.GetBool("DrawW"))
-                Render.Circle.DrawCircle(Me.Position, W.Range, System.Drawing.Color.DarkMagenta);
+                CircleRender.Draw(Me.Position, W.Range, Color.DarkMagenta);
 
             // Draw R Range
             if (R.IsReady() && Menu.GetBool("DrawR"))
-                Render.Circle.DrawCircle(Me.Position, R.Range, System.Drawing.Color.Indigo);
+                CircleRender.Draw(Me.Position, R.Range, Color.Indigo);
 
             // Flash Range is 425!!! 
             if (R.IsReady() && Flash.IsReady() && Menu.GetBool("DrawRF"))
-                Render.Circle.DrawCircle(Me.Position, R.Range + 425, System.Drawing.Color.Red);
+                CircleRender.Draw(Me.Position, R.Range + 425, Color.Red);
         }
 
         /// <summary>

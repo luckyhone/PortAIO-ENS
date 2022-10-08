@@ -29,7 +29,7 @@ namespace Flowers_Yasuo.MyCommon
                     MyLogic.ComboMenu.Add(new MenuBool("FlowersYasuo.ComboMenu.EQ", "Use EQ"));
                     MyLogic.ComboMenu.Add(new MenuBool("FlowersYasuo.ComboMenu.EQ3", "Use EQ3"));
                     MyLogic.ComboMenu.Add(new MenuKeyBind("FlowersYasuo.ComboMenu.R", "Use R", Keys.R,
-                        KeyBindType.Toggle) { Active = true }).Permashow();
+                        KeyBindType.Toggle) { Active = true }).AddPermashow();
                     MyLogic.ComboMenu.Add(new MenuSliderButton("FlowersYasuo.ComboMenu.RTargetHP",
                         "Use R| When target HealthPercent <= x%", 65, 1, 101));
                     MyLogic.ComboMenu.Add(new MenuSliderButton("FlowersYasuo.ComboMenu.RHitCount",
@@ -40,7 +40,7 @@ namespace Flowers_Yasuo.MyCommon
                             "Use On " + hero.CharacterName));
                     }
                     MyLogic.ComboMenu.Add(new MenuKeyBind("FlowersYasuo.ComboMenu.EQFlash", "Use EQ Flash",
-                        Keys.H, KeyBindType.Toggle)).Permashow();
+                        Keys.H, KeyBindType.Toggle)).AddPermashow();
                     MyLogic.ComboMenu.Add(new MenuBool("FlowersYasuo.ComboMenu.EQFlashKS", "Use EQ Flash| When Can KillAble in 1v1 or 1v2"));
                     MyLogic.ComboMenu.Add(new MenuSliderButton("FlowersYasuo.ComboMenu.EQFlashCount",
                         "Use EQ Flash| When Min Hit Count >= x", 3, 1, 5));
@@ -56,7 +56,7 @@ namespace Flowers_Yasuo.MyCommon
 
                     MyLogic.HarassMenu.Add(new MenuSeparator("FlowersYasuo.HarassMenu.AutoHarassSettings", "-- Auto Harass Settings"));
                     MyLogic.HarassMenu.Add(new MenuKeyBind("FlowersYasuo.HarassMenu.AutoQ", "Auto Q Harass",
-                        Keys.N, KeyBindType.Toggle){ Active = true }).Permashow();
+                        Keys.N, KeyBindType.Toggle){ Active = true }).AddPermashow();
                     MyLogic.HarassMenu.Add(new MenuBool("FlowersYasuo.HarassMenu.AutoQ3", "Auto Q3 Harass", false));
                 }
                 MyLogic.Menu.Add(MyLogic.HarassMenu);
@@ -127,7 +127,7 @@ namespace Flowers_Yasuo.MyCommon
                     //MyLogic.MiscMenu.Add(new MenuBool("FlowersYasuo.MiscMenu.Q3Interrupt", "Use Q3| Interrupt Danger Spell"));
                     //MyLogic.MiscMenu.Add(new MenuBool("FlowersYasuo.MiscMenu.Q3AntiGapcloser", "Use Q3| Anti Gapcloser"));
                     MyLogic.MiscMenu.Add(new MenuKeyBind("FlowersYasuo.MiscMenu.StackQ", "Stack Q Key",
-                        Keys.T, KeyBindType.Toggle)).Permashow();
+                        Keys.T, KeyBindType.Toggle)).AddPermashow();
                     MyLogic.MiscMenu.Add(new MenuBool("FlowersYasuo.MiscMenu.exploit", "Exploit"));
 
                     //MyLogic.MiscMenu.Add(new MenuSeparator("FlowersYasuo.MiscMenu.ESettings", "-- E Settings"));

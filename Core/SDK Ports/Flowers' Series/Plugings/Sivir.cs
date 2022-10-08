@@ -1,7 +1,9 @@
 ﻿ using EnsoulSharp;
  using EnsoulSharp.SDK;
  using EnsoulSharp.SDK.MenuUI;
+ using EnsoulSharp.SDK.Rendering;
  using EnsoulSharp.SDK.Utility;
+ using SharpDX;
 
  namespace Flowers_Series.Plugings
 {
@@ -319,7 +321,7 @@
 
             if (Menu["Sivir_Draw"]["Q"].GetValue<MenuBool>().Enabled && Q.IsReady())
             {
-                Render.Circle.DrawCircle(Me.Position, Q.Range, System.Drawing.Color.AliceBlue);
+                CircleRender.Draw(Me.Position, Q.Range, Color.AliceBlue);
             }
 
             if (Menu["Sivir_Draw"]["Damage"].GetValue<MenuBool>().Enabled)

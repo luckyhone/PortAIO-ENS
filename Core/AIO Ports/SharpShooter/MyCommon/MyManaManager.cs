@@ -30,8 +30,8 @@ namespace SharpShooter.MyCommon
                 };
                 mainMenu.Add(farmMenu);
 
-                farmMenu["MyManaManager.SpellFarm"].GetValue<MenuBool>().Permashow();
-                farmMenu["MyManaManager.SpellHarass"].GetValue<MenuBool>().Permashow();
+                farmMenu["MyManaManager.SpellFarm"].GetValue<MenuBool>().AddPermashow();
+                farmMenu["MyManaManager.SpellHarass"].GetValue<MenuBool>().AddPermashow();
 
                 Game.OnWndProc += delegate (GameWndEventArgs Args)
                 {

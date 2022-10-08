@@ -3,6 +3,8 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
+using SharpDX;
 
 namespace LyrdumAIO.Champions
 {
@@ -127,17 +129,17 @@ namespace LyrdumAIO.Champions
 
             if (Config["dsettings"].GetValue<MenuBool>("drawQ").Enabled)
             {
-                Render.Circle.DrawCircle(position, Q.Range, System.Drawing.Color.Red);
+                CircleRender.Draw(position, Q.Range, Color.Red);
             }
 
             if (Config["dsettings"].GetValue<MenuBool>("drawE").Enabled)
             {
-                Render.Circle.DrawCircle(position, E.Range, System.Drawing.Color.Blue);
+                CircleRender.Draw(position, E.Range, Color.Blue);
             }
 
             if (Config["dsettings"].GetValue<MenuBool>("drawW").Enabled)
             {
-                Render.Circle.DrawCircle(position, W.Range, System.Drawing.Color.Green);
+                CircleRender.Draw(position, W.Range, Color.Green);
             }
 
             CanSpellFarm();

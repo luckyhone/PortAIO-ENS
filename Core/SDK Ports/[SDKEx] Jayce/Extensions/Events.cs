@@ -1,5 +1,6 @@
 ﻿using EnsoulSharp;
 using EnsoulSharp.SDK;
+using EnsoulSharp.SDK.Rendering;
 
 namespace Jayce.Extensions
 {
@@ -165,12 +166,12 @@ namespace Jayce.Extensions
 
             if (RangeForm())
             {
-                if (CannonQERange.Enabled && QE.IsReady() && E.IsReady()) Render.Circle.DrawCircle(ObjectManager.Player.Position, QE.Range, System.Drawing.Color.Aqua, 2);
-                if (CannonQRange.Enabled && Q.IsReady()) Render.Circle.DrawCircle(ObjectManager.Player.Position, Q.Range, System.Drawing.Color.Cyan, 2);
+                if (CannonQERange.Enabled && QE.IsReady() && E.IsReady()) CircleRender.Draw(ObjectManager.Player.Position, QE.Range, Color.Aqua, 2);
+                if (CannonQRange.Enabled && Q.IsReady()) CircleRender.Draw(ObjectManager.Player.Position, Q.Range, Color.Cyan, 2);
             }
             else
             {
-                if (HammerQRange.Enabled && Q1.IsReady()) Render.Circle.DrawCircle(ObjectManager.Player.Position, Q1.Range, System.Drawing.Color.IndianRed, 2);
+                if (HammerQRange.Enabled && Q1.IsReady()) CircleRender.Draw(ObjectManager.Player.Position, Q1.Range, Color.IndianRed, 2);
             }
         }
 

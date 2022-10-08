@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EnsoulSharp.SDK.Rendering;
 using Color = System.Drawing.Color;
 
 
@@ -222,11 +223,11 @@ namespace Easy_Sup.scripts
             }
             if (Menubase.blitz_draw.Dq.Enabled && _q.IsReady())
             {
-                Render.Circle.DrawCircle(ObjectManager.Player.Position, _q.Range, System.Drawing.Color.LightGreen);
+                CircleRender.Draw(ObjectManager.Player.Position, _q.Range, Color.LightGreen.ToSharpDxColor());
             }
             if (Menubase.blitz_draw.Dr.Enabled && _r.IsReady())
             {
-                Render.Circle.DrawCircle(ObjectManager.Player.Position, _r.Range, System.Drawing.Color.LightGreen);
+                CircleRender.Draw(ObjectManager.Player.Position, _r.Range, Color.LightGreen.ToSharpDxColor());
             }
         }
     }

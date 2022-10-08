@@ -3,6 +3,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using EnsoulSharp.SDK.Utility;
 using Entropy.AIO.Bases;
 using SharpDX;
@@ -286,9 +287,9 @@ namespace Olympus_Annie
             myMenu.Add(creditsMenu);
 
             myMenu.Add(MenuSettings.Keys.menuSeparatorKeys);
-            myMenu.Add(MenuSettings.Keys.harassToggle).Permashow();
-            myMenu.Add(MenuSettings.Keys.saveStunToggle).Permashow();
-            myMenu.Add(MenuSettings.Keys.flashR).Permashow();
+            myMenu.Add(MenuSettings.Keys.harassToggle).AddPermashow();
+            myMenu.Add(MenuSettings.Keys.saveStunToggle).AddPermashow();
+            myMenu.Add(MenuSettings.Keys.flashR).AddPermashow();
 
             myMenu.Attach();
 
@@ -702,15 +703,15 @@ namespace Olympus_Annie
             }
             if (MenuSettings.Drawing.drawQ.Enabled)
             {
-                Render.Circle.DrawCircle(objPlayer.Position, Q.Range, System.Drawing.Color.AliceBlue);
+                CircleRender.Draw(objPlayer.Position, Q.Range, Color.AliceBlue);
             }
             if (MenuSettings.Drawing.drawW.Enabled)
             {
-                Render.Circle.DrawCircle(objPlayer.Position, W.Range, System.Drawing.Color.CadetBlue);
+                CircleRender.Draw(objPlayer.Position, W.Range, Color.CadetBlue);
             }
             if (MenuSettings.Drawing.drawR.Enabled)
             {
-                Render.Circle.DrawCircle(objPlayer.Position, R.Range, System.Drawing.Color.DarkSlateBlue);
+                CircleRender.Draw(objPlayer.Position, R.Range, Color.DarkSlateBlue);
             }
             if (MenuSettings.Drawing.drawFlashR.Enabled)
             {
@@ -719,7 +720,7 @@ namespace Olympus_Annie
                 if (ObjectManager.Player.HasBuff("AnnieRController"))
                     return;
 
-                Render.Circle.DrawCircle(objPlayer.Position, R.Range + 600, System.Drawing.Color.DarkBlue);
+                CircleRender.Draw(objPlayer.Position, R.Range + 600, Color.DarkBlue);
             }
         }
         private static void OnEndScene(EventArgs args)

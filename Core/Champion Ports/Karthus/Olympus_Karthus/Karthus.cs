@@ -4,6 +4,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using SharpDX;
 using SharpDX.Direct3D9;
 using SPrediction;
@@ -153,9 +154,9 @@ namespace Olympus_Karthus
             myMenu.Add(creditsMenu);
 
             myMenu.Add(new MenuSeparator("KeysSeparator", "Keys"));
-            myMenu.Add(MenuSettings.Keys.harassToggle.SetValue(true)).Permashow();
-            myMenu.Add(MenuSettings.Keys.farmToggle.SetValue(true)).Permashow();
-            myMenu.Add(MenuSettings.Keys.aaFarmToggle.SetValue(false)).Permashow();
+            myMenu.Add(MenuSettings.Keys.harassToggle.SetValue(true)).AddPermashow();
+            myMenu.Add(MenuSettings.Keys.farmToggle.SetValue(true)).AddPermashow();
+            myMenu.Add(MenuSettings.Keys.aaFarmToggle.SetValue(false)).AddPermashow();
 
             myMenu.Attach();
 
@@ -222,22 +223,22 @@ namespace Olympus_Karthus
 
                 if (MenuSettings.Drawing.QRange.Enabled)
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, Q.Range, System.Drawing.Color.Red);
+                    CircleRender.Draw(objPlayer.Position, Q.Range, Color.Red);
                 }
                 if (MenuSettings.Drawing.WRange.Enabled && W.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, W.Range, System.Drawing.Color.DarkRed);
+                    CircleRender.Draw(objPlayer.Position, W.Range, Color.DarkRed);
                 }
                 if (MenuSettings.Drawing.ERange.Enabled && E.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, E.Range, System.Drawing.Color.OrangeRed);
+                    CircleRender.Draw(objPlayer.Position, E.Range, Color.OrangeRed);
                 }
                 if (MenuSettings.Drawing.QWidth.Enabled)
                 {
                     if (Variables.GameTimeTickCount - lastQTime > 1000)
                         return;
 
-                    Render.Circle.DrawCircle(QPosition, Q.Width, System.Drawing.Color.White);
+                    CircleRender.Draw(QPosition, Q.Width, Color.White);
                 }
             }
 

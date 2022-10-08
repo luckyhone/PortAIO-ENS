@@ -2,6 +2,7 @@ using System;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using static FreshBooster.FreshCommon;
 using Color = System.Drawing.Color;
 using Render = EnsoulSharp.SDK.Render;
@@ -114,9 +115,9 @@ namespace FreshBooster.Champion
             {
                 if (Player.IsDead) return;
                 if (_MainMenu["Blitzcrank_Draw_Q"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(Player.Position, _Q.Range, Color.White, 1);
+                    CircleRender.Draw(Player.Position, _Q.Range, Color.White.ToSharpDxColor(), 1);
                 if (_MainMenu["Blitzcrank_Draw_R"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(Player.Position, _R.Range, Color.White, 1);
+                    CircleRender.Draw(Player.Position, _R.Range, Color.White.ToSharpDxColor(), 1);
                 var QTarget = TargetSelector.GetTarget(_Q.Range, DamageType.Magical);
                 if (QTarget != null)
                     Drawing.DrawCircle(QTarget.Position, 150,1, Color.Green);

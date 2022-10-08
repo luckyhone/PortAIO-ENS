@@ -3,6 +3,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using LeagueSharpCommon;
 using PortAIO;
 using SPrediction;
@@ -467,22 +468,22 @@ namespace Flowers_ADC_Series.Pluging
             {
                 if (Menu.GetBool("DrawQ") && Q.IsReady())
                 {
-                    Render.Circle.DrawCircle(Me.Position, Q.Range, Color.Green, 1);
+                    CircleRender.Draw(Me.Position, Q.Range, Color.Green.ToSharpDxColor(), 1);
                 }
 
                 if (Menu.GetBool("DrawQEx") && QExtend.IsReady())
                 {
-                    Render.Circle.DrawCircle(Me.Position, QExtend.Range, Color.Green, 1);
+                    CircleRender.Draw(Me.Position, QExtend.Range, Color.Green.ToSharpDxColor(), 1);
                 }
 
                 if (Menu.GetBool("DrawW") && W.IsReady())
                 {
-                    Render.Circle.DrawCircle(Me.Position, W.Range, Color.FromArgb(9, 253, 242), 1);
+                    CircleRender.Draw(Me.Position, W.Range, Color.FromArgb(9, 253, 242).ToSharpDxColor(), 1);
                 }
 
                 if (Menu.GetBool("DrawE") && E.IsReady())
                 {
-                    Render.Circle.DrawCircle(Me.Position, E.Range, Color.FromArgb(188, 6, 248), 1);
+                    CircleRender.Draw(Me.Position, E.Range, Color.FromArgb(188, 6, 248).ToSharpDxColor(), 1);
                 }
             }
         }

@@ -4,6 +4,8 @@ using EnsoulSharp.SDK.MenuUI;
 using SPrediction;
 using System;
 using System.Linq;
+using EnsoulSharp.SDK.Rendering;
+using SharpDX;
 using Prediction = SPrediction.Prediction;
 
 namespace Easy_Sup.scripts
@@ -255,7 +257,7 @@ namespace Easy_Sup.scripts
                 return;
             if (Q.IsReady())
             {
-                Render.Circle.DrawCircle(ObjectManager.Player.Position, Q.Range, System.Drawing.Color.LightGreen);
+                CircleRender.Draw(ObjectManager.Player.Position, Q.Range, Color.LightGreen);
             }
         }
     }

@@ -3,6 +3,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using Entropy.AIO.Bases;
 using SharpDX;
 
@@ -263,8 +264,8 @@ namespace Olympus_Veigar
             myMenu.Add(creditsMenu);
 
             myMenu.Add(MenuSettings.Keys.keysSeperator);
-            myMenu.Add(MenuSettings.Keys.harassToggle.SetValue(true)).Permashow();
-            myMenu.Add(MenuSettings.Keys.farmToggle.SetValue(true)).Permashow();
+            myMenu.Add(MenuSettings.Keys.harassToggle.SetValue(true)).AddPermashow();
+            myMenu.Add(MenuSettings.Keys.farmToggle.SetValue(true)).AddPermashow();
 
             myMenu.Attach();
 
@@ -722,19 +723,19 @@ namespace Olympus_Veigar
 
             if (MenuSettings.Drawing.drawQ.Enabled && Q.IsReady())
             {
-                Render.Circle.DrawCircle(objPlayer.Position, Q.Range, System.Drawing.Color.AliceBlue);
+                CircleRender.Draw(objPlayer.Position, Q.Range, Color.AliceBlue);
             }
             if (MenuSettings.Drawing.drawW.Enabled && W.IsReady())
             {
-                Render.Circle.DrawCircle(objPlayer.Position, W.Range, System.Drawing.Color.Beige);
+                CircleRender.Draw(objPlayer.Position, W.Range, Color.Beige);
             }
             if (MenuSettings.Drawing.drawE.Enabled && E.IsReady())
             {
-                Render.Circle.DrawCircle(objPlayer.Position, W.Range, System.Drawing.Color.DodgerBlue);
+                CircleRender.Draw(objPlayer.Position, W.Range, Color.DodgerBlue);
             }
             if (MenuSettings.Drawing.drawR.Enabled && R.IsReady())
             {
-                Render.Circle.DrawCircle(objPlayer.Position, R.Range, System.Drawing.Color.DarkBlue);
+                CircleRender.Draw(objPlayer.Position, R.Range, Color.DarkBlue);
             }
         }
         private static void OnEndScene(EventArgs args)

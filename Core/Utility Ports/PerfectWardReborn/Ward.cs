@@ -74,7 +74,7 @@ namespace PerfectWardReborn
             //Drawing.DrawCircle(Position, WARD_INDICATOR_RADIUS, System.Drawing.Color.Red);
 
             Vector2 TextPos = Drawing.WorldToScreen(Position);
-            Render.Circle.DrawCircle(Position, 80.0f, DrawColor);
+            CircleRender.Draw(Position, 80.0f, DrawColor.ToSharpDxColor());
 
             if (AliveTo != float.MaxValue)
             {

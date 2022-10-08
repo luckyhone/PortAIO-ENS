@@ -46,8 +46,8 @@ namespace hikiMarksmanRework.Champions
             HikiSprite.OnDraw();
             DelayAction.Add(8000, () => HikiSprite.Remove());
 
-            Notification notif = new Notification("hikiMarksman:AIO",
-                ObjectManager.Player.CharacterName+" - Loaded!");
+            /*Notification notif = new Notification("hikiMarksman:AIO",
+                ObjectManager.Player.CharacterName+" - Loaded!");*/
 
             Game.OnUpdate += GravesOnUpdate;
             AIBaseClient.OnProcessSpellCast += GravesOnProcessSpellCast;

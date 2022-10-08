@@ -3,6 +3,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 
 namespace NickyJinx
 {
@@ -144,7 +145,7 @@ namespace NickyJinx
             }
             if (W.IsReady())
             {
-                Render.Circle.DrawCircle(GameObjects.Player.Position, W.Range, Color.Crimson);
+                CircleRender.Draw(GameObjects.Player.Position, W.Range, Color.Crimson.ToSharpDxColor());
             }
         }
 

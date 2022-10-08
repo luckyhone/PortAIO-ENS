@@ -4,6 +4,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using ExorAIO.Utilities;
 using SharpDX;
 using Geometry = LeagueSharpCommon.Geometry.Geometry;
@@ -83,7 +84,7 @@ namespace HikiCarry.Core.Utilities
         {
             if (!onMinimap)
             {
-                Render.Circle.DrawCircle(center, radius, color, thickness);
+                CircleRender.Draw(center, radius, color.ToSharpDxColor(), thickness);
                 return;
             }
 

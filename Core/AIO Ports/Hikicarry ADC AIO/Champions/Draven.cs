@@ -4,6 +4,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using EnsoulSharp.SDK.Utility;
 using HikiCarry.Core.Predictions;
 using SharpDX;
@@ -185,7 +186,7 @@ namespace HikiCarry.Champions
                 {
                     if (CatchableAxes(axe))
                     {
-                        Render.Circle.DrawCircle(axe.Object.Position, 100, Color.GreenYellow.ToSystemColor());
+                        CircleRender.Draw(axe.Object.Position, 100, Color.GreenYellow);
                         Drawing.DrawText(Drawing.WorldToScreen(axe.Object.Position).X - 40, Drawing.WorldToScreen(axe.Object.Position).Y,
                             Color.Gold.ToSystemColor(), (((float)(axe.EndTick - Environment.TickCount))) + " ms");
                     }

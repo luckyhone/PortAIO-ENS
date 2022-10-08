@@ -3,6 +3,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using LeagueSharpCommon;
 using SharpDX;
 using Color = System.Drawing.Color;
@@ -117,11 +118,11 @@ namespace FreshBooster.Champion
             {
                 if (Player.IsDead) return;
                 if (_MainMenu["Braum_Draw_Q"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(Player.Position, _Q.Range, Color.White, 1);
+                    CircleRender.Draw(Player.Position, _Q.Range, Color.White.ToSharpDxColor(), 1);
                 if (_MainMenu["Braum_Draw_W"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(Player.Position, _W.Range, Color.White, 1);
+                    CircleRender.Draw(Player.Position, _W.Range, Color.White.ToSharpDxColor(), 1);
                 if (_MainMenu["Braum_Draw_R"].GetValue<MenuBool>().Enabled)
-                    Render.Circle.DrawCircle(Player.Position, _R.Range, Color.White, 1);
+                    CircleRender.Draw(Player.Position, _R.Range, Color.White.ToSharpDxColor(), 1);
                 var QTarget = TargetSelector.GetTarget(_Q.Range, DamageType.Magical);
                 if (QTarget != null)
                     Drawing.DrawCircle(QTarget.Position, 150,1, Color.Green);

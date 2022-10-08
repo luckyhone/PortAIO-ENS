@@ -122,10 +122,10 @@ namespace Entropy.AIO.Darius
 
             MenuBase.Root.Add(MenuBase.Gapcloser);
             MenuBase.Root.Add(MenuBase.Interrupter);
-            LaneClearMenu.farmKey.Permashow();
+            LaneClearMenu.farmKey.AddPermashow();
             MenuBase.Champion.Add(new MenuSeparator("--", " ~~~~ "));
             MenuBase.Champion.Add(ComboMenu.QLock);
-            ComboMenu.QLock.Permashow();
+            ComboMenu.QLock.AddPermashow();
         }
     }
 }

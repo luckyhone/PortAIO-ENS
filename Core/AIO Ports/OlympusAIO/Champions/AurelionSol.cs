@@ -4,9 +4,11 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using EnsoulSharp.SDK.Utility;
 using OlympusAIO.General;
 using OlympusAIO.Helpers;
+using SharpDX;
 using MenuManager = OlympusAIO.Helpers.MenuManager;
 
 namespace OlympusAIO.Champions
@@ -97,26 +99,26 @@ namespace OlympusAIO.Champions
 
                 if (MenuManager.SpellRangesMenu["QRange"].GetValue<MenuBool>().Enabled && SpellManager.Q.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, SpellManager.Q.Range, System.Drawing.Color.White);
+                    CircleRender.Draw(objPlayer.Position, SpellManager.Q.Range, Color.White);
                 }
                 if (MenuManager.SpellRangesMenu["WRange"].GetValue<MenuBool>().Enabled)
                 {
                     if (objPlayer.HasBuff("AurelionSolWActive"))
                     {
-                        Render.Circle.DrawCircle(objPlayer.Position, SpellManager.W2.Range, System.Drawing.Color.DodgerBlue);
+                        CircleRender.Draw(objPlayer.Position, SpellManager.W2.Range, Color.DodgerBlue);
                     }
                     else
                     {
-                        Render.Circle.DrawCircle(objPlayer.Position, SpellManager.W.Range, System.Drawing.Color.DodgerBlue);
+                        CircleRender.Draw(objPlayer.Position, SpellManager.W.Range, Color.DodgerBlue);
                     }
                 }
                 if (MenuManager.SpellRangesMenu["ERange"].GetValue<MenuBool>().Enabled && SpellManager.E.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, SpellManager.E.Range, System.Drawing.Color.Azure);
+                    CircleRender.Draw(objPlayer.Position, SpellManager.E.Range, Color.Azure);
                 }
                 if (MenuManager.SpellRangesMenu["RRange"].GetValue<MenuBool>().Enabled && SpellManager.R.IsReady())
                 {
-                    Render.Circle.DrawCircle(objPlayer.Position, SpellManager.R.Range, System.Drawing.Color.Cyan);
+                    CircleRender.Draw(objPlayer.Position, SpellManager.R.Range, Color.Cyan);
                 }
             }
             public static void OnMissileCreate(GameObject gameObject, EventArgs args)

@@ -3,6 +3,7 @@ using System.Linq;
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using SharpDX;
 using Color = System.Drawing.Color;
 
@@ -100,7 +101,7 @@ namespace Challenger_Series.Utils.Plugins
             var drawRange = DrawRange.Value;
             if (drawRange > 0)
             {
-                Render.Circle.DrawCircle(ObjectManager.Player.Position, drawRange, Color.Gold);
+                CircleRender.Draw(ObjectManager.Player.Position, drawRange, Color.Gold.ToSharpDxColor());
             }
             var victims =
                    GameObjects.EnemyHeroes.Where(

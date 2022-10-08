@@ -1,6 +1,7 @@
 using EnsoulSharp;
 using EnsoulSharp.SDK;
 using EnsoulSharp.SDK.MenuUI;
+using EnsoulSharp.SDK.Rendering;
 using SharpDX;
 
 namespace Zypppy_AurelionSol
@@ -133,26 +134,26 @@ namespace Zypppy_AurelionSol
 
             if (Q.IsReady() && Menu["drawings"]["drawq"].GetValue<MenuBool>().Enabled)
             {
-                Render.Circle.DrawCircle(Player.Position, Q.Range, Color.Indigo);
+                CircleRender.Draw(Player.Position, Q.Range, Color.Indigo.ToSharpDxColor());
             }
             if (Q.IsReady() && Menu["drawings"]["drawq2"].GetValue<MenuBool>().Enabled)
             {
                 if (missiles != null)
                 {
-                    Render.Circle.DrawCircle(missiles.Position, 250, Color.DeepPink);
+                    CircleRender.Draw(missiles.Position, 250, Color.DeepPink.ToSharpDxColor());
                 }
             }
             if (W.IsReady() && Menu["drawings"]["draww2"].GetValue<MenuBool>().Enabled)
             {
-                Render.Circle.DrawCircle(Player.Position, W2.Range, Color.DeepSkyBlue);
+                CircleRender.Draw(Player.Position, W2.Range, Color.DeepSkyBlue.ToSharpDxColor());
             }
             if (W.IsReady() && Menu["drawings"]["draww"].GetValue<MenuBool>().Enabled)
             {
-                Render.Circle.DrawCircle(Player.Position, W.Range, Color.Cornsilk);
+                CircleRender.Draw(Player.Position, W.Range, Color.Cornsilk.ToSharpDxColor());
             }
             if (R.IsReady() && Menu["drawings"]["drawr"].GetValue<MenuBool>().Enabled)
             {
-                Render.Circle.DrawCircle(Player.Position, R.Range, Color.Crimson);
+                CircleRender.Draw(Player.Position, R.Range, Color.Crimson.ToSharpDxColor());
             }
         }
         private void Game_OnUpdate(EventArgs args)

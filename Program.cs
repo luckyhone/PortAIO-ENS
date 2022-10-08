@@ -12,7 +12,7 @@ namespace PortAIO{
 
     internal class Program
     {
-        public const string version = "1.0.0.8";
+        public const string version = "1.0.0.9";
         
         public static void Main(string[] args)
         {
